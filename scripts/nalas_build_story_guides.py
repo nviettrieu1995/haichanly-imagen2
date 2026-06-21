@@ -263,9 +263,81 @@ EARLY_TEACHING_FLOW_LOCKS = {
 }
 
 
+MODERN_CHAPTER_FLOW_LOCKS = {
+    17: """Chapter 17 step-by-step lock:
+- This is the Truth of the Universe through smallest energy particle knowledge, not a generic lecture chapter.
+- Setting baseline: modern post-Covid Vietnamese class/training room; students arrive early, eager for the next lesson about enlightened knowledge and energy particles.
+- Opening focus: students' anticipation and the teacher introducing the truth of the universe as a practical standard, including parent-child misunderstandings and the idea that souls are not property.
+- Doctrine focus: smallest positive/negative energy particles create humans, animals, tuelinhs, events, and interactions. Keep visualizations restrained and attached to the classroom explanation.
+- Late focus: acquisition of information, interaction with positive/negative environments, internal toxins, suffering, and the struggle of yin/yang particles. Character and setting matter more than microscopic decorative detail.""",
+    18: """Chapter 18 step-by-step lock:
+- This chapter is the Truth of Enlightenment and correction of misunderstood enlightenment knowledge.
+- Setting baseline: modern Vietnamese classroom with serious students who have studied for years; use teacher/student dialogue rather than isolated abstract symbols.
+- Opening focus: a student reflects that earlier learners memorized the teacher's words but misunderstood because practice did not match learning.
+- Conflict focus: disobedient/proud students return to suffering lessons; the teacher explains enlightenment as knowing origin, nature, humanity, tuelinhs, and liberating suffering by forcing out toxins.
+- Doctrine focus: intellectual fibres, vibrational wave code, negative/positive energy particles, destructive vs sustainable transformation. Keep diagrams subtle and non-readable.""",
+    19: """Chapter 19 step-by-step lock:
+- This chapter begins with a very specific modern atmosphere: cold rain at the autumn-to-winter transition, wet city streets, and Nalas making hot tea in his office after walking through freezing rain.
+- Earth setting is a modern teacher's office/classroom, not countryside. Use rain reflections, winter clothing, window light, desk, tea, and a quiet reflective mood.
+- Story focus: the teacher reflects on students with illness, then discusses a girl's mental illness, her parents' misunderstanding, medicine suppressing her brain, and information disorder in the soul.
+- Relationship focus: the love story and destructive transformation are shown through conversations and human consequences, not sensational imagery.
+- Late focus: wrong-body/confused-soul explanations and decay/disintegration causing mental illness. Avoid explicit sexuality or shock imagery; keep it compassionate and clinical.""",
+    20: """Chapter 20 step-by-step lock:
+- This chapter is the positive counterpart after the cold rain: winter office warmth, hot fragrant tea, and the teacher with two students discussing successful practice.
+- Key character: Loi Nalanda, over sixty, symbol of the sustainable transmutation mechanism. Show him as an older Vietnamese man with fulfilled family/business/social/spiritual life when the excerpt reaches him.
+- Flashback context: war, poverty, death, business hardship, family life, social relationships, and spreading the two truths. Use restrained human scenes.
+- Doctrine focus: positive/neutral/harmful energy particles and sustainable transmutation, but visualized through Nalas's explanation and Loi's life, not generic glowing science posters.
+- Closing focus: balanced tuelinh structure that can control destructive energy; character and life evidence should anchor abstract mechanism.""",
+    21: """Chapter 21 step-by-step lock:
+- This chapter is Mind Dharma and has a clear split: the mortal teacher sleeps in a modern bright capital/city night, while his tuelinh leaves the body and returns to the heavenly homeland.
+- Earth body: modern city room at night, streetlights and roads outside, Nalas asleep naturally with glasses on; no duplicate glasses and no rural/countryside room.
+- Heaven body: Father Nalas teaches mature tuelinhs in Western sacred heaven with the stable Jesus-like divine Father style.
+- Teaching focus: four types of Mind Dharma - dharma within dharma, dharma outside dharma, dharma unites dharma, and dharma denies dharma.
+- Closing focus: Mind Dharma as the key to understanding two truths and moving through cosmic space by information values. Do not turn this into a normal classroom unless the excerpt returns to Earth.""",
+    22: """Chapter 22 step-by-step lock:
+- This chapter begins in the body, soul and wisdom therapy course: a weekend modern classroom, students arrive early, and an older mother waits quietly in the teacher's office.
+- Key character: the devoted older woman/mother asking why her mentally ill child can be normal at class but abnormal at home. She should be present when the excerpt reaches that beat.
+- Setting baseline: modern class/office, tea made by a student, organized students, serious compassionate atmosphere.
+- Doctrine focus: information entanglement and how information changes nature in different environments; show family/patient environment effects through human scenes first.
+- Late focus: relatives' sincere love, positive environment, mental illness recovery, and forcing out toxins. Avoid hospital-drama unless the excerpt demands it.""",
+    23: """Chapter 23 step-by-step lock:
+- This chapter is explicitly the pandemic-era memory: second year of a terrible epidemic, end-of-year/new-year hopes, deaths, economic collapse, and the teacher teaching amid that suffering.
+- Setting baseline: modern Covid/pandemic Vietnam, office-classroom/training-room, city/home context, masks/sanitizer only if natural; no rural old-room look.
+- Story focus: destructive power of decaying tuelinh shown through moral/social examples - same-sex love example, impure love, prostitution/adultery, hunting/fishing cruelty, corrupt professions, harmful teachers, arrogant students.
+- Keep images compassionate and non-sensational: show consequences, loneliness, family suffering, social decay, and teaching explanation rather than explicit or judgmental shock scenes.
+- Closing focus: great rescue of tuelinhs, rebuilding humanity, and Giac/Chap excited to accompany Father in the human world; use heaven only when the excerpt reaches Giac/Chap/Father.""",
+    24: """Chapter 24 step-by-step lock:
+- This chapter is the Unified Tao of the Universe taught in a modern class through the four forms of human life.
+- Opening focus: student asks about Tao of the universe and the task of transforming the yin-yang embryo into an energy filter.
+- Key human forms: family Tao, social Tao, national Tao, and teacher-student Tao. Show father/mother/son/daughter, spouse relationship, siblings, social interactions, national community, and classroom practice when supported.
+- Doctrine focus: four forms encode the conference gathering humanity and create the practice environment for tuelinhs.
+- Closing focus: students understand that sufficient quality/quantity of energy particles across all four forms is needed before returning home.""",
+    25: """Chapter 25 step-by-step lock:
+- This chapter opens before a healing course when the tuelinh within Nalas returns to heaven and chats with two messengers about toxins affecting souls.
+- Split correctly: heaven conversation with two male messengers in Western sacred style when the excerpt is heaven; modern classroom when the excerpt enters the healing course.
+- Earth course focus: students with illness, mental illness, and suffering share experiences; the teacher begins with the role of learner.
+- Toxin focus: learner toxins such as laziness to study, arrogance, harming teachers/classmates, and frozen toxin clusters in negative energy.
+- Practice focus: students follow Nalas to unfreeze and squeeze out toxins; show group practice and compassion, not horror/demonic imagery.""",
+    26: """Chapter 26 step-by-step lock:
+- This chapter continues after a short rest and cup of tea, moving from learner toxins to toxins of wisdom spreaders.
+- Setting baseline: modern classroom/training room, teacher with tea, students recovering from intense inner conflict after the previous lesson.
+- Role focus: religious leaders, teachers, knowledge spreaders, ritual/spell sellers, school teachers abusing scores/power, and harmful liberation teachings.
+- Practice focus: students may see inner mental images of Buddha, God, devil, sweet words, and negative words like a movie in the mind; treat this as inner toxin imagery, not literal true deities.
+- Closing focus: students speak to the tuelinh within, connect body-wisdom-soul, remember friends from past lives, and commit to helping others.""",
+    27: """Chapter 27 step-by-step lock:
+- This chapter is a new weekly lecture after quiet falls in the classroom, following learner and wisdom-spreader toxin lessons.
+- Setting baseline: modern classroom with serious students; teacher asks about experiences breaking toxic ice in two interaction groups.
+- Student case: a student reports nearly twenty years of demon/ancestor possession phenomena and asks why the knowledge heals mental illness.
+- Doctrine focus: meditation and worship rituals do not produce true enlightenment; they can reveal old soul memories but not complete the human practice mission.
+- Late focus: harmful ritual teachers, animal killing, sudden death, reincarnation with possession/mental illness, and forgiving harm to animals/others/self. Keep the tone compassionate, not horror."""
+}
+
+
 def custom_chapter_flow_rules(chapter):
     if chapter in EARLY_TEACHING_FLOW_LOCKS:
         return EARLY_TEACHING_FLOW_LOCKS[chapter]
+    if chapter in MODERN_CHAPTER_FLOW_LOCKS:
+        return MODERN_CHAPTER_FLOW_LOCKS[chapter]
     if chapter != 8:
         return ""
     return """Chapter 8 step-by-step lock:
@@ -320,6 +392,7 @@ Story arc samples to keep the chapter distinct:
 Mandatory visual rules for this chapter:
 {profile_text}
 {custom_flow_text}
+- Story focus priority: first lock the correct character identity, relationship, chapter phase, and setting; second show the local action/emotion; only then add secondary props, particles, diagrams, or symbolic details when they clarify the beat. Do not overload a frame with every doctrine term.
 - Always obey the local lane excerpt first. If the excerpt is a classroom conversation, show that exact class beat. If it is a technical doctrine, visualize it through the named mechanism rather than a generic glowing circle. If it is heaven, temple, tuelinh, Giac, Chap, or Father, use the correct heaven/Earth split.
 - Whenever the mortal/pham-tran Nalas or Earth teacher body is visible, keep the approved identity: Vietnamese father-teacher, rounded-square gentle face, solid grounded build, calm scholarly compassion, and thin metal eyeglasses worn on his face. The glasses are mandatory even when he sleeps; do not show a bare-faced mortal Nalas and do not create a spare pair of glasses on a bed/table/desk.
 - If Giac, Chap, two messengers, or five messengers appear, keep them role-distinct and non-cloned. All five true messengers are mature men. Giac is insight/discernment: restrained gold-white, slightly older, leaner oval face, high cheekbones, calm analytical gaze, precise still posture, with a small gold-white geometry or clear-light thread near the hands/chest. Chap is compassion/attachment-testing: warmer rose-gold, slightly younger or softer face, warmer eyes, humble protective posture, rose-gold sash or warm rose light held in the palm. If Father Nalas is present, Giac, Chap, and all messengers must have no Sacred Heart, no glowing heart icon, no heart-shaped chest light, and no radiant chest emblem; only Father has chest-heart radiance. The other three messengers, when present, are blue-white order/law with grid/archive/tablet markers, green-gold healing/transformation clearing toxins or carrying clean botanical light, and silver-violet transmission/transit with a gateway/path/arc marker. Do not render Giac and Chap as identical generic angels, identical white-haired men, women, children, or Father Nalas lookalikes. Only show old-woman form when the local excerpt explicitly says a messenger disguises as an old woman.

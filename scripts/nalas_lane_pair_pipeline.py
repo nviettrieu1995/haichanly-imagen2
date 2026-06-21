@@ -123,6 +123,13 @@ PHAM_TRAN_PHASE_TIMELINE = """Phase timeline lock:
 Chapter mapping: C008 belongs to phases 1-2, C009-C015 belong to phase 3 unless the local excerpt explicitly says flashback/past life, and C016+ belongs to phase 4."""
 
 
+STORY_FOCUS_PRIORITY_RULE = """Story focus hierarchy:
+1. Character identity and relationship are the first priority: Nalas's correct mortal/divine form, Giac/Chap/five messengers, students, mothers, patients, named examples, and whether the scene is Earth, dream, or heaven.
+2. Setting and timeline are the second priority: C008 poor modern countryside, C009-C015 early teaching rooms, C016+ modern/Covid/post-Covid office-classrooms, and Western sacred heaven for true celestial scenes.
+3. The local action/emotion is the third priority: a question, tea pause, class reaction, rain outside the office, sleeping body, mother waiting, pandemic memory, group practice, or heavenly teaching.
+4. Secondary props, energy particles, diagrams, symbolic overlays, and doctrine visuals are optional support. Use them only when they clarify the beat; do not overload a frame with every doctrine term or tiny detail."""
+
+
 C008_STORY_FLOW_LOCK = """C008 step-by-step story flow lock:
 Chapter 8 is not generic teacher-at-desk imagery. It is the journey of Nalas Nalanda's mortal body gradually returning to wisdom while being accompanied and protected by the messengers.
 Required flow anchors:
@@ -156,6 +163,32 @@ State of Ignorant Soul. Show the scale and humanity of the course: one class a w
 State of Enlightened Mind. Teaching-room baseline with doctrine visualizations only when useful: intellectual wave code fibres, yin-yang root embryo, positive energy controlling negative energy, compassion, delight, and peace. Use concrete moral scenes for compassion around possession/non-possession, love/hatred, wisdom/lack of knowledge, success/failure, action/inaction. Alternate classroom explanation, student reflection, human examples, and restrained mechanism visuals.""",
     15: """C015 flow lock:
 Suffering and Methods of Liberation. Present-class scenes: Nalas sipping hot tea, students asking about past lives, and Nalas sharing memories to support the lesson. Past-life flashbacks are allowed only when the excerpt moves there: ancient South Asian crown prince, king and queen, wife/children, high-walled capital, temple study, escape southeast, teachers, meditation, asceticism, and three metal-tool sounds. Past-life scenes are South Asian/princely/ascetic, not Chinese fantasy; present class stays modern early-teaching."""
+}
+
+
+MODERN_CHAPTER_FLOW_LOCKS = {
+    17: """C017 flow lock:
+Truth of the Universe with smallest energy particle knowledge. Modern post-Covid class/training room; students arrive early and look forward to the new lesson. Focus on Nalas giving a practical standard for the truth of the universe, including parent-child/soul-not-property examples. Visualize smallest positive/negative energy particles only as restrained support for classroom explanation of humans, animals, tuelinhs, events, interactions, information acquisition, toxins, and suffering.""",
+    18: """C018 flow lock:
+Truth of Enlightenment. Modern classroom dialogue with students who have studied for years but once misunderstood enlightened knowledge because memorization did not become practice. Focus on correction of pride/disobedience, suffering lessons, origin/nature/humanity/tuelinh mission, and liberation from suffering. Intellectual fibres, vibrational wave code, and positive/negative energy particles should support the teacher-student explanation, not replace it.""",
+    19: """C019 flow lock:
+Love Story and destructive transformation. Begin with cold rain, autumn-to-winter transition, wet modern city/office atmosphere, and Nalas making hot tea after walking in freezing rain. Focus on the teacher reflecting on sick students and discussing a girl's mental illness, parental misunderstanding, medicine suppression, false information, relationship confusion, wrong-body/confused-soul explanation, and decay. Keep it compassionate, modern, and non-sensational.""",
+    20: """C020 flow lock:
+Symbol of Sustainable Transformation. Winter office warmth after rain, hot fragrant tea, teacher with two students. Key character Loi Nalanda, over sixty, as a fulfilled older Vietnamese man whose family, business, social relationships, and spreading of the two truths demonstrate sustainable transmutation. Use his life and Nalas's office discussion to anchor positive/neutral/harmful particle doctrine and balanced tuelinh structure.""",
+    21: """C021 flow lock:
+Mind Dharma. Strong split: mortal Nalas sleeps in a modern bright capital/city night with streetlights and roads outside, while his tuelinh leaves the body and returns to heavenly homeland. The Earth body wears glasses and sleeps naturally. Heaven stays Western sacred with divine Father Nalas teaching mature tuelinhs about dharma within dharma, dharma outside dharma, dharma unites dharma, and dharma denies dharma. Do not turn heavenly teaching into an Earth classroom.""",
+    22: """C022 flow lock:
+Information entanglement. Weekend body-soul-wisdom therapy course in a modern classroom; students arrive early; an older mother waits quietly in the teacher's office; a student makes tea for Nalas. Key human question: why her mentally ill child is normal in class but abnormal at home. Focus on devoted mother, family environment, sincere love, positive environments, relatives helping patients, and information changing nature in different environments.""",
+    23: """C023 flow lock:
+Destructive power of decaying tuelinh. Pandemic-era memory, second year of a terrible epidemic near New Year, with deaths and economic collapse. Modern Covid/post-Covid Vietnam, not old rooms. Show social/moral examples as compassionate consequence scenes: family suffering, impure love, prostitution/adultery, hunting/fishing cruelty, corrupt professions, harmful teachers, arrogant students. Use heaven/Giac/Chap only when the excerpt reaches rescue/rebuilding humanity.""",
+    24: """C024 flow lock:
+Unified Tao of the Universe. Modern class about four forms of human life. Student asks difference between Tao of the universe and transforming the yin-yang embryo into an energy filter. Use concrete examples of family Tao, social Tao, national Tao, and teacher-student Tao: father/mother/son/daughter, spouses, siblings, community, nation, and classroom practice. Keep doctrine anchored in human forms.""",
+    25: """C025 flow lock:
+Destroying Toxins in Learners. Open with Nalas's tuelinh returning to heaven to speak with two male messengers about toxins; then move to modern healing course/classroom. Students with illness, mental illness, and suffering share experiences. Focus on the learner role, laziness/arrogance/hurting teachers and classmates, frozen toxin clusters, group practice, forgiveness, gratitude, and uniting with Nalas to squeeze out toxins. No horror staging.""",
+    26: """C026 flow lock:
+Eliminating toxins in wisdom spreaders. After a short rest and cup of tea, modern classroom continues from learner toxins to wisdom-spreader toxins. Show teacher with tea and students after intense inner conflict. Human examples: religious conflict/slander, school teachers abusing scores or power, harmful liberation teachings, spells/method sellers. Inner images of Buddha/God/devil are toxin-movie imagery in the mind, not true deities. End with body-wisdom-soul practice and helping friends.""",
+    27: """C027 flow lock:
+Destroying toxins of meditation and worship rituals. Modern weekly classroom, quiet students, teacher asks about experiences breaking toxic ice in learner and wisdom-spreader groups. Key student reports nearly twenty years of demon/ancestor possession phenomena. Teaching explains why meditation/worship rituals do not complete enlightenment and can relate to harmful ritual teachers, animal killing, sudden death, reincarnation with possession/mental illness. Tone is compassionate and healing, not horror."""
 }
 
 
@@ -614,6 +647,8 @@ def chapter_flow_note(chapter_number):
         return C008_STORY_FLOW_LOCK
     if int(chapter_number) in EARLY_TEACHING_FLOW_LOCKS:
         return EARLY_TEACHING_FLOW_LOCKS[int(chapter_number)]
+    if int(chapter_number) in MODERN_CHAPTER_FLOW_LOCKS:
+        return MODERN_CHAPTER_FLOW_LOCKS[int(chapter_number)]
     return (
         "Chapter flow rule: read this chapter's story guide before batching. Each lane should follow "
         "the local excerpt and the chapter's actual sequence of people, places, transformations, "
@@ -747,6 +782,8 @@ Character and world DNA, with mandatory fidelity rule:
 {EARTH_STAGE_RULE}
 
 {PHAM_TRAN_PHASE_TIMELINE}
+
+{STORY_FOCUS_PRIORITY_RULE}
 
 {VIETNAM_VISUAL_IDENTITY}
 
