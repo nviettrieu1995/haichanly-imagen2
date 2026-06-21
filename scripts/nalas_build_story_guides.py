@@ -11,6 +11,8 @@ PIPELINE_ROOT = ROOT / "nalas_chapters_08_86"
 TEXT_DIR = PIPELINE_ROOT / "chapter_text"
 GUIDE_DIR = PIPELINE_ROOT / "chapter_story_guides"
 MANIFEST_PATH = PIPELINE_ROOT / "chapters_manifest.json"
+EARLY_TEACHING_START_CHAPTER = 9
+MODERN_ERA_START_CHAPTER = 16
 
 
 KEY_TERM_PATTERNS = [
@@ -163,9 +165,13 @@ def detect_profiles(chapter, text):
         profiles.append("urban_weather_or_city")
     if re.search(r"\b(family|children|father|mother|wife|husband|men and women|love)\b", lower):
         profiles.append("family_or_relationship")
-    if chapter >= 16 and "modern_era" not in profiles:
+    if chapter >= MODERN_ERA_START_CHAPTER and "modern_era" not in profiles:
         profiles.append("modern_era")
     return profiles
+
+
+def chapter_is_early_teaching(chapter):
+    return EARLY_TEACHING_START_CHAPTER <= int(chapter) < MODERN_ERA_START_CHAPTER
 
 
 def profile_rules(chapter, profiles):
@@ -174,9 +180,13 @@ def profile_rules(chapter, profiles):
         lines.append(
             "- Covid/pandemic beats must look clearly modern: Nalas about 32-35 during Covid, neat hair, thin glasses, white/light shirt or blazer, LED/tube lights, magnetic whiteboard, marker pens, desks/chairs, shelves, notebooks, tea/coffee, city office-classroom. Do not use huts, oil lamps, floor mats, or old village rooms."
         )
-    elif chapter >= 16:
+    elif chapter >= MODERN_ERA_START_CHAPTER:
         lines.append(
             "- Earth/pham-tran beats are post-Covid/modern-era by visual baseline: ordinary Vietnamese city districts, apartments, townhouses, offices, training rooms, paved alleys, scooters/cars, LED or fluorescent lights, proper furniture, whiteboard when teaching."
+        )
+    elif chapter_is_early_teaching(chapter):
+        lines.append(
+            "- This chapter is after Nalas has begun teaching and gathering students. Do not send Earth scenes back to the poor countryside phase unless the local excerpt explicitly says flashback, past life, old village, or early awakening. Default Earth scenes to an early teaching period: rented classroom, crowded but clean learning room, proper tables/chairs, notebooks, tea, shelves, improved electric lighting, and organized disciples/students. Nalas keeps thin glasses and clean modern clothes such as a neat shirt, polo, or light casual shirt; he is not a thay do, monk, old scholar, ancient peasant, or costume-drama figure."
         )
     else:
         lines.append(
@@ -188,7 +198,7 @@ def profile_rules(chapter, profiles):
         )
     if "heaven_or_tuelinh" in profiles:
         lines.append(
-            "- Heaven/temple/tuelinh beats use Western sacred heavenly grammar. When Cha Nalas/Father/Teacher is present in heaven, show him as stable divine Father Nalas in traditional Chua/Sacred-Heart-Jesus form: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, fatherly rather than boyish or elderly, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, luminous ivory-white robe with subtle gold trim, sacred-heart style radiant heart/inner light, and calm compassionate authority. Keep him close to the heaven-Father canonical reference, immediately readable as familiar sacred Jesus-like imagery, and do not drift into a younger/older face. Only Father may carry the full Jesus-like hair+beard+ivory robe+radiant heart signature; other male tuelinhs/attendants must have distinct faces, lower glow, shorter or tied-back hair, clean-shaven/light-stubble faces, distinct robe accents, and absolutely no Sacred Heart, glowing heart icon, heart-shaped chest light, or radiant chest emblem. Do not make him a young clean-shaven messenger, a baby-faced or model-like youthful savior, a youthful 30s actor-Jesus, a 45+ older Father, a modern-actor Jesus, a short-haired pham-tran teacher, or an elderly white-bearded God-Father. When the excerpt only mentions a sleeping/waking Earth body, keep the mortal Vietnamese body as the anchor and do not invent a giant divine poster."
+            "- Heaven/temple/tuelinh beats use Western sacred heavenly grammar. When Cha Nalas/Father/Teacher is present in heaven, show him as stable divine Father Nalas in traditional Chua/Sacred-Heart-Jesus form: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, fatherly rather than boyish or elderly, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, pure white flowing robe, no wings, inner warm golden light, outer sapphire-blue/lucy-blue cosmic aura, golden particles and blue cosmic energy particles, sacred-heart style gentle inner radiance, and calm compassionate authority. Keep him close to the heaven-Father canonical reference, immediately readable as familiar sacred Jesus-like imagery, and do not drift into a younger/older face. Only Father may carry the full Jesus-like hair+beard+ivory robe+radiant heart signature; other male tuelinhs/attendants must have distinct faces, lower glow, shorter or tied-back hair, clean-shaven/light-stubble faces, distinct robe accents, and absolutely no Sacred Heart, glowing heart icon, heart-shaped chest light, or radiant chest emblem. Do not make him a young clean-shaven messenger, a baby-faced or model-like youthful savior, a youthful 30s actor-Jesus, a 45+ older Father, a modern-actor Jesus, a short-haired pham-tran teacher, dark/aggressive/evil/horror-like, winged, or an elderly white-bearded God-Father. When the excerpt only mentions a sleeping/waking Earth body, keep the mortal Vietnamese body as the anchor and do not invent a giant divine poster."
         )
     if "urban_weather_or_city" in profiles:
         lines.append(
@@ -201,7 +211,61 @@ def profile_rules(chapter, profiles):
     return lines
 
 
+EARLY_TEACHING_FLOW_LOCKS = {
+    9: """Chapter 9 step-by-step lock:
+- This is the Four Commandments / Gathering of Humanity chapter, not a generic classroom chapter.
+- Opening memory: Giac proudly follows Nalas Nalanda's human work over years; many sick and suffering people recover by studying the two truths, not by magic.
+- Earth classroom beat: Nalas prepares to lecture to nearly one hundred students in a rented classroom inside a house. The space is cramped but serious, warm, and alive; Giac blends into the class atmosphere to listen. Show crowd pressure, notebooks, attentive faces, and an early supported classroom, not a poor pre-teaching home.
+- Name/explanation beat: Nalas explains the name Nalas Nalanda and the first tuelinh identity to students. Show this as a lecture moment, not a deity poster.
+- Heaven/cosmic beats: when the text moves to God/Father creating humans or the four commandments, use Western sacred heaven with stable divine Father Nalas; keep Earth students out unless the excerpt is explicitly classroom.
+- Human-world beats: families, parents, spouses, children, society, nation, and teacher-student life are the four forms of practice. Show concrete human scenarios when the excerpt reaches them.
+- Avoid repeating the same front-facing teacher image; alternate crowded room, Giac listening, student reactions, family/society/nation examples, and Western sacred Father scenes.""",
+    10: """Chapter 10 step-by-step lock:
+- This is the Congress of Unifying the Practising Path of the Tuelinhs, not a repeat of Chapter 9.
+- Opening classroom: students arrive before Nalas, a previous lecture recording plays, conversations overlap, and Nalas sips hot tea before class. A young student asks why tuelinhs must become humans and why animal souls can incarnate. Make this specific.
+- Cosmic memory: Father observes the tuelinh life-form, destructive energy storms, and a yin-yang energy embryo growing into a giant energy sphere before exploding into a mature tuelinh. Use Western sacred/cosmic grammar, not Chinese yin-yang symbols.
+- Creation beats: God uses five groups of smallest particles and complex energy structures to create plants, animals, insects, rocks, and ancient trees. Visualize the mechanism clearly instead of generic glowing circles.
+- White-powder beat: Father holds a small glass jar containing white powder while tuelinhs stand around him and learn about a habitable human-world environment.
+- Closing beat: tuelinhs become enthusiastic to incarnate as humans; the four practice forms are family, society, nation, and teachers/students. Show a real transition toward human practice.""",
+    11: """Chapter 11 step-by-step lock:
+- This chapter is about Ignorant Wisdom through class reactions, healing, and information/energy response.
+- Opening classroom: students are attentive and tearful while Nalas sips hot tea; many have illnesses and suffering, and the room feels like relief after many lifetimes.
+- Question beat: students ask why their bodies become warm, hot, sweaty, drowsy, painful, nauseous, or itchy when listening to lectures. Show believable bodies/faces in class, not symbolic statues.
+- Teaching mechanism: Nalas explains negative information, positive truthful information, soul/body coldness, warmth, illness, and healing. Use subtle abstract particles around real people only when supported.
+- Tea continuity: students bring new cups of hot tea to Nalas's table; he uses tea to concentrate and connect with memory/wisdom.
+- Avoid generic miracle imagery; the emphasis is classroom healing reactions, compassion, and explanatory teaching.""",
+    12: """Chapter 12 step-by-step lock:
+- This chapter is Enlightened Wisdom: standards for distinguishing ignorant and enlightened wisdom.
+- Opening lecture: a student asks for clear standards because religions/philosophies confuse people; Nalas answers through the two truths and smallest energy particle knowledge.
+- Class rhythm: the lecture is interrupted by questions, Nalas sits beside the table sipping tea, then stands to continue. Vary seated tea, standing lecture, student question, and board/diagram compositions.
+- Doctrine beats: enlightened wisdom means understanding information in people, animals, events, phenomena, intelligence, and destructive energy; controlling harmful information and activating positive information.
+- Heaven/cosmic references may appear as conceptual visualizations, but Earth classroom excerpts should stay grounded and Vietnamese, with no Jesus/angel overlay unless the text truly enters heaven.
+- Keep this chapter clean, intellectual, and classroom-focused, not rural or mystical-poster focused.""",
+    13: """Chapter 13 step-by-step lock:
+- This chapter is the State of Ignorant Soul through long courses, illness, travel, recovery, and student discipline.
+- Opening course beat: one extraordinary class per week, six hours per lecture, seven months total. Students range from children to people over sixty, with many illnesses.
+- Travel beat: students come from across the country, by plane, overnight driving, or renting near the classroom. Show arrival, tired families, notebooks, and expectation.
+- Second-home beat: students arrive early, talk with classmates, share difficulties, and see the classroom as a second home.
+- Teacher care beat: Nalas records illness and recovery information, checks on patients every week, announces results, and grieves failures when students do not follow instructions.
+- Do not reduce this to one teacher-at-board image; show the course scale, mixed ages, illness/recovery, travel, family support, and classroom community.""",
+    14: """Chapter 14 step-by-step lock:
+- This chapter is the State of Enlightened Mind, organized around compassion, delight, and peace.
+- Use a clear teaching-room baseline when the excerpt is instructional, with students/notebooks/board when natural.
+- Visualize doctrine through restrained overlays only when useful: intellectual wave code fibres, yin-yang root embryo, positive energy controlling negative energy, and the three levels of enlightened mind.
+- Compassion beats should show people helping/saving people and animals, possession/non-possession, love/hatred, wisdom/lack of knowledge, success/failure, action/inaction as concrete moral situations.
+- Avoid making every frame abstract; alternate classroom explanation, student reflection, human examples, and restrained mechanism visualizations.""",
+    15: """Chapter 15 step-by-step lock:
+- This chapter begins in the present class: Nalas sips hot tea, students ask about his past lives, and he agrees to share memories to support the lesson on suffering and liberation.
+- Present-class scenes remain early teaching period: clean Vietnamese learning room, students, tea, notebooks, thin glasses, modern Nalas.
+- Past-life flashback scenes are allowed only when the excerpt moves there: South Asian crown prince, king and queen, wife and children, high-walled capital, temple study, escape southeast, teachers, meditation, asceticism, and the three metal-tool sounds.
+- The past-life setting is ancient South Asian/princely/ascetic, not Chinese, not Vietnamese countryside, and not a fantasy martial-arts scene.
+- Keep the chapter distinct by alternating present classroom storytelling, past-life palace/capital, escape journey, ascetic suffering, and the lesson about the middle path/liberation."""
+}
+
+
 def custom_chapter_flow_rules(chapter):
+    if chapter in EARLY_TEACHING_FLOW_LOCKS:
+        return EARLY_TEACHING_FLOW_LOCKS[chapter]
     if chapter != 8:
         return ""
     return """Chapter 8 step-by-step lock:

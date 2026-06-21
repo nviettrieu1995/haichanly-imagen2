@@ -37,6 +37,7 @@ CANONICAL_HEAVEN_FATHER_REF = (
     PIPELINE_ROOT / "character_refs" / "heaven_father_canonical" / "heaven_father_canonical.png"
 )
 MODERN_ERA_START_CHAPTER = 16
+EARLY_TEACHING_START_CHAPTER = 9
 
 
 def path_points_inside_root(value):
@@ -83,11 +84,14 @@ def atomic_write_text(path, text):
 
 PHAM_TRAN_CHARACTER_DNA = """Canonical pham-tran Nalas reference:
 Use the approved pham-tran canonical reference image when it is attached by the runner. It defines the mortal Vietnamese form of Cha Nalas Nalanda in Earth scenes: an adult Vietnamese father-teacher with a rounded-square face, gentle fullness, short dark hair, thin metal eyeglasses, solid grounded body, calm scholarly expression, and compassionate teacher energy. Keep the face/body continuity, but update clothing and setting by timeline: before teaching he can wear a clean T-shirt, polo, or casual shirt in a poor but present-day Vietnamese countryside home, with sparse village lights, low modest houses, simple electric bulbs or fluorescent tube light, cement/tile floor, simple wooden furniture, and no city skyline or high-rise apartment view. He must look modern and clean, not like an old scholar, monk, thầy đồ, historical peasant, or costume-drama figure. By the Covid chapter he should read as 32-35 rather than elderly, neater and more formal in a white button-down shirt or light dress shirt, optionally a dark blazer in class. No obvious grey hair, no frailty, no 45+ styling. Keep him human, kind, learned, and ordinary; do not turn him into a warrior, monk, Chinese ancient scholar, Western Jesus figure, or slim heroic fantasy character.
+Extra phase lock for the mortal body: Chapter 8 / before wisdom returns uses the poor present-day countryside home. Chapters 9-15 / after classes begin use rented classrooms or cleaner learning rooms with students, notebooks, tea, shelves, proper tables/chairs, and improved electric lighting; do not send him back to a poor pre-teaching home unless the local excerpt is explicitly a flashback. Chapter 16+ / Covid and post-Covid uses modern office-classrooms or training rooms, with Nalas about 32-35 around Covid in a white button-down or light dress shirt, optionally a blazer.
 The canonical reference is only for pham tran / Earth / mortal scenes. In true heaven, dream, tuelinh, or celestial scenes, do not use the mortal Vietnamese teacher as the primary divine figure. Use the mortal reference only if the sleeping or waking earthly body is explicitly visible."""
 
 
 DIVINE_NALAS_CHARACTER_DNA = """Divine/heaven Nalas identity:
-In true heaven, thien duong, thien gioi, tuelinh homeland, celestial temple, or paradise scenes, Cha Nalas Nalanda must appear in one stable divine Father form, not as the pham-tran Vietnamese schoolteacher and not as a generic changing deity. When the approved heaven-Father canonical reference image is attached by the runner, treat it as the portrait lock: preserve the same face identity, exact age read, hair length, beard density, robe language, shoulder build, and sacred presence. Use a Western sacred / traditional Christian Sacred-Heart Jesus visual register with a consistent Chua-like identity that reads immediately as a familiar sacred Jesus figure: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, fatherly and compassionate rather than boyish or elderly, with subtle forehead texture, mature smile lines, and calm gravity in the eyes but no grey/white age markers. He has classic Jesus iconography: shoulder-length wavy dark chestnut-brown hair with a natural center part, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, deep calm eyes, gentle strength, luminous ivory-white robe with subtle gold trim, open hands, a sacred-heart style radiant heart or gentle inner light, surrounded by tuelinhs/angels/light messengers in cathedral-like white-gold space. This is Nalas Nalanda's heavenly manifestation in a Chua/Jesus-like form; do not drift away from the reference into a generic fantasy angel, handsome young savior, modern actor/model Jesus, vague deity, or elderly God-Father. Keep this exact heavenly face, hair, beard, apparent age, robe language, and emotional presence across all heaven lanes and across both images in a start/end pair. When messengers, tuelinhs, or students share the heaven frame, Father Nalas must remain uniquely recognizable as the central sacred Father anchor: most authoritative, warmest white-gold heart light, most classic Jesus-like robe/hair/beard silhouette, and closest to the reference. Only Father Nalas may have the full signature combination of center-parted shoulder-length chestnut hair, full neat brown beard, ivory-gold robe, and radiant heart. Other male tuelinhs, attendants, or messengers must have distinct faces, lower light intensity, different robe accents, and absolutely no Sacred Heart, heart-shaped chest light, radiant chest emblem, or glowing heart icon. Default them to short hair or tied-back hair, clean-shaven faces, light stubble at most, and cooler or softer aura markers. If one attendant has longer hair, he must not also have a full beard, ivory-gold Father robe, or any chest-heart radiance. Messengers must not copy his full Jesus-like beard, exact robe, face, age, or radiant-heart identity. Do not make him an elderly God-Father with grey/white hair or a long white beard. Do not make him a younger clean-shaven man, teenage angel, slim student, baby-faced 20s/early-30s savior, youthful 30s actor-Jesus, 45+ older Father, 50s/60s old Father, short-haired mortal teacher, or one of the messengers. Do not attach the pham-tran face/body reference to pure heaven lanes. If the sleeping or waking Earth body also appears, keep it as a separate modern Vietnamese mortal body layer, visually secondary to the heavenly manifestation."""
+In true heaven, thien duong, thien gioi, tuelinh homeland, celestial temple, or paradise scenes, Cha Nalas Nalanda must appear in one stable divine Father form, not as the pham-tran Vietnamese schoolteacher and not as a generic changing deity. When the approved heaven-Father canonical reference image is attached by the runner, treat it as the portrait lock: preserve the same face identity, exact age read, hair length, beard density, robe language, shoulder build, and sacred presence. Use a Western sacred / traditional Christian Sacred-Heart Jesus visual register with a consistent Chua-like identity that reads immediately as a familiar sacred Jesus figure: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, fatherly and compassionate rather than boyish or elderly, with subtle forehead texture, mature smile lines, and calm gravity in the eyes but no grey/white age markers. He has classic Jesus iconography: shoulder-length wavy dark chestnut-brown hair with a natural center part, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, deep calm eyes, gentle strength, luminous ivory-white robe with subtle gold trim, open hands, a sacred-heart style radiant heart or gentle inner light, surrounded by tuelinhs/angels/light messengers in cathedral-like white-gold space. This is Nalas Nalanda's heavenly manifestation in a Chua/Jesus-like form; do not drift away from the reference into a generic fantasy angel, handsome young savior, modern actor/model Jesus, vague deity, or elderly God-Father. Keep this exact heavenly face, hair, beard, apparent age, robe language, and emotional presence across all heaven lanes and across both images in a start/end pair. When messengers, tuelinhs, or students share the heaven frame, Father Nalas must remain uniquely recognizable as the central sacred Father anchor: most authoritative, warmest white-gold heart light, most classic Jesus-like robe/hair/beard silhouette, and closest to the reference. Only Father Nalas may have the full signature combination of center-parted shoulder-length chestnut hair, full neat brown beard, ivory-gold robe, and radiant heart.
+Heaven-Father sample style lock: for every true heaven/celestial Father Nalas frame, use the style of a close-up divine father portrait inspired by the God Father Jesus archetype: pure white flowing robe, no wings, long soft hair, gentle beard, compassionate wise eyes, calm loving expression, slight gentle smile, ultra-detailed skin and fabric texture, soft cinematic lighting, volumetric light rays, sacred atmosphere, ethereal glow, depth of field, and ultra-realistic 16:9 cinematic detail. Surround him with dual aura layers: inner warm golden light and outer sapphire-blue / lucy-blue cosmic aura, both glowing softly. Add golden particles and blue cosmic energy particles floating around him in slow motion. Keep the older white-gold Sacred-Heart language as a soft inner radiance, but avoid making it aggressive, dark, horror-like, or winged.
+Other male tuelinhs, attendants, or messengers must have distinct faces, lower light intensity, different robe accents, and absolutely no Sacred Heart, heart-shaped chest light, radiant chest emblem, or glowing heart icon. Default them to short hair or tied-back hair, clean-shaven faces, light stubble at most, and cooler or softer aura markers. If one attendant has longer hair, he must not also have a full beard, ivory-gold Father robe, or any chest-heart radiance. Messengers must not copy his full Jesus-like beard, exact robe, face, age, or radiant-heart identity. Do not make him an elderly God-Father with grey/white hair or a long white beard. Do not make him a younger clean-shaven man, teenage angel, slim student, baby-faced 20s/early-30s savior, youthful 30s actor-Jesus, 45+ older Father, 50s/60s old Father, short-haired mortal teacher, or one of the messengers. Do not attach the pham-tran face/body reference to pure heaven lanes. If the sleeping or waking Earth body also appears, keep it as a separate modern Vietnamese mortal body layer, visually secondary to the heavenly manifestation."""
 
 
 PHAM_TRAN_GLASSES_RULE = """Mortal Nalas glasses lock:
@@ -115,7 +119,8 @@ PHAM_TRAN_PHASE_TIMELINE = """Phase timeline lock:
 1. Before wisdom returns / before formal teaching: Nalas is the same modern Vietnamese man, always wearing thin glasses, but he lives in a poor countryside/village environment. Use low modest houses, a quiet yard, simple rural lane, sparse night lights, electric bulb or tube light, cement/tile floor, worn plaster/brick wall, simple furniture, books/notebooks, clean T-shirt/polo/casual shirt. Do not show city skyline, high-rise buildings, apartment towers, crowded urban lights, luxury rooms, or thầy đồ/old-scholar clothing.
 2. Guided study / meeting the spiritual teacher: still grounded and modest, with travel/visits and skeptical human emotion. If a male guide leads him to a woman teacher, show a real adult male guide and the woman teacher as concrete story characters, not vague symbols. Keep the setting rural/modest or transitional unless the excerpt clearly moves elsewhere.
 3. After he begins teaching / gathering disciples: the environment improves. Use cleaner, brighter Vietnamese learning rooms, proper tables/chairs, bookshelves, notebooks, tea/coffee, organized students, and a room that feels supported by disciples. This can look modern and khang trang, but not corporate luxury or a hotel.
-4. Covid and post-Covid: clearly modern 2020+ office-classroom/training-room language. Use LED/tube lights, magnetic whiteboard or whiteboard on wheels, markers/eraser, desks/chairs, shelves, notebooks, tea/coffee, and a neat formal Nalas around age 32-35 during Covid."""
+4. Covid and post-Covid: clearly modern 2020+ office-classroom/training-room language. Use LED/tube lights, magnetic whiteboard or whiteboard on wheels, markers/eraser, desks/chairs, shelves, notebooks, tea/coffee, and a neat formal Nalas around age 32-35 during Covid.
+Chapter mapping: C008 belongs to phases 1-2, C009-C015 belong to phase 3 unless the local excerpt explicitly says flashback/past life, and C016+ belongs to phase 4."""
 
 
 C008_STORY_FLOW_LOCK = """C008 step-by-step story flow lock:
@@ -136,12 +141,31 @@ Required flow anchors:
 13. He later teaches many classes and students; only then should the Earth setting improve into cleaner, better-funded rooms."""
 
 
+EARLY_TEACHING_FLOW_LOCKS = {
+    9: """C009 flow lock:
+Four Commandments / Gathering of Humanity. Start from Giac proudly following Nalas's human teaching over years and seeing many sick/suffering people recover through the two truths. Key Earth beat: nearly one hundred students in a cramped rented classroom inside a house; Giac blends into the classroom atmosphere to listen. Then move to Nalas explaining his name and the first tuelinh identity, and to Western sacred Father/heaven scenes for creation/four-commandment material. Show family, society, nation, and teacher-student life as concrete human practice forms. Avoid generic teacher portraits.""",
+    10: """C010 flow lock:
+Congress of Unifying the Practising Path of the Tuelinhs. Opening Earth beat: students arrive before the Teacher, a previous lecture recording plays, Nalas sips hot tea, and a young student asks why tuelinhs become humans and animal souls incarnate. Cosmic beats: destructive energy storms, yin-yang energy embryo growing into a giant sphere, explosion into a mature tuelinh, creation of plants/animals/insects with five particle groups, Father holding a small glass jar of white powder, and tuelinhs becoming enthusiastic to incarnate. No generic glowing-circle filler.""",
+    11: """C011 flow lock:
+Ignorant Wisdom. Ground the chapter in class reactions: attentive tearful students, illness and suffering relief, students asking about warmth, sweating, drowsiness, headaches, nausea, itching, and bone pain while listening. Nalas explains negative/positive information reactions and healing; students bring hot tea to his table. Keep the emphasis on believable class healing reactions plus restrained information-energy visuals.""",
+    12: """C012 flow lock:
+Enlightened Wisdom. A student asks for a clear standard between ignorant and enlightened wisdom; Nalas answers through the two truths and smallest energy particle knowledge. Vary seated tea, standing lecture, student question, board/diagram, and reflective class frames. Doctrine beats can show understanding information in people/animals/events/destructive energy and activating positive information, but Earth classroom excerpts stay grounded.""",
+    13: """C013 flow lock:
+State of Ignorant Soul. Show the scale and humanity of the course: one class a week, six-hour lectures, seven months, students from under ten to over sixty, serious illnesses, families accompanying patients, people flying/driving/renting near the classroom, students arriving early and seeing the classroom as a second home. Nalas records illness/recovery and checks patients weekly. Do not collapse it into one repeated teacher-at-board frame.""",
+    14: """C014 flow lock:
+State of Enlightened Mind. Teaching-room baseline with doctrine visualizations only when useful: intellectual wave code fibres, yin-yang root embryo, positive energy controlling negative energy, compassion, delight, and peace. Use concrete moral scenes for compassion around possession/non-possession, love/hatred, wisdom/lack of knowledge, success/failure, action/inaction. Alternate classroom explanation, student reflection, human examples, and restrained mechanism visuals.""",
+    15: """C015 flow lock:
+Suffering and Methods of Liberation. Present-class scenes: Nalas sipping hot tea, students asking about past lives, and Nalas sharing memories to support the lesson. Past-life flashbacks are allowed only when the excerpt moves there: ancient South Asian crown prince, king and queen, wife/children, high-walled capital, temple study, escape southeast, teachers, meditation, asceticism, and three metal-tool sounds. Past-life scenes are South Asian/princely/ascetic, not Chinese fantasy; present class stays modern early-teaching."""
+}
+
+
 VIETNAM_VISUAL_IDENTITY = """Vietnamese visual identity rule:
 Use an international modern cinematic/editorial look: premium lensing, controlled natural light, restrained color grade, tactile realism, mature composition. Modernity should come from camera grammar and polish, not from adding modern props unless the excerpt requires them.
 Keep the cultural ground clearly Vietnam through faces, body language, warm family/classroom atmosphere, books, tea/coffee, plants, and practical rooms. The pham-tran timeline changes by story stage: early Chapter 8/pre-teaching scenes are poor modern Vietnamese countryside, with low houses, sparse lights, simple electric lighting, cement/tile floors, modest furniture, and a quiet rural night; later teaching/Covid/post-Covid scenes move into cleaner, brighter city classrooms or office-classrooms. Poverty should read as modest present-day rural life, not old dynastic deprivation, oil-lamp nostalgia, or patched costume. If an early frame needs atmosphere, choose a simple village home, lane, yard, or window view with low houses and few lights, not high-rises or a city skyline. In later classroom/lecture/tea/coffee scenes, Vietnam may look cleaner, brighter, more spacious, and better funded: clean teaching rooms, proper tables and chairs, shelves, notebooks, cups of tea or coffee, and organized disciples/students, while keeping a warm Vietnamese human atmosphere. In Covid/pandemic-era and all post-Covid Earth scenes, make the world distinctly modern and polished: LED/tube lighting, office-like tables and chairs, a proper magnetic whiteboard, marker pens, eraser, organized seating, and a serious modern training-room feel. Avoid rural river-delta/water-village nostalgia in modern teaching scenes; if water is unavoidable after the modern shift, use an urban canal/lake/riverfront with concrete paths, streetlights, apartments/townhouses, and city context.
+Phase override: C008 is the poor modern countryside / return-to-wisdom phase. C009-C015 are early teaching and disciple-gathering chapters, so Earth scenes default to cleaner rented classrooms or supported learning rooms unless the local excerpt is a flashback. C016+ is the Covid/post-Covid modern office-classroom era.
 World split rule:
 - Pham tran / Earth / ordinary life: clearly Vietnamese, grounded, modern-cinematic, humble, no Jesus/church/angel styling, no halo or luminous ring/crown/corona above any human head.
-- Thien duong / thien gioi / heaven / dream / tuelinh / cosmic memory / golden spiritual space: show Cha Nalas Nalanda in his stable divine Father manifestation, a Western sacred / traditional Christian Sacred-Heart Jesus heavenly form rather than the pham-tran Vietnamese teacher. Use Renaissance/Baroque-inspired heaven, white-gold clouds, cathedral-like depth, marble/ivory/gold atmosphere, Jesus-like compassion, saintly calm, angelic or light-messenger presence when supported by the excerpt. His heavenly identity must be stable and close to the canonical heaven-Father reference: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, luminous ivory-white robe with subtle gold trim, sacred-heart style radiant heart/inner light, and calm compassionate Jesus-like authority. No other male tuelinh, attendant, or messenger should share this full signature; surrounding male figures should mostly be short-haired or clean-shaven/light-stubble, with lower glow, distinct robe accents, and no Sacred Heart / glowing heart icon / heart-shaped chest light / radiant chest emblem. Do not make him elderly, grey-haired, white-bearded, clean-shaven, youthful, baby-faced, short-haired, youthful 30s actor-Jesus, 45+ old Father, model-like fantasy handsome, or visually identical to Giac/Chap.
+- Thien duong / thien gioi / heaven / dream / tuelinh / cosmic memory / golden spiritual space: show Cha Nalas Nalanda in his stable divine Father manifestation, a Western sacred / traditional Christian Sacred-Heart Jesus heavenly form rather than the pham-tran Vietnamese teacher. Use Renaissance/Baroque-inspired heaven, white-gold clouds, cathedral-like depth, marble/ivory/gold atmosphere, Jesus-like compassion, saintly calm, angelic or light-messenger presence when supported by the excerpt. His heavenly identity must be stable and close to the canonical heaven-Father reference: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, pure white flowing robe, no wings, inner warm golden light, outer sapphire-blue/lucy-blue cosmic aura, golden particles and blue cosmic energy particles, sacred-heart style gentle inner radiance, and calm compassionate Jesus-like authority. No other male tuelinh, attendant, or messenger should share this full signature; surrounding male figures should mostly be short-haired or clean-shaven/light-stubble, with lower glow, distinct robe accents, and no Sacred Heart / glowing heart icon / heart-shaped chest light / radiant chest emblem. Do not make him elderly, grey-haired, white-bearded, clean-shaven, youthful, baby-faced, short-haired, youthful 30s actor-Jesus, 45+ old Father, model-like fantasy handsome, or visually identical to Giac/Chap.
 If Giac and Chap appear in heaven, they may be Western celestial messengers, angels, saint-like figures, or subtle light presences. If they appear in Earth teaching scenes, keep them ordinary and Vietnamese.
 Children in heaven may sit, play, or learn in a Western heavenly garden or cloud-lit sacred space; do not stage them in a Chinese fantasy temple academy.
 Dragon vision rule:
@@ -344,24 +368,37 @@ def chapter_is_modern_era(chapter_number):
     return int(chapter_number) >= MODERN_ERA_START_CHAPTER
 
 
+def chapter_is_early_teaching(chapter_number):
+    return EARLY_TEACHING_START_CHAPTER <= int(chapter_number) < MODERN_ERA_START_CHAPTER
+
+
 def frame_visual_mode_note(excerpt, anchor, chapter_number):
     if frame_is_celestial(excerpt, anchor):
         has_divine_nalas = frame_has_divine_nalas_presence(excerpt, anchor, chapter_number)
-        mortal_room = (
-            "If the sleeping or waking mortal body appears, keep that body in the modern "
-            "Vietnamese era: around Covid, Nalas is about 32-35, neat and formal, and the room "
-            "should use modern lighting, tiled/painted interiors, desks/chairs, whiteboard, and "
-            "office-classroom furniture in a normal city district rather than oil-lamp poverty, "
-            "countryside, or rural river scenery."
-            if chapter_is_modern_era(chapter_number)
-            else (
+        if chapter_is_modern_era(chapter_number):
+            mortal_room = (
+                "If the sleeping or waking mortal body appears, keep that body in the modern "
+                "Vietnamese era: around Covid, Nalas is about 32-35, neat and formal, and the room "
+                "should use modern lighting, tiled/painted interiors, desks/chairs, whiteboard, and "
+                "office-classroom furniture in a normal city district rather than oil-lamp poverty, "
+                "countryside, or rural river scenery."
+            )
+        elif chapter_is_early_teaching(chapter_number):
+            mortal_room = (
+                "If the sleeping or waking mortal body appears, keep that body in the early teaching "
+                "period: a clean rented classroom, modest learning room, or ordinary Vietnamese room "
+                "connected to classes and disciples, with notebooks, tea, shelves, improved electric "
+                "lighting, proper tables/chairs when natural, and no return to the poor pre-teaching "
+                "countryside unless the excerpt explicitly says flashback."
+            )
+        else:
+            mortal_room = (
                 "If the sleeping or waking mortal body appears, keep that body and its room "
                 "clearly Vietnamese and in the correct early phase: poor modern countryside/village "
                 "home, sparse night lights, simple electric lighting, cement/tile floor, modest furniture, "
                 "and no high-rise city view. Keep Nalas modern, clean, and wearing glasses; do not make "
                 "him an old scholar, monk, or costume-drama peasant."
             )
-        )
         if has_divine_nalas:
             note = (
                 "This lane includes a heaven/dream/spiritual layer where Cha Nalas Nalanda is "
@@ -370,8 +407,9 @@ def frame_visual_mode_note(excerpt, anchor, chapter_number):
                 "a stable traditional Chua/Sacred-Heart-Jesus heavenly manifestation: one fixed "
                 "traditional Jesus-like portrait every time, apparent age 40-42, fatherly rather than boyish or elderly, "
                 "center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard "
-                "and moustache, warm olive/light-tan Mediterranean/Semitic features, luminous "
-                "ivory-white robe with subtle gold trim, radiant heart or inner light, and "
+                "and moustache, warm olive/light-tan Mediterranean/Semitic features, pure white "
+                "flowing robe, no wings, inner warm golden light, outer sapphire-blue/lucy-blue "
+                "cosmic aura, golden particles and blue cosmic energy particles, and "
                 "open-handed compassionate authority. Keep him close to the attached heaven-Father "
                 "canonical reference and readable immediately as traditional Jesus-inspired "
                 "sacred Father imagery. Make all other male tuelinhs or attendants clearly less central and visually distinct, without the full Jesus-like hair+beard+robe+heart signature; default them to shorter hair or clean-shaven/light-stubble faces with lower glow. Do not make him elderly, grey-haired, white-bearded, "
@@ -432,6 +470,15 @@ def frame_earth_stage_note(excerpt, anchor, chapter_number):
                 "approved Vietnamese Nalas, but older than chapter 8, about 32-35 during Covid "
                 "and gradually older afterward. The Earth room/body layer should look modern "
                 "Vietnamese, urban, and contemporary, not the early oil-lamp/rural/countryside look."
+            )
+        if chapter_is_early_teaching(chapter_number):
+            return (
+                "Earth stage note: if the sleeping or waking mortal body appears inside this celestial "
+                "lane, place that body in the early teaching phase: a clean Vietnamese learning room, "
+                "rented classroom, or practical room connected to classes and disciples. Use notebooks, "
+                "tea, shelves, improved electric lighting, and proper tables/chairs when natural. Do not "
+                "force the mortal body back into the poor Chapter 8 countryside unless the local excerpt "
+                "explicitly says flashback or early awakening."
             )
         return (
             "Earth stage note: if the sleeping or waking mortal body appears inside this celestial "
@@ -496,6 +543,19 @@ def frame_earth_stage_note(excerpt, anchor, chapter_number):
             "low floor table, oil-lamp room, corporate-office luxury, hotel styling, temple fantasy, "
             "or ancient Chinese classroom."
         )
+    if chapter_is_early_teaching(chapter_number):
+        return (
+            "Earth stage note: this chapter belongs to the early teaching period after Nalas has "
+            "begun classes and gathered students. Even if the excerpt is reflective or doctrinal, "
+            "default the pham-tran setting to a clean rented classroom, modest but supported learning "
+            "room, student discussion space, or practical Vietnamese teaching room with proper "
+            "tables/chairs, notebooks, shelves, tea, improved electric lighting, and organized "
+            "disciples/students. Do not revert to poor countryside, river-village scenery, floor mats, "
+            "oil lamps, ancient rooms, or old-scholar styling unless the local excerpt explicitly "
+            "says flashback, past life, old village, or early awakening. For Chapter 15, past-life "
+            "flashbacks may be ancient South Asian/princely/ascetic only when the excerpt says so; "
+            "present-class scenes stay modern early-teaching."
+        )
     return (
         "Earth stage note: this is the pre-teaching or ordinary mortal period unless the excerpt "
         "clearly shows a later class/lecture/tea/coffee setting. Place it in a poor but present-day "
@@ -541,7 +601,9 @@ def frame_negative_prompt(excerpt, anchor, force_celestial=False):
             "male tuelinhs with same shoulder-length brown hair and full beard as Father Nalas, "
             "second bearded long-haired Jesus-like man, Jesus-like attendant clone, radiant-heart attendant, "
             "Sacred Heart on messenger, Sacred Heart on attendant, glowing heart on Giac, glowing heart on Chap, "
-            "heart-shaped chest light on messenger, radiant chest emblem on attendant, multiple sacred hearts in one frame"
+            "heart-shaped chest light on messenger, radiant chest emblem on attendant, multiple sacred hearts in one frame, "
+            "wings on Father Nalas, angel wings on Father Nalas, dark tone on Father Nalas, aggressive face, "
+            "evil expression, horror-like Father Nalas, distorted Father face"
         )
         return f"{celestial_common}{celestial_identity_negative}{sleep_negative}"
     return f"{COMMON_NEGATIVE_PROMPT}, {EARTH_ONLY_NEGATIVE_PROMPT}{sleep_negative}"
@@ -550,6 +612,8 @@ def frame_negative_prompt(excerpt, anchor, force_celestial=False):
 def chapter_flow_note(chapter_number):
     if int(chapter_number) == 8:
         return C008_STORY_FLOW_LOCK
+    if int(chapter_number) in EARLY_TEACHING_FLOW_LOCKS:
+        return EARLY_TEACHING_FLOW_LOCKS[int(chapter_number)]
     return (
         "Chapter flow rule: read this chapter's story guide before batching. Each lane should follow "
         "the local excerpt and the chapter's actual sequence of people, places, transformations, "
@@ -687,7 +751,7 @@ Character and world DNA, with mandatory fidelity rule:
 {VIETNAM_VISUAL_IDENTITY}
 
 Current frame world mode:
-{frame_visual_mode_note(excerpt, anchor, chapter['chapter']) if not force_celestial else "C021 heaven-temple override: this frame remains in the heavenly temple / Father teaching Mind Dharma unless the excerpt explicitly shows the sleeping Earth body. Use stable divine Father Nalas in traditional Chua/Sacred-Heart-Jesus form: one fixed traditional Jesus-like portrait every time, apparent age 40-42, fatherly rather than boyish or elderly, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, luminous ivory-white robe with subtle gold trim, sacred-heart style radiant heart/inner light, and calm compassionate authority. Keep him close to the attached heaven-Father canonical reference and readable immediately as traditional Jesus-inspired sacred Father imagery. Keep him distinct from Giac, Chap, and mature tuelinhs; only Father may have the full Jesus-like hair+beard+ivory robe+radiant heart signature. Other male tuelinhs must have different faces, lower glow, shorter or tied-back hair, clean-shaven/light-stubble faces, distinct robe accents, and no Sacred Heart / glowing heart icon / heart-shaped chest light / radiant chest emblem; no second long-haired full-bearded Jesus-like man. Do not make him young/clean-shaven, baby-faced, model-like youthful, youthful 30s actor-Jesus, 45+ old Father, modern-actor handsome, 50s/60s old, or elderly white-bearded. Do not turn it into a modern Vietnamese classroom merely because Father mentions human-world practice."}
+{frame_visual_mode_note(excerpt, anchor, chapter['chapter']) if not force_celestial else "C021 heaven-temple override: this frame remains in the heavenly temple / Father teaching Mind Dharma unless the excerpt explicitly shows the sleeping Earth body. Use stable divine Father Nalas in traditional Chua/Sacred-Heart-Jesus form: one fixed traditional Jesus-like portrait every time, apparent age 40-42, fatherly rather than boyish or elderly, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, pure white flowing robe, no wings, inner warm golden light, outer sapphire-blue/lucy-blue cosmic aura, golden particles and blue cosmic energy particles, sacred-heart style gentle inner radiance, and calm compassionate authority. Keep him close to the attached heaven-Father canonical reference and readable immediately as traditional Jesus-inspired sacred Father imagery. Keep him distinct from Giac, Chap, and mature tuelinhs; only Father may have the full Jesus-like hair+beard+ivory robe+radiant heart signature. Other male tuelinhs must have different faces, lower glow, shorter or tied-back hair, clean-shaven/light-stubble faces, distinct robe accents, and no Sacred Heart / glowing heart icon / heart-shaped chest light / radiant chest emblem; no second long-haired full-bearded Jesus-like man. Do not make him young/clean-shaven, baby-faced, model-like youthful, youthful 30s actor-Jesus, 45+ old Father, modern-actor handsome, 50s/60s old, winged, dark, aggressive, evil, horror-like, or elderly white-bearded. Do not turn it into a modern Vietnamese classroom merely because Father mentions human-world practice."}
 
 Current body/action logic:
 {frame_sleep_body_note(excerpt, anchor, chapter_story_guide, lane_index)}
