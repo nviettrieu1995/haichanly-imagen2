@@ -1,0 +1,53 @@
+# NALAS NALANDA - HUMAN-FORM VISUAL DNA
+
+Core truth established in Chapter 8:
+Nalas Nalanda has incarnated as a human to carry out his mission. In Earth-life and teaching scenes, the main visual subject is his mortal form body in the human world, not a fully revealed cosmic god form.
+
+Primary appearance:
+- A Vietnamese mortal man whose Earth setting follows the timeline, not a generic pan-Asian or Chinese costume figure.
+- In the early pham-tran years before he formally teaches, place him in ordinary modern urban Vietnam around 2014-2019, but make the visual surface feel contemporary like a normal 2020s city district: modest but proper houses or rooms, painted walls, tiled floors, aluminum/glass windows, clearly visible fluorescent tube lights or simple LED lights, fans, simple modern furniture, books, notebooks, phones only when natural. Do not make 2014 look vintage, rural, poor-old-era, or oil-lamp era.
+- Before the teaching period he wears clean everyday modern clothes: plain T-shirt, polo, casual shirt, simple trousers, neat sandals or shoes. He may be financially modest, but never looks ancient, ragged, patched, or dressed like an old historical peasant.
+- In later teaching scenes he appears as the same human form matured by years of practice and teaching, cleaner and more established.
+- During the Covid chapter around 2020 he is about 32-35 years old: a mid-30s Vietnamese teacher, still physically close to the approved pham-tran reference, calm, knowledgeable, compassionate, not elderly, not grey-haired, and not frail. He should look neater and more formal: white button-down shirt or light dress shirt, optionally a dark blazer for class, tidy hair, thin glasses.
+- Married, has children, carries ordinary human fatigue and responsibility.
+- Plain clean modern clothes suitable for modest daily life or humble teaching.
+- Natural black hair, grounded human face, no Western Jesus-like styling.
+- Natural human face, grounded body language, no holy costume by default.
+- Subtle inner dignity and quiet spiritual pressure, but still human.
+- Hair should be natural short hair or simple low tied hair. Avoid topknots, high hair buns, ornate pins, long warrior hair, and historical-drama grooming.
+- Approved pham-tran face/body reference: use the locked image `nalas_chapters_08_86/character_refs/pham_tran_canonical/pham_tran_canonical.png` for Earth scenes. This is the mortal father-teacher Nalas: adult Vietnamese man, rounded-square gentle face, thin glasses, solid grounded body, modest teacher warmth, calm scholarly compassion, and ordinary human kindness. Around the Covid chapter he should read as 32-35, not elderly, not grey-haired, and not frail. Keep this identity for pham tran; do not replace him with a slim hero, monk, Chinese scholar, or Western Jesus-like figure.
+
+Spiritual identity:
+- The tuelinh/father/wisdom is inside the human body.
+- Giac and Chap protect and awaken the form body through dreams.
+- The body does not fully know who he is at first; the awakening is gradual.
+- Visuals should show the tension between ordinary human life and inner cosmic memory.
+
+Earth and teaching scenes:
+- Ordinary Earth-life visual identity is modern Vietnamese urban life from about 2014 onward, with a contemporary 2020-2026 city-district look as the baseline: normal wards/districts, townhouses, apartments, rented classrooms, office-classrooms, painted plaster walls, tiled floors, aluminum/glass windows, ceiling fans, fluorescent tube lights or LED panels, clean desks and chairs, shelves of books, notebooks, ceramic tea cups or coffee mugs, modest potted plants, and lived-in but tidy rooms.
+- Clothing should be modest modern Vietnamese daily life: T-shirts, polos, simple shirts, casual trousers, clean sandals or shoes before teaching; white button-down shirt, light dress shirt, or neat blazer for later/Covid teaching. Do not use patched clothing, ragged poverty clothes, ao nau peasant styling, layered robes, robe belts, monk robes, scholar robes, martial-arts uniforms, wide-sleeve costumes, or any historical-drama outfit.
+- Do not use nhà tranh vách đất, clay/mud walls, thatched huts, oil lamps, dirt floors, low floor mats, antique tea-house staging, old village interiors, or ancient poverty styling for the pham-tran timeline. Poverty should read as modest modern life, not old-era deprivation.
+- Do not use rural riverbank/countryside-water scenery, rice fields, banana-grove village paths, fishermen, boats, muddy canals, nostalgic village moonlight, riverside villages, rural lotus ponds, or miền quê sông nước for modern pham-tran scenes. Treat scenic countryside-water as a rejected visual direction, not an acceptable alternate mood. If water is necessary, make it an urban canal, city lake, or riverfront promenade with concrete paths, railings, streetlights, houses/apartments/townhouses, traffic, and unmistakable modern city context.
+- City-district override: if the Earth/pham-tran excerpt does not explicitly require heaven, dream, cosmic space, or a specific non-urban location, default to an ordinary modern Vietnamese city/district/ward from 2020-2026. Use townhouses, apartments, paved alleys, shopfronts, sidewalks, traffic lights, scooters/cars, clean rooms, offices, or training classrooms. Do not use river-delta nostalgia, floating markets, rural water villages, wooden canal bridges, or any scenic countryside-water look as emotional atmosphere.
+- Default outdoor Earth backgrounds to ordinary Vietnamese city districts: normal wards, paved alleys, townhouses, apartments, shopfronts, streetlights, scooters/cars, sidewalks, balconies, small city parks, or office/classroom exteriors. Avoid scenic countryside beauty entirely as the pham-tran default mood.
+- Teacher with students, hot tea or coffee, suffering people listening, illness/healing reactions, grounded human classrooms, clean study rooms, or modern office-classrooms depending on the chapter timeline.
+- Use an international modern cinematic/editorial surface: premium lensing, controlled natural light, restrained color grade, tactile materials, mature composition. Modernity should come from camera grammar and polish, not from adding modern props unless the excerpt requires them.
+- Timeline note: early pham-tran scenes are modest modern city life around 2014, but still visually close to a contemporary 2020s urban district rather than a historical or rural village. Later, when the text shows Nalas opening classes, teaching students/disciples, traveling to many places, drinking tea or coffee, or using a rented/improved classroom, the setting should move forward into a cleaner, brighter, more khang trang Vietnamese teaching room. Disciples contribute to the class, so there may be proper tables and chairs, shelves, notebooks, clean lighting, tea/coffee cups, and organized students. Keep it warm and human, not corporate luxury, rustic tea-house, or temple fantasy.
+- Covid and post-Covid Earth scenes should be visibly modern and polished: LED panels or fluorescent tube lights, proper desks and chairs, a magnetic whiteboard or whiteboard on wheels, marker pens and eraser, organized notes, shelves, tea/coffee, and a serious Vietnamese training-room or office-classroom atmosphere.
+- Outdoor Covid/post-Covid Earth scenes should feel like a normal Vietnamese city district in 2020-2026: paved streets, alleys, shopfronts, apartments or townhouses, streetlights, scooters/cars when natural, concrete sidewalks, and contemporary urban night/day atmosphere, not countryside.
+
+Dream/heaven scenes:
+- Only when the excerpt explicitly enters dreams, heaven, temple, lake, tuelinh, memory travel, or cosmic energy.
+- A mere thought, complaint, or spoken mention of heaven/paradise/spirits while the body is on Earth does not turn the frame into a heaven scene; keep those frames Vietnamese, mortal, and emotionally grounded.
+- In heaven, Cha Nalas Nalanda must take on his Western sacred / Jesus-like divine Father manifestation when the excerpt supports it: compassionate mature divine presence, white-gold robe, soft long hair and beard when appropriate, luminous inner light, open-handed teaching authority, surrounded by tuelinhs/angels/light messengers. The sleeping or waking mortal body, if visible, remains separate: Vietnamese, ordinary, modern, and secondary.
+- Heavenly and celestial scenes should use a Western sacred visual language: Renaissance/Baroque-inspired heaven, clouds, white-gold radiance, soft marble or ivory-gold space, cathedral-like depth, Jesus-like compassion, saintly calm, and angelic/light-messenger presence when the excerpt supports it.
+- Giac and Chap may appear as Western celestial messengers, angels, or saint-like light figures in heaven. This is allowed only in heaven/dream/celestial scenes.
+- Children in heaven, if shown, can sit, play, or learn in a Western heavenly garden or cloud-lit sacred space, not in a Chinese fantasy academy.
+- If a dragon appears, do not render a detailed Chinese-style dragon body. Show it as a subtle Vietnamese/Lac Viet-inspired spiritual presence: a soft green-gold breath of light, a faint water-serpent silhouette, or abstract protective energy. Avoid Chinese imperial dragon heads, whiskers, horns, fangs, beard, pearl-chasing pose, coiling scaled body, and palace-dragon styling.
+- If a temple appears in heaven, use Western sacred/cathedral-like atmosphere or abstract spiritual space; avoid Chinese palace gardens, pagoda silhouettes, hanfu robes, wuxia, and xianxia styling.
+- Keep the human body's point of view visible whenever the story is about awakening human wisdom.
+
+Strict negative:
+Do not depict the mortal human body of Nalas on Earth as Jesus, God-Father, a winged angel, or a white-robed Western savior. Western Jesus/angel/church-like heavenly iconography is allowed only when the excerpt is explicitly in heaven, dream, tuelinh, cosmic memory, or spiritual space. In Earth/pham-tran scenes, do not place a halo, luminous ring, glowing crown, or saintly corona above any human head. No text, no watermark, no poster layout.
+Do not use Chinese palace, Chinese pagoda, hanfu, tang suit, wuxia, xianxia, Chinese imperial robes, red lanterns, calligraphy scrolls, Chinese garden pavilion, Japanese kimono, Korean hanbok, samurai, shoji, torii, k-drama palace, or generic pan-Asian costume language.
+Do not use ancient Chinese fantasy academy visuals, Chinese stone temple courtyards, giant circular stone reliefs, hanging bells, topknots, high hair buns, immortal-sage poses, Chinese imperial dragon, dragon whiskers, dragon horns, dragon beard, pearl-chasing dragon, coiling scaled Chinese dragon body, or "Oriental fantasy" styling.

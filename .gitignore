@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local credentials/config
+.env
+.env.*
+
+# Generated prompt cache
+nalas_chapters_08_86/lane_pair_prompts/
+
+# Generated images and final video inputs
+nalas_chapters_08_86/generated_images/
+nalas_chapters_08_86/generated_lane_pairs*/
+nalas_chapters_08_86/final_image_video/
+
+# Logs and QA scratch
+logs/
+nalas_chapters_08_86/logs/
+nalas_chapters_08_86/debug/
+nalas_chapters_08_86/qa_*/
+codex-imagen-output/
+
+# Local backups/experiments
+*_backup_*/
+*backup*/
+paused_temp*/
+style_demo*/
+wrong_divine*/
+
+# Archives created from this repo
+*.zip

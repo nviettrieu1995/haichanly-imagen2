@@ -1,0 +1,804 @@
+﻿{
+    "chapter_range":  [
+                          8,
+                          86
+                      ],
+    "images_per_minute":  4.0,
+    "pairs_per_minute":  2.0,
+    "pairs_per_batch":  1,
+    "total_minutes":  2647,
+    "total_lane_pairs":  5294,
+    "total_target_images":  10588,
+    "chapters":  [
+                     {
+                         "chapter":  8,
+                         "duration_minutes":  25,
+                         "target_lane_count":  50,
+                         "target_pair_count":  50,
+                         "target_image_count":  100,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C008",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C008"
+                     },
+                     {
+                         "chapter":  9,
+                         "duration_minutes":  25,
+                         "target_lane_count":  50,
+                         "target_pair_count":  50,
+                         "target_image_count":  100,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C009",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C009"
+                     },
+                     {
+                         "chapter":  10,
+                         "duration_minutes":  29,
+                         "target_lane_count":  58,
+                         "target_pair_count":  58,
+                         "target_image_count":  116,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C010",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C010"
+                     },
+                     {
+                         "chapter":  11,
+                         "duration_minutes":  39,
+                         "target_lane_count":  78,
+                         "target_pair_count":  78,
+                         "target_image_count":  156,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C011",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C011"
+                     },
+                     {
+                         "chapter":  12,
+                         "duration_minutes":  28,
+                         "target_lane_count":  56,
+                         "target_pair_count":  56,
+                         "target_image_count":  112,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C012",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C012"
+                     },
+                     {
+                         "chapter":  13,
+                         "duration_minutes":  25,
+                         "target_lane_count":  50,
+                         "target_pair_count":  50,
+                         "target_image_count":  100,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C013",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C013"
+                     },
+                     {
+                         "chapter":  14,
+                         "duration_minutes":  22,
+                         "target_lane_count":  44,
+                         "target_pair_count":  44,
+                         "target_image_count":  88,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C014",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C014"
+                     },
+                     {
+                         "chapter":  15,
+                         "duration_minutes":  54,
+                         "target_lane_count":  108,
+                         "target_pair_count":  108,
+                         "target_image_count":  216,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C015",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C015"
+                     },
+                     {
+                         "chapter":  16,
+                         "duration_minutes":  32,
+                         "target_lane_count":  64,
+                         "target_pair_count":  64,
+                         "target_image_count":  128,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C016",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C016"
+                     },
+                     {
+                         "chapter":  17,
+                         "duration_minutes":  38,
+                         "target_lane_count":  76,
+                         "target_pair_count":  76,
+                         "target_image_count":  152,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C017",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C017"
+                     },
+                     {
+                         "chapter":  18,
+                         "duration_minutes":  23,
+                         "target_lane_count":  46,
+                         "target_pair_count":  46,
+                         "target_image_count":  92,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C018",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C018"
+                     },
+                     {
+                         "chapter":  19,
+                         "duration_minutes":  25,
+                         "target_lane_count":  50,
+                         "target_pair_count":  50,
+                         "target_image_count":  100,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C019",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C019"
+                     },
+                     {
+                         "chapter":  20,
+                         "duration_minutes":  25,
+                         "target_lane_count":  50,
+                         "target_pair_count":  50,
+                         "target_image_count":  100,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C020",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C020"
+                     },
+                     {
+                         "chapter":  21,
+                         "duration_minutes":  27,
+                         "target_lane_count":  54,
+                         "target_pair_count":  54,
+                         "target_image_count":  108,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C021",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C021"
+                     },
+                     {
+                         "chapter":  22,
+                         "duration_minutes":  36,
+                         "target_lane_count":  72,
+                         "target_pair_count":  72,
+                         "target_image_count":  144,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C022",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C022"
+                     },
+                     {
+                         "chapter":  23,
+                         "duration_minutes":  27,
+                         "target_lane_count":  54,
+                         "target_pair_count":  54,
+                         "target_image_count":  108,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C023",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C023"
+                     },
+                     {
+                         "chapter":  24,
+                         "duration_minutes":  26,
+                         "target_lane_count":  52,
+                         "target_pair_count":  52,
+                         "target_image_count":  104,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C024",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C024"
+                     },
+                     {
+                         "chapter":  25,
+                         "duration_minutes":  29,
+                         "target_lane_count":  58,
+                         "target_pair_count":  58,
+                         "target_image_count":  116,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C025",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C025"
+                     },
+                     {
+                         "chapter":  26,
+                         "duration_minutes":  23,
+                         "target_lane_count":  46,
+                         "target_pair_count":  46,
+                         "target_image_count":  92,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C026",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C026"
+                     },
+                     {
+                         "chapter":  27,
+                         "duration_minutes":  31,
+                         "target_lane_count":  62,
+                         "target_pair_count":  62,
+                         "target_image_count":  124,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C027",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C027"
+                     },
+                     {
+                         "chapter":  28,
+                         "duration_minutes":  28,
+                         "target_lane_count":  56,
+                         "target_pair_count":  56,
+                         "target_image_count":  112,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C028",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C028"
+                     },
+                     {
+                         "chapter":  29,
+                         "duration_minutes":  19,
+                         "target_lane_count":  38,
+                         "target_pair_count":  38,
+                         "target_image_count":  76,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C029",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C029"
+                     },
+                     {
+                         "chapter":  30,
+                         "duration_minutes":  26,
+                         "target_lane_count":  52,
+                         "target_pair_count":  52,
+                         "target_image_count":  104,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C030",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C030"
+                     },
+                     {
+                         "chapter":  31,
+                         "duration_minutes":  27,
+                         "target_lane_count":  54,
+                         "target_pair_count":  54,
+                         "target_image_count":  108,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C031",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C031"
+                     },
+                     {
+                         "chapter":  32,
+                         "duration_minutes":  22,
+                         "target_lane_count":  44,
+                         "target_pair_count":  44,
+                         "target_image_count":  88,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C032",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C032"
+                     },
+                     {
+                         "chapter":  33,
+                         "duration_minutes":  23,
+                         "target_lane_count":  46,
+                         "target_pair_count":  46,
+                         "target_image_count":  92,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C033",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C033"
+                     },
+                     {
+                         "chapter":  34,
+                         "duration_minutes":  23,
+                         "target_lane_count":  46,
+                         "target_pair_count":  46,
+                         "target_image_count":  92,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C034",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C034"
+                     },
+                     {
+                         "chapter":  35,
+                         "duration_minutes":  21,
+                         "target_lane_count":  42,
+                         "target_pair_count":  42,
+                         "target_image_count":  84,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C035",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C035"
+                     },
+                     {
+                         "chapter":  36,
+                         "duration_minutes":  25,
+                         "target_lane_count":  50,
+                         "target_pair_count":  50,
+                         "target_image_count":  100,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C036",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C036"
+                     },
+                     {
+                         "chapter":  37,
+                         "duration_minutes":  23,
+                         "target_lane_count":  46,
+                         "target_pair_count":  46,
+                         "target_image_count":  92,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C037",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C037"
+                     },
+                     {
+                         "chapter":  38,
+                         "duration_minutes":  33,
+                         "target_lane_count":  66,
+                         "target_pair_count":  66,
+                         "target_image_count":  132,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C038",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C038"
+                     },
+                     {
+                         "chapter":  39,
+                         "duration_minutes":  28,
+                         "target_lane_count":  56,
+                         "target_pair_count":  56,
+                         "target_image_count":  112,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C039",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C039"
+                     },
+                     {
+                         "chapter":  40,
+                         "duration_minutes":  16,
+                         "target_lane_count":  32,
+                         "target_pair_count":  32,
+                         "target_image_count":  64,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C040",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C040"
+                     },
+                     {
+                         "chapter":  41,
+                         "duration_minutes":  33,
+                         "target_lane_count":  66,
+                         "target_pair_count":  66,
+                         "target_image_count":  132,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C041",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C041"
+                     },
+                     {
+                         "chapter":  42,
+                         "duration_minutes":  23,
+                         "target_lane_count":  46,
+                         "target_pair_count":  46,
+                         "target_image_count":  92,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C042",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C042"
+                     },
+                     {
+                         "chapter":  43,
+                         "duration_minutes":  25,
+                         "target_lane_count":  50,
+                         "target_pair_count":  50,
+                         "target_image_count":  100,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C043",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C043"
+                     },
+                     {
+                         "chapter":  44,
+                         "duration_minutes":  34,
+                         "target_lane_count":  68,
+                         "target_pair_count":  68,
+                         "target_image_count":  136,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C044",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C044"
+                     },
+                     {
+                         "chapter":  45,
+                         "duration_minutes":  26,
+                         "target_lane_count":  52,
+                         "target_pair_count":  52,
+                         "target_image_count":  104,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C045",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C045"
+                     },
+                     {
+                         "chapter":  46,
+                         "duration_minutes":  34,
+                         "target_lane_count":  68,
+                         "target_pair_count":  68,
+                         "target_image_count":  136,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C046",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C046"
+                     },
+                     {
+                         "chapter":  47,
+                         "duration_minutes":  39,
+                         "target_lane_count":  78,
+                         "target_pair_count":  78,
+                         "target_image_count":  156,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C047",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C047"
+                     },
+                     {
+                         "chapter":  48,
+                         "duration_minutes":  38,
+                         "target_lane_count":  76,
+                         "target_pair_count":  76,
+                         "target_image_count":  152,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C048",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C048"
+                     },
+                     {
+                         "chapter":  49,
+                         "duration_minutes":  33,
+                         "target_lane_count":  66,
+                         "target_pair_count":  66,
+                         "target_image_count":  132,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C049",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C049"
+                     },
+                     {
+                         "chapter":  50,
+                         "duration_minutes":  32,
+                         "target_lane_count":  64,
+                         "target_pair_count":  64,
+                         "target_image_count":  128,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C050",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C050"
+                     },
+                     {
+                         "chapter":  51,
+                         "duration_minutes":  36,
+                         "target_lane_count":  72,
+                         "target_pair_count":  72,
+                         "target_image_count":  144,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C051",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C051"
+                     },
+                     {
+                         "chapter":  52,
+                         "duration_minutes":  32,
+                         "target_lane_count":  64,
+                         "target_pair_count":  64,
+                         "target_image_count":  128,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C052",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C052"
+                     },
+                     {
+                         "chapter":  53,
+                         "duration_minutes":  48,
+                         "target_lane_count":  96,
+                         "target_pair_count":  96,
+                         "target_image_count":  192,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C053",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C053"
+                     },
+                     {
+                         "chapter":  54,
+                         "duration_minutes":  38,
+                         "target_lane_count":  76,
+                         "target_pair_count":  76,
+                         "target_image_count":  152,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C054",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C054"
+                     },
+                     {
+                         "chapter":  55,
+                         "duration_minutes":  26,
+                         "target_lane_count":  52,
+                         "target_pair_count":  52,
+                         "target_image_count":  104,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C055",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C055"
+                     },
+                     {
+                         "chapter":  56,
+                         "duration_minutes":  51,
+                         "target_lane_count":  102,
+                         "target_pair_count":  102,
+                         "target_image_count":  204,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C056",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C056"
+                     },
+                     {
+                         "chapter":  57,
+                         "duration_minutes":  19,
+                         "target_lane_count":  38,
+                         "target_pair_count":  38,
+                         "target_image_count":  76,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C057",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C057"
+                     },
+                     {
+                         "chapter":  58,
+                         "duration_minutes":  26,
+                         "target_lane_count":  52,
+                         "target_pair_count":  52,
+                         "target_image_count":  104,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C058",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C058"
+                     },
+                     {
+                         "chapter":  59,
+                         "duration_minutes":  17,
+                         "target_lane_count":  34,
+                         "target_pair_count":  34,
+                         "target_image_count":  68,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C059",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C059"
+                     },
+                     {
+                         "chapter":  60,
+                         "duration_minutes":  14,
+                         "target_lane_count":  28,
+                         "target_pair_count":  28,
+                         "target_image_count":  56,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C060",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C060"
+                     },
+                     {
+                         "chapter":  61,
+                         "duration_minutes":  13,
+                         "target_lane_count":  26,
+                         "target_pair_count":  26,
+                         "target_image_count":  52,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C061",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C061"
+                     },
+                     {
+                         "chapter":  62,
+                         "duration_minutes":  19,
+                         "target_lane_count":  38,
+                         "target_pair_count":  38,
+                         "target_image_count":  76,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C062",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C062"
+                     },
+                     {
+                         "chapter":  63,
+                         "duration_minutes":  45,
+                         "target_lane_count":  90,
+                         "target_pair_count":  90,
+                         "target_image_count":  180,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C063",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C063"
+                     },
+                     {
+                         "chapter":  64,
+                         "duration_minutes":  56,
+                         "target_lane_count":  112,
+                         "target_pair_count":  112,
+                         "target_image_count":  224,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C064",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C064"
+                     },
+                     {
+                         "chapter":  65,
+                         "duration_minutes":  81,
+                         "target_lane_count":  162,
+                         "target_pair_count":  162,
+                         "target_image_count":  324,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C065",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C065"
+                     },
+                     {
+                         "chapter":  66,
+                         "duration_minutes":  41,
+                         "target_lane_count":  82,
+                         "target_pair_count":  82,
+                         "target_image_count":  164,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C066",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C066"
+                     },
+                     {
+                         "chapter":  67,
+                         "duration_minutes":  36,
+                         "target_lane_count":  72,
+                         "target_pair_count":  72,
+                         "target_image_count":  144,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C067",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C067"
+                     },
+                     {
+                         "chapter":  68,
+                         "duration_minutes":  32,
+                         "target_lane_count":  64,
+                         "target_pair_count":  64,
+                         "target_image_count":  128,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C068",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C068"
+                     },
+                     {
+                         "chapter":  69,
+                         "duration_minutes":  61,
+                         "target_lane_count":  122,
+                         "target_pair_count":  122,
+                         "target_image_count":  244,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C069",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C069"
+                     },
+                     {
+                         "chapter":  70,
+                         "duration_minutes":  101,
+                         "target_lane_count":  202,
+                         "target_pair_count":  202,
+                         "target_image_count":  404,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C070",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C070"
+                     },
+                     {
+                         "chapter":  71,
+                         "duration_minutes":  72,
+                         "target_lane_count":  144,
+                         "target_pair_count":  144,
+                         "target_image_count":  288,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C071",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C071"
+                     },
+                     {
+                         "chapter":  72,
+                         "duration_minutes":  44,
+                         "target_lane_count":  88,
+                         "target_pair_count":  88,
+                         "target_image_count":  176,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C072",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C072"
+                     },
+                     {
+                         "chapter":  73,
+                         "duration_minutes":  42,
+                         "target_lane_count":  84,
+                         "target_pair_count":  84,
+                         "target_image_count":  168,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C073",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C073"
+                     },
+                     {
+                         "chapter":  74,
+                         "duration_minutes":  35,
+                         "target_lane_count":  70,
+                         "target_pair_count":  70,
+                         "target_image_count":  140,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C074",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C074"
+                     },
+                     {
+                         "chapter":  75,
+                         "duration_minutes":  62,
+                         "target_lane_count":  124,
+                         "target_pair_count":  124,
+                         "target_image_count":  248,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C075",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C075"
+                     },
+                     {
+                         "chapter":  76,
+                         "duration_minutes":  61,
+                         "target_lane_count":  122,
+                         "target_pair_count":  122,
+                         "target_image_count":  244,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C076",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C076"
+                     },
+                     {
+                         "chapter":  77,
+                         "duration_minutes":  57,
+                         "target_lane_count":  114,
+                         "target_pair_count":  114,
+                         "target_image_count":  228,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C077",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C077"
+                     },
+                     {
+                         "chapter":  78,
+                         "duration_minutes":  29,
+                         "target_lane_count":  58,
+                         "target_pair_count":  58,
+                         "target_image_count":  116,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C078",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C078"
+                     },
+                     {
+                         "chapter":  79,
+                         "duration_minutes":  52,
+                         "target_lane_count":  104,
+                         "target_pair_count":  104,
+                         "target_image_count":  208,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C079",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C079"
+                     },
+                     {
+                         "chapter":  80,
+                         "duration_minutes":  47,
+                         "target_lane_count":  94,
+                         "target_pair_count":  94,
+                         "target_image_count":  188,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C080",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C080"
+                     },
+                     {
+                         "chapter":  81,
+                         "duration_minutes":  59,
+                         "target_lane_count":  118,
+                         "target_pair_count":  118,
+                         "target_image_count":  236,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C081",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C081"
+                     },
+                     {
+                         "chapter":  82,
+                         "duration_minutes":  48,
+                         "target_lane_count":  96,
+                         "target_pair_count":  96,
+                         "target_image_count":  192,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C082",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C082"
+                     },
+                     {
+                         "chapter":  83,
+                         "duration_minutes":  6,
+                         "target_lane_count":  12,
+                         "target_pair_count":  12,
+                         "target_image_count":  24,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C083",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C083"
+                     },
+                     {
+                         "chapter":  84,
+                         "duration_minutes":  4,
+                         "target_lane_count":  8,
+                         "target_pair_count":  8,
+                         "target_image_count":  16,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C084",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C084"
+                     },
+                     {
+                         "chapter":  85,
+                         "duration_minutes":  11,
+                         "target_lane_count":  22,
+                         "target_pair_count":  22,
+                         "target_image_count":  44,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C085",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C085"
+                     },
+                     {
+                         "chapter":  86,
+                         "duration_minutes":  6,
+                         "target_lane_count":  12,
+                         "target_pair_count":  12,
+                         "target_image_count":  24,
+                         "pairs_per_batch":  1,
+                         "prompt_dir":  "nalas_chapters_08_86/lane_pair_prompts/C086",
+                         "output_dir":  "nalas_chapters_08_86/generated_lane_pairs/C086"
+                     }
+                 ]
+}

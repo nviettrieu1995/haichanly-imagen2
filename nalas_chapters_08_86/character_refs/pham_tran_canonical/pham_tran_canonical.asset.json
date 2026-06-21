@@ -1,0 +1,12 @@
+{
+  "provider": "codex-imagen",
+  "model": "gpt-5.5",
+  "approved": true,
+  "quality_floor": "premium cinematic audiobook plate",
+  "role": "canonical pham-tran mortal Earth reference for Cha Nalas Nalanda",
+  "selected_image": "pham_tran_canonical.png",
+  "width": 1672,
+  "height": 941,
+  "sha256": "ed32852a6b00b10647dfac298f44587fd7662c32aa20a8a8c2112441bf6bc8f8",
+  "approval_note": "User approved this image as the pham-tran version to use across mortal Earth chapters. Use for mortal Earth scenes; do not apply to true heaven/celestial Jesus-like representations except when the mortal body is visible."
+}

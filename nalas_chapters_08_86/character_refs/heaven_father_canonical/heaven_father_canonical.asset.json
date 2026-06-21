@@ -1,0 +1,9 @@
+{
+  "provider": "codex-imagen",
+  "model": "gpt-5.5",
+  "approved": true,
+  "quality_floor": "stable traditional Sacred-Heart-Jesus Nalas canonical reference, one fixed Jesus-like portrait, apparent age 40-42, sacred-heart radiance, no young/old drift",
+  "selected_image": "heaven_father_canonical.png",
+  "prompt_file": "jesus_v4_sacred_heart_20260621_prompt.md",
+  "usage": "Attach only to true heaven/celestial lanes where divine Father Nalas appears; do not use for pham-tran Earth teacher scenes."
+}
