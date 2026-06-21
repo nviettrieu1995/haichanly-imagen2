@@ -204,7 +204,7 @@ def extract_chapter_texts(manifest):
 
 
 def load_manifest():
-    return normalize_manifest_paths(json.loads(MANIFEST_PATH.read_text(encoding="utf-8")))
+    return normalize_manifest_paths(json.loads(MANIFEST_PATH.read_text(encoding="utf-8-sig")))
 
 
 def normalize_manifest_paths(manifest):

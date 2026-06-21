@@ -154,11 +154,14 @@ python -u .\scripts\nalas_parallel_lane_batch_runner.py --start-chapter 21 --end
 
 ## Current Art Direction Lock
 
-- Earth/pham-tran scenes: modern Vietnamese city/district life, not old rural hut imagery.
-- Covid/post-Covid teaching scenes: modern office/classroom, LED or tube lights, whiteboard/magnetic board, markers, desks/chairs.
+- Earth/pham-tran scenes are phase-based, not one generic look:
+  - Before wisdom returns / before formal teaching: poor present-day Vietnamese countryside/village home, low houses, sparse lights, simple electric bulb or tube light, cement/tile floor, simple furniture. Nalas stays modern, clean, and always wears thin glasses.
+  - After Nalas starts teaching / gathers disciples: cleaner, brighter, better-supported Vietnamese learning rooms with proper desks/chairs, books, tea/coffee, shelves, and organized students.
+  - Covid/post-Covid teaching: modern office/classroom, LED or tube lights, whiteboard/magnetic board, markers, desks/chairs.
 - Mortal Nalas: Vietnamese father-teacher, thin metal glasses always visible, including sleep.
 - Heaven Father Nalas: stable Western sacred/Sacred-Heart-Jesus-like form, apparent age 40-42.
 - Only Father has Sacred Heart/radiant chest. Messengers must not have heart-shaped chest lights or Father clones.
-- Five messengers must stay role-distinct: Giac gold-white insight, Chap rose/amber compassion, blue-white law/order, green-gold healing, silver-violet transmission.
+- Five messengers must stay role-distinct and all true forms are mature men: Giac gold-white insight, Chap rose/amber compassion, blue-white law/order, green-gold healing, silver-violet transmission.
+- Chapter 8 is locked to the step-by-step return-to-wisdom flow: two mature male messengers, poor countryside sleeping body, moonlit dream house, huge jade-green dragon with head low/tail high/six body curves, dragon transforming into two adult men, adult male guide, woman teacher, old-man and old-woman disguise sequence, then later teaching rooms.
 
 See the DNA files for the full current rules.

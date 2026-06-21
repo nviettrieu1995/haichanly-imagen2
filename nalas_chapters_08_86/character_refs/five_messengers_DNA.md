@@ -5,7 +5,7 @@ This is the locked visual DNA for the five messengers of the first tuelinh. Use 
 ## Shared Group Identity
 
 - Western sacred / celestial visual grammar in heaven: ivory-white garments, quiet white-gold space, mature calm faces, no Chinese/xianxia styling.
-- They are a coordinated working group, not generic identical angels, Father Nalas clones, students, monks, or the same white-haired man repeated.
+- All five true messengers are mature men. They are a coordinated working group, not generic identical angels, Father Nalas clones, students, monks, women, children, or the same white-haired man repeated.
 - Use distinct face type, aura color, posture, hand gesture, and role marker for each messenger.
 - If Father Nalas appears in the same frame, only Father Nalas may have a Sacred Heart, heart-shaped chest light, glowing heart icon, or radiant chest emblem. The messengers use role-colored sashes, hand light, geometry, grids, healing particles, or transit arcs instead.
 - No ornate crowns, halos, Buddhist monk costume, church props in Earth scenes, horror-demon staging, or readable text.
@@ -61,3 +61,11 @@ When Giac and Chap appear together, the frame must make their roles visible at a
 - Chap: rose-gold, softer, compassionate, protective, sash or palm-light marker.
 
 Never give them the same face, same hair, same beard, same robe silhouette, same aura color, or the divine Father / Jesus-like look.
+
+## Chapter 8 Messenger Flow Lock
+
+- In the early Chapter 8 dream, the dragon transforms into two adult men. These are male messengers in human form. Do not show a man/woman pair, two girls, children, or romantic couple composition.
+- When Giac and Chap watch or guide Nalas before the disguise sequence, they remain two mature male messengers with distinct role markers.
+- A messenger may appear as an old man only when the local excerpt says that disguise appears.
+- A messenger may appear as an old woman only when the local excerpt says that disguise appears. This is a temporary disguise, not the messenger's true identity.
+- The old man and old woman appear together only after Nalas has met the woman teacher. Do not use that old-man/old-woman pair for the earlier dragon-transforms-into-two-men beat.

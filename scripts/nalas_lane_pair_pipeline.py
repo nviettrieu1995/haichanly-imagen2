@@ -82,7 +82,7 @@ def atomic_write_text(path, text):
 
 
 PHAM_TRAN_CHARACTER_DNA = """Canonical pham-tran Nalas reference:
-Use the approved pham-tran canonical reference image when it is attached by the runner. It defines the mortal Vietnamese form of Cha Nalas Nalanda in Earth scenes: an adult Vietnamese father-teacher with a rounded-square face, gentle fullness, short dark hair, thin metal eyeglasses, solid grounded body, calm scholarly expression, and compassionate teacher energy. Keep the face/body continuity, but update clothing and setting by timeline: before teaching he can wear a clean T-shirt, polo, or casual shirt in a modest modern 2014-2019 Vietnamese city home that still feels contemporary like a normal 2020s urban district, not vintage or rural; by the Covid chapter he should read as 32-35 rather than elderly, neater and more formal in a white button-down shirt or light dress shirt, optionally a dark blazer in class. No obvious grey hair, no frailty, no 45+ styling. Keep him human, kind, learned, and ordinary; do not turn him into a warrior, monk, Chinese ancient scholar, Western Jesus figure, or slim heroic fantasy character.
+Use the approved pham-tran canonical reference image when it is attached by the runner. It defines the mortal Vietnamese form of Cha Nalas Nalanda in Earth scenes: an adult Vietnamese father-teacher with a rounded-square face, gentle fullness, short dark hair, thin metal eyeglasses, solid grounded body, calm scholarly expression, and compassionate teacher energy. Keep the face/body continuity, but update clothing and setting by timeline: before teaching he can wear a clean T-shirt, polo, or casual shirt in a poor but present-day Vietnamese countryside home, with sparse village lights, low modest houses, simple electric bulbs or fluorescent tube light, cement/tile floor, simple wooden furniture, and no city skyline or high-rise apartment view. He must look modern and clean, not like an old scholar, monk, thầy đồ, historical peasant, or costume-drama figure. By the Covid chapter he should read as 32-35 rather than elderly, neater and more formal in a white button-down shirt or light dress shirt, optionally a dark blazer in class. No obvious grey hair, no frailty, no 45+ styling. Keep him human, kind, learned, and ordinary; do not turn him into a warrior, monk, Chinese ancient scholar, Western Jesus figure, or slim heroic fantasy character.
 The canonical reference is only for pham tran / Earth / mortal scenes. In true heaven, dream, tuelinh, or celestial scenes, do not use the mortal Vietnamese teacher as the primary divine figure. Use the mortal reference only if the sleeping or waking earthly body is explicitly visible."""
 
 
@@ -95,7 +95,7 @@ Whenever the pham-tran / Earth / mortal teacher body of Nalas Nalanda is visible
 
 
 FIVE_MESSENGERS_DNA = """Five messengers visual DNA:
-When the text mentions Giac, Chap, the two messengers, several messengers, or the five messengers of the first tuelinh, do not make them generic identical angels, identical white-haired men, Father Nalas clones, or random students. Keep them as a coherent five-member celestial working group: mature calm faces, white-ivory base garments, role-colored sashes or light seams, restrained sacred posture, no wings unless the excerpt strongly needs symbolic angelic language, and no Chinese/xianxia styling.
+When the text mentions Giac, Chap, the two messengers, several messengers, or the five messengers of the first tuelinh, do not make them generic identical angels, identical white-haired men, Father Nalas clones, children, women, or random students. Their true forms are five mature male messengers. Keep them as a coherent five-member celestial working group: mature calm male faces, white-ivory base garments, role-colored sashes or light seams, restrained sacred posture, no wings unless the excerpt strongly needs symbolic angelic language, and no Chinese/xianxia styling. Giac and Chap appearing in dreams before the disguise sequence are both adult men, never one male and one female. Only when the local excerpt explicitly says a messenger disguises himself as an old man or old woman should the image show that temporary disguise; the underlying messenger identity remains male.
 - Giac: insight / discernment messenger. Slightly older than Chap, leaner oval face, higher cheekbones, calm analytical eyes, precise upright posture, almost still. Restrained gold-white aura. Gesture: one hand lightly tracing a small gold-white geometry or clear-light thread near the hands/chest. Position: often nearest Father, watching, measuring, asking. Never use a halo, crown, beard-heavy Jesus face, or warm rose color.
 - Chap: compassion / attachment-testing messenger. Slightly younger or softer than Giac, fuller kinder face, warmer eyes, humble protective posture, emotionally responsive but not weak. Rose-gold or amber-white aura. Gesture: open palm near the heart or a protective hand lowered toward suffering people. Visual marker: rose-gold sash, warm light held in the palm, or a soft rose aura around the hands. Never give Chap a Sacred Heart, heart-shaped chest light, radiant chest emblem, or the Father's chest glow when Father Nalas is present. Never clone Giac's lean analytical face or gold-white geometry marker.
 - Messenger Three: order / law / causal record. Upright and symmetrical, quiet judge-like composure, blue-white aura. Visual marker: blue-white luminous grid, archive table, or orderly light tablets with no readable text. Gesture: holding the structure steady, not comforting.
@@ -105,23 +105,47 @@ If Giac and Chap appear together, compose them as two clearly different roles: G
 
 
 EARTH_STAGE_RULE = """Pham-tran timeline / setting rule:
-- City-district override for pham-tran Earth scenes: when the excerpt does not explicitly require heaven, dream, cosmic space, or a specific non-urban location, default to an ordinary modern Vietnamese city/district/ward from 2020-2026. Use townhouses, apartments, paved alleys, shopfronts, sidewalks, traffic lights, scooters/cars, clean rooms, offices, or training classrooms. Do not use scenic countryside, river-delta nostalgia, rural water villages, floating-market mood, or any old rural beauty as a visual shortcut.
-- Pre-teaching ordinary life, around 2014-2019: Nalas may still be financially modest, but the world is modern urban Vietnam with a contemporary 2020s city-district feel, not old poverty, vintage nostalgia, or countryside scenery. Use normal wards/districts, townhouses, apartments, rented rooms or proper small houses, painted plaster walls, tiled floors, aluminum/glass windows, ceiling fans, fluorescent tube lights or simple LED lights clearly visible, basic desks/chairs, books, notebooks, tea/coffee cups, and ordinary contemporary objects when natural. Clothing: clean T-shirt, polo, casual shirt, simple trousers, neat sandals or shoes. Do not use nha tranh vach dat, clay/mud walls, thatched huts, dirt floors, oil lamps, patched clothes, ragged peasant styling, historical-village interiors, rural riverbanks, rice fields, boats, fishermen, or mien que song nuoc scenery.
+- Early/pre-teaching ordinary life, especially Chapter 8: the setting is a poor, modest Vietnamese countryside/village home, not a city apartment or urban district. Keep the period modern enough for 2014-2019: clean T-shirt/polo/casual shirt, simple trousers, thin glasses, electric bulb or fluorescent tube light, fan when natural, cement or plain tile floor, painted or worn plaster/brick walls, simple wooden bed/table/chairs, notebooks/books, and low rural houses or a dark quiet village outside the window. The village may feel poor and mộc mạc, but never ancient, costume-drama, thầy đồ, monk, or old dynastic China. Avoid high-rise buildings, city skyline, many urban lights, glass office towers, apartment blocks, busy traffic, and polished city interiors in this early quê period.
 - Later teaching/classroom period: when the excerpt shows Nalas teaching classes, students/disciples, lectures, tea/coffee, rented classrooms, improved learning rooms, or organized study groups, move the Earth setting into a clean, bright, modern Vietnamese learning room in an ordinary city district. He has traveled, gathered disciples, and the disciples contribute to the class, so the room can be khang trang: proper tables and chairs, orderly shelves, books, notebooks, tea or coffee cups, potted plants, modest wall lights, and an organized serious classroom feel. Do not make it a rustic tea house, antique wooden room, ancient classroom, corporate luxury office, hotel, temple fantasy, or historical costume room.
 - Covid / pandemic teaching period, around 2020: when the excerpt enters Covid-19, pandemic, lockdown, quarantine, infectious disease, or post-pandemic mental-health class material, raise the production value clearly above earlier scenes. Nalas is about 32-35, neat and formal: white button-down shirt or light dress shirt, optionally a dark blazer, tidy hair, thin glasses, compassionate and knowledgeable. Use a proper modern Vietnamese office-classroom or training room: LED ceiling panels or fluorescent tube lights, office-style desks and chairs, a real magnetic whiteboard or whiteboard on wheels, visible marker pens and eraser, organized notes, bookshelves, tea/coffee, and students seated like a serious modern class. The whiteboard may be clean or contain simple non-readable marker strokes/diagrams; avoid fake legible text. Avoid hospital drama unless the excerpt is medical; avoid sci-fi lab, corporate luxury, hotel styling, old wooden tea room, and ancient classroom.
 - Post-Covid modern era: from Chapter 16 onward, Earth/pham-tran scenes are never the old oil-lamp poverty look and must not become rural river/countryside scenes. Nalas is about 32-35 during Covid and gradually older after that. Keep the approved face/body continuity, but make him more mature, established, and teacher-like. Default to normal Vietnamese city districts in 2020-2026: ordinary wards, urban neighborhoods, modern homes, apartments, townhouses, offices, classrooms, rented training rooms, paved streets, alleys, shopfronts, streetlights, scooters/cars when natural, electric lights, whiteboards, office desks/chairs, shelves, notebooks, tea/coffee, phones or laptops only when natural, and a world that has visibly moved forward. If water is explicitly necessary, make it an urban canal/lake/riverfront promenade with concrete paths, railings, streetlights, buildings, apartments/townhouses, traffic, and city context; never scenic countryside-water."""
 
 
+PHAM_TRAN_PHASE_TIMELINE = """Phase timeline lock:
+1. Before wisdom returns / before formal teaching: Nalas is the same modern Vietnamese man, always wearing thin glasses, but he lives in a poor countryside/village environment. Use low modest houses, a quiet yard, simple rural lane, sparse night lights, electric bulb or tube light, cement/tile floor, worn plaster/brick wall, simple furniture, books/notebooks, clean T-shirt/polo/casual shirt. Do not show city skyline, high-rise buildings, apartment towers, crowded urban lights, luxury rooms, or thầy đồ/old-scholar clothing.
+2. Guided study / meeting the spiritual teacher: still grounded and modest, with travel/visits and skeptical human emotion. If a male guide leads him to a woman teacher, show a real adult male guide and the woman teacher as concrete story characters, not vague symbols. Keep the setting rural/modest or transitional unless the excerpt clearly moves elsewhere.
+3. After he begins teaching / gathering disciples: the environment improves. Use cleaner, brighter Vietnamese learning rooms, proper tables/chairs, bookshelves, notebooks, tea/coffee, organized students, and a room that feels supported by disciples. This can look modern and khang trang, but not corporate luxury or a hotel.
+4. Covid and post-Covid: clearly modern 2020+ office-classroom/training-room language. Use LED/tube lights, magnetic whiteboard or whiteboard on wheels, markers/eraser, desks/chairs, shelves, notebooks, tea/coffee, and a neat formal Nalas around age 32-35 during Covid."""
+
+
+C008_STORY_FLOW_LOCK = """C008 step-by-step story flow lock:
+Chapter 8 is not generic teacher-at-desk imagery. It is the journey of Nalas Nalanda's mortal body gradually returning to wisdom while being accompanied and protected by the messengers.
+Required flow anchors:
+1. Heaven remains Western sacred, not Chinese/xianxia. Giac and Chap are two mature male messengers watching the 29-year-old mortal body.
+2. The Earth body is sleeping in a poor, peaceful countryside home on a cold early-spring New Year night. He is modern and clean, always wearing thin glasses; the room is poor/moc mac, not city/apartment.
+3. In the dream he stands inside the house, moonlight through glass windows, unsure dream vs reality.
+4. He hears a strange breath, opens the door, steps to the left garden, and sees a huge jade-green dragon: large head low near the ground, tail up toward the sky, long whiskers/beard, body bent into six sweeping sections. It must be large and frightening/sacred, not a tiny snake.
+5. The dragon passes the front door and transforms into two adult men. These two are male messengers in human form. Never show one male and one female, children, or two little girls here.
+6. The two men tell him time is running out, they cannot teach him, and they will direct him to someone to study.
+7. Months later he meets the notified adult male person, who leads/directs him to a woman teacher with spiritual abilities. Include the adult male guide and the woman teacher when this beat appears.
+8. Before meeting the woman teacher, a messenger first disguises himself as an old man in a dream and urges him to study quickly; Nalas remains skeptical and does not answer.
+9. The next night a messenger disguises himself as an old woman and repeats the message; Nalas still does not answer.
+10. After Nalas meets the woman teacher, the two disguised figures appear together as an old man and an old woman, repeat that they cannot teach him and he must study with that woman for one year. This old-man/old-woman pair appears only at this later step, not at the initial two-male-messenger step.
+11. He studies, becomes disappointed, burns his notes, and questions the heaven/paradise people. Show this as human frustration in the modest Earth setting, not as a generic mystical poster.
+12. Later dreams reveal the temple/heaven/lake/homeland and the gradual return of memory and wisdom. Heaven remains Western sacred; if Father Nalas appears, use the canonical Sacred-Heart-Jesus-like Father form.
+13. He later teaches many classes and students; only then should the Earth setting improve into cleaner, better-funded rooms."""
+
+
 VIETNAM_VISUAL_IDENTITY = """Vietnamese visual identity rule:
 Use an international modern cinematic/editorial look: premium lensing, controlled natural light, restrained color grade, tactile realism, mature composition. Modernity should come from camera grammar and polish, not from adding modern props unless the excerpt requires them.
-Keep the cultural ground clearly Vietnam through faces, body language, warm family/classroom atmosphere, modest contemporary Vietnamese city interiors, books, tea/coffee, plants, and practical rooms. The pham-tran timeline is modern urban Vietnam from about 2014 onward, using a contemporary 2020-2026 city-district look as the visual baseline: ordinary wards/districts, townhouses, apartments, rented classrooms, paved streets, alleys, shopfronts, streetlights, scooters/cars when natural, painted walls, tiled floors, glass/aluminum windows, ceiling fans, LED panels or fluorescent tube lights, desks/chairs, whiteboards, shelves, notebooks, mugs, and clean everyday clothes. Poverty should read as modest modern city life, not old-era deprivation or countryside nostalgia. If a frame needs atmosphere but not a specific place, choose a normal city home, ward street, apartment room, office-classroom, bookstore-like study room, or training room. In later classroom/lecture/tea/coffee scenes, Vietnam may look cleaner, brighter, more spacious, and better funded: clean teaching rooms, proper tables and chairs, shelves, notebooks, cups of tea or coffee, and organized disciples/students, while keeping a warm Vietnamese human atmosphere. In Covid/pandemic-era and all post-Covid Earth scenes, make the world distinctly modern and polished: LED/tube lighting, office-like tables and chairs, a proper magnetic whiteboard, marker pens, eraser, organized seating, and a serious modern training-room feel. Avoid rural riverbanks, rice fields, village canals, fishermen, boats, banana-grove village paths, river-delta scenery, floating markets, wooden footbridges over canals, and mien que song nuoc in modern Earth scenes; if water is unavoidable, use an urban canal/lake/riverfront with concrete paths, streetlights, apartments/townhouses, and city context.
+Keep the cultural ground clearly Vietnam through faces, body language, warm family/classroom atmosphere, books, tea/coffee, plants, and practical rooms. The pham-tran timeline changes by story stage: early Chapter 8/pre-teaching scenes are poor modern Vietnamese countryside, with low houses, sparse lights, simple electric lighting, cement/tile floors, modest furniture, and a quiet rural night; later teaching/Covid/post-Covid scenes move into cleaner, brighter city classrooms or office-classrooms. Poverty should read as modest present-day rural life, not old dynastic deprivation, oil-lamp nostalgia, or patched costume. If an early frame needs atmosphere, choose a simple village home, lane, yard, or window view with low houses and few lights, not high-rises or a city skyline. In later classroom/lecture/tea/coffee scenes, Vietnam may look cleaner, brighter, more spacious, and better funded: clean teaching rooms, proper tables and chairs, shelves, notebooks, cups of tea or coffee, and organized disciples/students, while keeping a warm Vietnamese human atmosphere. In Covid/pandemic-era and all post-Covid Earth scenes, make the world distinctly modern and polished: LED/tube lighting, office-like tables and chairs, a proper magnetic whiteboard, marker pens, eraser, organized seating, and a serious modern training-room feel. Avoid rural river-delta/water-village nostalgia in modern teaching scenes; if water is unavoidable after the modern shift, use an urban canal/lake/riverfront with concrete paths, streetlights, apartments/townhouses, and city context.
 World split rule:
 - Pham tran / Earth / ordinary life: clearly Vietnamese, grounded, modern-cinematic, humble, no Jesus/church/angel styling, no halo or luminous ring/crown/corona above any human head.
 - Thien duong / thien gioi / heaven / dream / tuelinh / cosmic memory / golden spiritual space: show Cha Nalas Nalanda in his stable divine Father manifestation, a Western sacred / traditional Christian Sacred-Heart Jesus heavenly form rather than the pham-tran Vietnamese teacher. Use Renaissance/Baroque-inspired heaven, white-gold clouds, cathedral-like depth, marble/ivory/gold atmosphere, Jesus-like compassion, saintly calm, angelic or light-messenger presence when supported by the excerpt. His heavenly identity must be stable and close to the canonical heaven-Father reference: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, luminous ivory-white robe with subtle gold trim, sacred-heart style radiant heart/inner light, and calm compassionate Jesus-like authority. No other male tuelinh, attendant, or messenger should share this full signature; surrounding male figures should mostly be short-haired or clean-shaven/light-stubble, with lower glow, distinct robe accents, and no Sacred Heart / glowing heart icon / heart-shaped chest light / radiant chest emblem. Do not make him elderly, grey-haired, white-bearded, clean-shaven, youthful, baby-faced, short-haired, youthful 30s actor-Jesus, 45+ old Father, model-like fantasy handsome, or visually identical to Giac/Chap.
 If Giac and Chap appear in heaven, they may be Western celestial messengers, angels, saint-like figures, or subtle light presences. If they appear in Earth teaching scenes, keep them ordinary and Vietnamese.
 Children in heaven may sit, play, or learn in a Western heavenly garden or cloud-lit sacred space; do not stage them in a Chinese fantasy temple academy.
 Dragon vision rule:
-When the excerpt mentions the jade-green dragon or a dragon vision, avoid a literal Chinese dragon. Prefer a faint Vietnamese/Lac Viet-inspired spiritual presence: green-gold breath, mist, a water-serpent silhouette, or protective energy woven through the Vietnamese setting. Do not show a Chinese imperial dragon head, whiskers, horns, beard, fangs, pearl-chasing pose, long coiling scaled body, or ornate palace-dragon style.
+When the excerpt mentions the jade-green dragon or a dragon vision, make it a major dream-vision event, not a tiny snake. Show a huge jade-green celestial dragon with a large head lower in the frame, tail rising up toward the sky, a long powerful body bending in six visible sweeping curves, and large long whiskers/beard flowing through the air. Keep it sacred and Vietnamese/Lac Viet dreamlike rather than imperial Chinese palace style: no pearl-chasing pose, no Chinese pagoda/palace, no red lanterns, no xianxia costume, no ornate court setting.
 Yin/Yang visual rule:
 When the excerpt mentions Yin Yang or a yin-yang energy embryo, avoid a literal Taoist/Taijitu emblem, black-white yin-yang icon, or Chinese philosophical symbol as the main image. Prefer abstract balanced dual forces: interwoven gold-blue light, twin currents, a luminous dual energy filter, or a subtle non-cultural equilibrium sphere grounded in the Vietnamese/Western-heaven scene context.
 Avoid Chinese, Japanese, Korean, or generic pan-Asian visual language everywhere: no hanfu, tang suit, Chinese imperial robes, topknots, high hair buns, wuxia, xianxia, Chinese pagoda, Chinese palace garden, Chinese stone temple courtyard, giant circular stone relief, ornate round gate, hanging bells, red lanterns, calligraphy scrolls, kimono, hanbok, samurai, shoji, torii, or k-drama palace styling."""
@@ -134,8 +158,7 @@ COMMON_NEGATIVE_PROMPT = (
     "Chinese ancient scholar, Chinese monk robe, Chinese court official, red lanterns, "
     "calligraphy scrolls, Chinese garden pavilion, Chinese stone temple courtyard, "
     "Chinese fantasy academy, giant circular stone relief, ornate round gate, hanging bells, "
-    "Chinese imperial dragon, Chinese dragon head, dragon whiskers, dragon horns, "
-    "dragon beard, dragon fangs, pearl-chasing dragon, coiling scaled Chinese dragon body, "
+    "Chinese imperial palace dragon, pearl-chasing dragon, Chinese palace-dragon styling, "
     "literal Taoist yin-yang symbol, black-white Taijitu emblem, Chinese philosophical diagram, "
     "Japanese kimono, Korean hanbok, samurai, shoji, torii, k-drama palace, "
     "generic pan-Asian costume, Oriental fantasy, bad anatomy, extra limbs, distorted face, "
@@ -144,15 +167,12 @@ COMMON_NEGATIVE_PROMPT = (
     "missing eyeglasses on the pham-tran teacher, invisible eyeglasses, bare-looking mortal face, spare eyeglasses beside a visible Nalas, "
     "loose eyeglasses on bed or desk while Nalas is visible, identical Giac and Chap, duplicate angel clones, "
     "messengers with the same face, messengers resembling Father Nalas, white-haired identical messenger men, "
-    "nha tranh vach dat, thatched hut, mud wall, clay wall, "
-    "dirt floor, oil lamp, kerosene lamp, patched clothing, ragged poverty clothes, "
+    "thatched hut, mud wall, clay wall, "
+    "oil lamp, kerosene lamp, patched clothing, ragged poverty clothes, "
     "ao nau peasant costume, antique tea house, old wooden tea-room classroom, bamboo blinds, "
     "low floor mats, sitting on floor, historical peasant village, medieval interior, "
-    "rustic ancient classroom, dark blank old chalkboard, countryside riverbank, rural river, "
-    "village river, muddy canal, rice field, paddy field, fisherman, fishing boat, wooden boat, "
-    "banana grove village path, nostalgic village moonlight, mien que song nuoc, rural waterfront, "
-    "riverside village, rural lotus pond, scenic rural waterfront, wooden sampan, farm hamlet, bamboo hut, "
-    "river delta, floating market, rural water village, old riverside hamlet, wooden footbridge over canal"
+    "rustic ancient classroom, dark blank old chalkboard, floating market, river-delta tourism postcard, "
+    "ancient rural costume drama, scenic travel-poster countryside, wooden sampan as default mood"
 )
 
 
@@ -336,8 +356,10 @@ def frame_visual_mode_note(excerpt, anchor, chapter_number):
             if chapter_is_modern_era(chapter_number)
             else (
                 "If the sleeping or waking mortal body appears, keep that body and its room "
-                "clearly Vietnamese, modern, urban, modest, and ordinary, not an old hut, "
-                "ancient room, countryside, or rural riverbank."
+                "clearly Vietnamese and in the correct early phase: poor modern countryside/village "
+                "home, sparse night lights, simple electric lighting, cement/tile floor, modest furniture, "
+                "and no high-rise city view. Keep Nalas modern, clean, and wearing glasses; do not make "
+                "him an old scholar, monk, or costume-drama peasant."
             )
         )
         if has_divine_nalas:
@@ -369,9 +391,11 @@ def frame_visual_mode_note(excerpt, anchor, chapter_number):
             )
         if re.search(r"\bdragon\b", f"{excerpt}\n{anchor}", flags=re.I):
             note += (
-                " The dragon mention must not become a literal Chinese dragon. Render it as "
-                "abstract green-gold spiritual breath, mist, or a Vietnamese/Lac Viet water-serpent "
-                "silhouette without whiskers, horns, beard, fangs, pearl, or coiling imperial body."
+                " The dragon is a key Chapter 8 dream event: render it as a huge jade-green sacred "
+                "dragon, not a tiny snake. Its large head is low near the ground looking at Nalas, "
+                "its tail rises upward toward the sky, its body bends into six visible sweeping "
+                "sections, and its long whiskers/beard curl with strange breath. Keep it dreamlike "
+                "and sacred, without Chinese palace, pagoda, red lantern, pearl-chasing, or xianxia styling."
             )
         return note
     return (
@@ -474,15 +498,14 @@ def frame_earth_stage_note(excerpt, anchor, chapter_number):
         )
     return (
         "Earth stage note: this is the pre-teaching or ordinary mortal period unless the excerpt "
-        "clearly shows a later class/lecture/tea/coffee setting. Place it in modest but clean modern "
-        "urban Vietnam around 2014-2019, but with a contemporary 2020s city-district look: "
-        "a normal ward/district, townhouse/apartment/rented room, "
-        "painted walls, tiled floors, fluorescent tube light or LED light, fan, simple desk or table, chairs, books, "
-        "notebooks, tea/coffee cups, and ordinary contemporary objects when natural. "
-        "Nalas should wear a clean T-shirt, polo, or casual shirt with simple trousers. Do not use "
-        "nha tranh vach dat, clay walls, thatched roofs, oil lamps, dirt floors, patched clothes, "
-        "ragged poverty styling, old village interiors, countryside rivers, muddy canals, rice fields, "
-        "fishing boats, mien que song nuoc, scenic rural waterfronts, or historical-drama clothing."
+        "clearly shows a later class/lecture/tea/coffee setting. Place it in a poor but present-day "
+        "Vietnamese countryside/village setting around 2014-2019: low modest houses, quiet yard, "
+        "simple rural lane, sparse night lights, electric bulb or fluorescent tube light, fan when natural, "
+        "cement or plain tile floor, worn plaster or brick walls, simple wooden bed/table/chairs, books, "
+        "notebooks, and ordinary objects. Nalas should look modern and clean, wearing thin glasses, "
+        "a clean T-shirt, polo, or casual shirt with simple trousers. Do not use high-rise buildings, "
+        "city skyline, apartment towers, busy traffic, polished city interior, luxury room, thầy đồ styling, "
+        "monk robe, Chinese scholar robe, oil-lamp nostalgia, patched clothing, or historical-drama clothing."
     )
 
 
@@ -522,6 +545,17 @@ def frame_negative_prompt(excerpt, anchor, force_celestial=False):
         )
         return f"{celestial_common}{celestial_identity_negative}{sleep_negative}"
     return f"{COMMON_NEGATIVE_PROMPT}, {EARTH_ONLY_NEGATIVE_PROMPT}{sleep_negative}"
+
+
+def chapter_flow_note(chapter_number):
+    if int(chapter_number) == 8:
+        return C008_STORY_FLOW_LOCK
+    return (
+        "Chapter flow rule: read this chapter's story guide before batching. Each lane should follow "
+        "the local excerpt and the chapter's actual sequence of people, places, transformations, "
+        "and turning points. Do not flatten the chapter into generic teacher portraits, generic "
+        "heaven posters, or repeated emotional desk scenes."
+    )
 
 
 def read_ch8_anchor_sections():
@@ -648,6 +682,8 @@ Character and world DNA, with mandatory fidelity rule:
 
 {EARTH_STAGE_RULE}
 
+{PHAM_TRAN_PHASE_TIMELINE}
+
 {VIETNAM_VISUAL_IDENTITY}
 
 Current frame world mode:
@@ -664,6 +700,9 @@ Chapter-specific visual brief:
 
 Chapter-specific story guide, mandatory:
 {chapter_story_guide}
+
+Chapter flow lock:
+{chapter_flow_note(chapter['chapter'])}
 {anchor_block}
 Story beat excerpt to visualize:
 {excerpt}

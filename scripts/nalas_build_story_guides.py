@@ -180,7 +180,7 @@ def profile_rules(chapter, profiles):
         )
     else:
         lines.append(
-            "- Earth/pham-tran beats before Covid are still modern Vietnamese urban life, not old rural poverty: clean T-shirt/polo/casual shirt, modest city home or rented room, painted walls, tiled floors, glass/aluminum windows, ceiling fan, LED/tube lights."
+            "- Earth/pham-tran beats before formal teaching are poor modern Vietnamese countryside/village life: Nalas looks modern and clean in T-shirt/polo/casual shirt, always wearing thin glasses, but the setting is modest rural home/yard/lane with sparse lights, low houses, simple electric bulb or fluorescent tube light, cement/tile floor, worn plaster/brick wall, and simple furniture. Do not use city skyline, apartment towers, luxury interiors, thầy đồ styling, monk robes, oil-lamp nostalgia, or historical costume drama. Once the excerpt shows classes/students/disciples/teaching, move to a cleaner, better-supported learning room."
         )
     if "earth_modern_teaching" in profiles:
         lines.append(
@@ -201,6 +201,25 @@ def profile_rules(chapter, profiles):
     return lines
 
 
+def custom_chapter_flow_rules(chapter):
+    if chapter != 8:
+        return ""
+    return """Chapter 8 step-by-step lock:
+- C008 is the return-to-wisdom journey, not a generic teacher portrait chapter.
+- Opening heaven: Giac and Chap are two mature male messengers, not a male/female pair and not children.
+- Early Earth: the 29-year-old mortal Nalas sleeps in a poor peaceful countryside home on a cold early-spring New Year night. He is modern and clean, always wearing thin glasses; the room/village is poor and moc mac, not a city apartment.
+- Dream house: he stands inside the house at night, moonlight through glass windows, unsure whether dream or reality.
+- Dragon beat: he hears strange breathing, opens the door, steps toward the left garden, and sees a huge jade-green dragon with large head low near the ground, tail up toward the sky, long whiskers/beard, and body curved into six sections. Do not make it a tiny snake.
+- Transformation beat: the dragon passes the front door and transforms into two adult men. These are male messengers in human form; do not show one man and one woman here.
+- Instruction beat: the two men say time is running out, they cannot teach him, and they will direct him to someone to study.
+- Guide/teacher beat: months later he meets the adult male person announced in the dream; that man leads/directs him to a woman teacher with spiritual abilities. Include the male guide and the woman teacher when the excerpt reaches this beat.
+- Disguise sequence: before meeting the woman teacher, one messenger appears as an old man in a dream and Nalas does not answer; the next night one messenger appears as an old woman and Nalas still does not answer.
+- After meeting the woman teacher, the old man and old woman appear together and repeat that they cannot teach him and he must study with that woman for one year. This pair belongs only to the later step, not to the initial two adult men.
+- Study/disappointment beat: he studies, becomes disappointed, burns the notes, and questions heaven/paradise people. Keep this human and grounded.
+- Later return-of-wisdom beats: temple, lake in heaven, memory travel, and wisdom transfer may become Western sacred heavenly scenes. Father Nalas in heaven uses the stable Sacred-Heart-Jesus-like canonical form.
+- Teaching-many-students beat: only after wisdom begins returning and he teaches many classes should Earth rooms improve into clean, supported classrooms with students."""
+
+
 def build_guide(chapter, manifest_item=None):
     text_path = TEXT_DIR / f"C{chapter:03d}.txt"
     text = text_path.read_text(encoding="utf-8", errors="replace")
@@ -218,6 +237,7 @@ def build_guide(chapter, manifest_item=None):
     key_terms_text = "\n".join(f"- {term}" for term in key_terms) if key_terms else "- Use the exact local lane excerpt as the main subject."
     sample_text = "\n".join(f"- {label}: {excerpt}" for label, excerpt in samples if excerpt)
     profile_text = "\n".join(profile_rules(chapter, profiles))
+    custom_flow_text = custom_chapter_flow_rules(chapter)
     profile_names = ", ".join(profiles) if profiles else "literal_excerpt_only"
     return f"""# C{chapter:03d} Story Guide - {title}
 
@@ -235,10 +255,11 @@ Story arc samples to keep the chapter distinct:
 
 Mandatory visual rules for this chapter:
 {profile_text}
+{custom_flow_text}
 - Always obey the local lane excerpt first. If the excerpt is a classroom conversation, show that exact class beat. If it is a technical doctrine, visualize it through the named mechanism rather than a generic glowing circle. If it is heaven, temple, tuelinh, Giac, Chap, or Father, use the correct heaven/Earth split.
 - Whenever the mortal/pham-tran Nalas or Earth teacher body is visible, keep the approved identity: Vietnamese father-teacher, rounded-square gentle face, solid grounded build, calm scholarly compassion, and thin metal eyeglasses worn on his face. The glasses are mandatory even when he sleeps; do not show a bare-faced mortal Nalas and do not create a spare pair of glasses on a bed/table/desk.
-- If Giac, Chap, two messengers, or five messengers appear, keep them role-distinct and non-cloned. Giac is insight/discernment: restrained gold-white, slightly older, leaner oval face, high cheekbones, calm analytical gaze, precise still posture, with a small gold-white geometry or clear-light thread near the hands/chest. Chap is compassion/attachment-testing: warmer rose-gold, slightly younger or softer face, warmer eyes, humble protective posture, rose-gold sash or warm rose light held in the palm. If Father Nalas is present, Giac, Chap, and all messengers must have no Sacred Heart, no glowing heart icon, no heart-shaped chest light, and no radiant chest emblem; only Father has chest-heart radiance. The other three messengers, when present, are blue-white order/law with grid/archive/tablet markers, green-gold healing/transformation clearing toxins or carrying clean botanical light, and silver-violet transmission/transit with a gateway/path/arc marker. Do not render Giac and Chap as identical generic angels, identical white-haired men, or Father Nalas lookalikes.
-- Do not use rural river/countryside-water beauty, rice fields, muddy canals, old wooden tea houses, oil lamps, dirt floors, patched peasant clothes, Chinese costume drama, pagodas, hanfu, xianxia, or generic Asian fantasy.
+- If Giac, Chap, two messengers, or five messengers appear, keep them role-distinct and non-cloned. All five true messengers are mature men. Giac is insight/discernment: restrained gold-white, slightly older, leaner oval face, high cheekbones, calm analytical gaze, precise still posture, with a small gold-white geometry or clear-light thread near the hands/chest. Chap is compassion/attachment-testing: warmer rose-gold, slightly younger or softer face, warmer eyes, humble protective posture, rose-gold sash or warm rose light held in the palm. If Father Nalas is present, Giac, Chap, and all messengers must have no Sacred Heart, no glowing heart icon, no heart-shaped chest light, and no radiant chest emblem; only Father has chest-heart radiance. The other three messengers, when present, are blue-white order/law with grid/archive/tablet markers, green-gold healing/transformation clearing toxins or carrying clean botanical light, and silver-violet transmission/transit with a gateway/path/arc marker. Do not render Giac and Chap as identical generic angels, identical white-haired men, women, children, or Father Nalas lookalikes. Only show old-woman form when the local excerpt explicitly says a messenger disguises as an old woman.
+- Do not use old wooden tea houses, oil lamps, patched peasant clothes, Chinese costume drama, pagodas, hanfu, xianxia, or generic Asian fantasy. Poor countryside is allowed only when the chapter phase requires it, especially early C008; keep it present-day Vietnamese countryside, not historical costume rural nostalgia.
 - No fake readable text on boards/books. Boards may be blank or have simple non-readable marker strokes only.
 
 Composition variety:
@@ -256,7 +277,7 @@ def main():
     args = parser.parse_args()
 
     excluded = parse_chapter_list(args.exclude_chapters)
-    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8")) if MANIFEST_PATH.exists() else {"chapters": []}
+    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8-sig")) if MANIFEST_PATH.exists() else {"chapters": []}
     by_chapter = {int(item["chapter"]): item for item in manifest.get("chapters", [])}
     GUIDE_DIR.mkdir(parents=True, exist_ok=True)
     count = 0
