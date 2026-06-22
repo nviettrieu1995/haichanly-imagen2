@@ -69,6 +69,12 @@ The first run will:
 3. Generate missing lane pair prompts into `nalas_chapters_08_86/lane_pair_prompts/`.
 4. Generate images into `nalas_chapters_08_86/generated_lane_pairs/`.
 
+After prompt preparation, verify that every chapter has current flow locks in its guide, brief, and lane prompt cache:
+
+```powershell
+python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86
+```
+
 To mirror valid generated pairs into the final video folder while the runner works, open another PowerShell window:
 
 ```powershell
@@ -144,6 +150,13 @@ After editing one chapter, rebuild that chapter prompt cache:
 
 ```powershell
 python .\scripts\nalas_lane_pair_pipeline.py --prepare-chapter 21 --pairs-per-batch 1
+python .\scripts\nalas_verify_prompt_coverage.py --chapter 21
+```
+
+If you only edited committed guide/brief files and have not generated the prompt cache yet:
+
+```powershell
+python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86 --skip-prompts
 ```
 
 Then rerun with `--force` only if you want to replace existing generated images:

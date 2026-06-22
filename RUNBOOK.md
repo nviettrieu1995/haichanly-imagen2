@@ -15,6 +15,12 @@ Make sure this file exists:
 
 ## Full Auto Lane Batch
 
+Preflight prompt coverage after preparing/regenerating prompts:
+
+```powershell
+python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86
+```
+
 Terminal 1:
 
 ```powershell
@@ -37,14 +43,16 @@ python .\scripts\nalas_verify_final_images.py --start-chapter 8 --end-chapter 86
 ## Regenerate Chapter Guides
 
 ```powershell
-python .\scripts\nalas_build_visual_briefs.py --start-chapter 8 --end-chapter 86 --force
 python .\scripts\nalas_build_story_guides.py --start-chapter 8 --end-chapter 86 --force
+python .\scripts\nalas_build_visual_briefs.py --start-chapter 8 --end-chapter 86 --force
+python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86 --skip-prompts
 ```
 
 ## Regenerate One Chapter Prompt Cache
 
 ```powershell
 python .\scripts\nalas_lane_pair_pipeline.py --prepare-chapter 21 --pairs-per-batch 1
+python .\scripts\nalas_verify_prompt_coverage.py --chapter 21
 ```
 
 ## Replace One Chapter Images
