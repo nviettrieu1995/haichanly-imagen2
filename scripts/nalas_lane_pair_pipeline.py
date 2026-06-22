@@ -233,7 +233,29 @@ Day nine in Nepal: ancient capital where Prince Siddhartha grew up, high brick w
     48: """C048 flow lock:
 Plane from Patna to New Delhi after pilgrimage. Students sleep from exhaustion; Nalas stays awake by the airplane window, then closes eyes and recalls wisdom/past lives. Inner memory shows the central heavenly planet/House of Tuelinhs after Big Bang: divine Father/first tuelinh, crystal caves for baby tuelinhs, gold and precious-stone architecture, calm lapis-lazuli seas/lakes, glowing grass/trees/hills, golden super-energy. End with plane landing New Delhi and students waking. Keep plane-memory frame clear.""",
     49: """C049 flow lock:
-New Delhi hotel day before flying back to Vietnam. After breakfast, students choose coffee at hotel coffee bar; Duong brings Nalas hot cocoa; Loi asks him to share pilgrimage wisdom. Hotel living room lecture on current universe: central magical planet, pyramid gemstone, solar systems/galaxies/layers, rotating cosmic sphere, energy beams, fire particles, one universe outside destructive energy, three matter groups, eight particle colors/types, tuelinh babies, souls of rocks/trees/animals, transformation mechanisms. Students rest on sofas afterward."""
+New Delhi hotel day before flying back to Vietnam. After breakfast, students choose coffee at hotel coffee bar; Duong brings Nalas hot cocoa; Loi asks him to share pilgrimage wisdom. Hotel living room lecture on current universe: central magical planet, pyramid gemstone, solar systems/galaxies/layers, rotating cosmic sphere, energy beams, fire particles, one universe outside destructive energy, three matter groups, eight particle colors/types, tuelinh babies, souls of rocks/trees/animals, transformation mechanisms. Students rest on sofas afterward.""",
+    50: """C050 flow lock:
+Final pilgrimage afternoon in a New Delhi hotel living room after lunch, not a Vietnam classroom. Nalas asks students for questions because they are Nalandas who must teach clearly. Student asks about spinning/rotation; Nalas tests whether spinning exists in humans/tuelinhs through happy, sad, neutral emotions. Focus on two spinning forms: physical rotation while moving and internal circulation of information waves. Keep hotel/travel sofas, students, tea/water/notebooks and restrained rotation/particle overlays; do not make it pure space art.""",
+    51: """C051 flow lock:
+Flight back to Hanoi after pilgrimage. Earth anchor: airplane cabin, runway/airport view, tired students, Nalas with thin glasses closing eyes as plane takes off. He enters tuelinh memory. Cosmic memory: first tuelinh after Big Bang surveys the central magical planet, embryos in crystal rocks, heat from explosion, outer universe with rotating particles/yin-yang embryos, boundary with destructive energy, and heat being consumed. Keep airplane-body frame clear; Father/Jesus-like form only inside memory.""",
+    52: """C052 flow lock:
+Continues the memory journey while the mortal body sleeps on the flight. First tuelinh builds the universe information transceiver: central-planet pyramid processing center, synthetic particle clusters/stations, neutral-particle wires, negative particles receiving signals, positive particles pushing data, and energy strings connecting suns/galaxies to the central planet. The system is like a giant tuelinh/soul spread through the universe. Closing returns to the airplane one hour before Hanoi landing; sleeping Nalas wears one pair of glasses, no spare glasses.""",
+    53: """C053 flow lock:
+Modern Hanoi office on a cold autumn morning. Nalas sits on a sofa with hot Vietnamese tea before students unexpectedly arrive with a sad older woman whose mother is gravely ill in hospital. Nalas explains life completion, the mother's soul, devotion, illness, death, and information instead of miracle-cure spectacle. Then he draws the intellectual wave-code fibre on a whiteboard beside the coffee table and teaches Everything Is Information. Keep sofa/tea/whiteboard/students/older woman; no literal heaven unless excerpt leaves office.""",
+    54: """C054 flow lock:
+Modern Hanoi office after lunch. Students nap in chairs, wash faces, drink tea/water, then gather when a male student asks what first tuelinh did before creating human practice. Heaven-memory beats: baby tuelinhs born from crystal rocks in a giant cave, gold/precious-stone homes and temple, Father teaching, children secretly practicing near destructive energy, many injured/disintegrated, Father suffering and healing survivors, then deciding Earth/human life must be a harsh school. Keep office frame distinct from Western sacred/cosmic memory.""",
+    55: """C055 flow lock:
+First spring after dual energy filter. Earth setup: cold rainy night, mortal body sleeps after children sleep. Heaven: Nalas returns to private working space on central planet; messenger opens door; golden super-energy particles and magical heart-pulsing pyramid. Pyramid replays congresses and shows Nalas with five eldest male tuelinh children who will incarnate, lead humanity, operate cause/effect tree, and become five messengers. Then past-life montage: forest tribe survivor, soldier avoiding killing, trader, teacher, stay-at-home mother/father, other Tao lives. No female/child messengers or clones.""",
+    56: """C056 flow lock:
+Heaven lecture to children/tuelinhs. Earth setup only: Nalas returns home early after a tuelinh signal and sleeps after his children. Main scene: Father Nalas sits in his central-planet temple before thousands of tuelinh children. He explains recent human-world therapy teaching, India-pilgrimage knowledge upgrades, two truths, energy particles, intellectual wave-code secrets, and successful transformation of his yin-yang embryo into a dual energy filter. Use stable Jesus-like Father in Western sacred heaven; not an Earth classroom.""",
+    57: """C057 flow lock:
+Same heavenly temple lecture. A child asks whether speaking ill of harmful people is ignorant wisdom in action. Father answers with the toxin/poisonous-snake metaphor and warns that attacking another person's toxins provokes more toxins. Doctrine: black negative particles with very strong electric waves bond with ivory-white, green, fire-red, or yellow positive particles and corrupt their sustainable information. Keep child/Father dialogue in heavenly temple; no horror snake staging.""",
+    58: """C058 flow lock:
+Same heavenly temple lecture about ignorant wisdom in spreading false knowledge. Father compares war between countries with creating/spreading false knowledge about origin and mission. Children debate; Father says false knowledge is more poisonous long-term because everything is information and wrong information creates blood-red negative particles with super-strong electric waves. Use restrained lesson visions for war/false teachers/religious or ideological misinformation, but main frame stays heaven with stable Father.""",
+    59: """C059 flow lock:
+Same heavenly temple lecture. A child asks how Father can save tuelinhs whose wisdom is easily manipulated and rejects true knowledge. Father reassures them he abandons no tuelinh; five messengers, transit planet, and information transmission/reception system support rescue. Solutions: four Tao interaction scenarios force out toxins over lifetimes; accurate-information environments teach origin, mission, and liberation. Human-world suffering/mental illness may appear as soft vision windows only.""",
+    60: """C060 flow lock:
+Same heavenly temple lesson on sustainable-development intelligence. Children discuss environment changing intelligence and fear human incarnation. Father shows vision windows: poor people who study hard, farmers improving crops, workers/engineers building useful projects, scientists making medicines/vaccines/transport/machines, businesspeople overcoming hardship, and teachers creating useful knowledge. Alternate Father/children temple shots with human-world vignettes inside luminous visions; not a random modern classroom montage."""
 }
 
 
@@ -329,7 +351,8 @@ INTERNATIONAL_TRAVEL_TERMS = re.compile(
     flags=re.I,
 )
 
-INTERNATIONAL_TRAVEL_CHAPTERS = {39, 42, 43, 44, 45, 46, 47, 48, 49}
+INTERNATIONAL_TRAVEL_CHAPTERS = {39, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52}
+HEAVEN_FATHER_LECTURE_CHAPTERS = {55, 56, 57, 58, 59, 60}
 
 EARTH_TEACHING_TERMS = re.compile(
     r"\b(human world|human life|classroom|students|student|lecture|lectures|"
@@ -436,6 +459,27 @@ def frame_has_divine_nalas_presence(excerpt, anchor, chapter_number):
     text = f"{excerpt}\n{anchor}"
     if not frame_is_celestial(excerpt, anchor):
         return False
+    try:
+        chapter_int = int(chapter_number)
+    except (TypeError, ValueError):
+        chapter_int = None
+    if chapter_int in HEAVEN_FATHER_LECTURE_CHAPTERS:
+        earth_only_setup = re.search(
+            r"\b(works at the office|returned home early|returned home earlier|"
+            r"children had gone to bed|body fell asleep|fell asleep early|"
+            r"deep sleep|mortal body|human body|form body)\b",
+            excerpt,
+            flags=re.I,
+        )
+        heaven_presence = re.search(
+            r"\b(returned to heaven|sat in his temple|temple on the central planet|"
+            r"private working space|pyramid|Father|my children|children in heaven|"
+            r"five eldest|five messengers|tuelinh children|tuelinhs)\b",
+            excerpt,
+            flags=re.I,
+        )
+        if not earth_only_setup or heaven_presence:
+            return True
     if int(chapter_number) == 21 and re.search(
         r"\b(temple|tuelinh|tuelinhs|Mind Dharma|mature tuelinhs|my children|"
         r"single energy filter|dual energy filter|yin and yang energy embryo)\b",

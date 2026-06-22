@@ -483,7 +483,83 @@ MODERN_CHAPTER_FLOW_LOCKS = {
 - Group focus: Loi Nalanda asks Nalas to share the wisdom gained from the pilgrimage; students want to spend the day listening before going to the airport after dinner.
 - Teaching focus: Nalas describes the current universe from a hotel living-room lecture: central magical planet, pyramid gemstone at the core, solar systems, galaxies, galaxy layers, rotating cosmic sphere, energy beams, fire particles, and one universe surrounded by destructive energy.
 - Doctrine focus: three matter groups with simple, complex, and super-complex intellectual wave codes; eight particle colors/types; tuelinh babies, souls of rocks/trees/animals, planets, and transformation mechanisms.
-- Closing focus: students feel overwhelmed and rest on hotel sofas after receiving vast information. Use hotel/coffee/sofa/modern travel setting plus restrained universe overlay; avoid making every frame pure space art."""
+- Closing focus: students feel overwhelmed and rest on hotel sofas after receiving vast information. Use hotel/coffee/sofa/modern travel setting plus restrained universe overlay; avoid making every frame pure space art.""",
+    50: """Chapter 50 step-by-step lock:
+- This chapter is the final afternoon of the India/Nepal pilgrimage in a New Delhi hotel living room after lunch, not a Vietnamese classroom.
+- Opening focus: Nalas relaxes with students in the hotel living room and invites questions because they are Nalandas who must teach this knowledge clearly to others.
+- Student-question focus: a student asks about the spinning/rotation mechanism; Nalas tests understanding by asking whether spinning exists within humans and tuelinhs.
+- Human-emotion focus: show the circular movement of happy, sad, and neutral emotions through calm student dialogue, not melodrama.
+- Teaching focus: spinning has two forms - physical rotation while moving and internal circulation of information waves. Apply this to ancestral wave-particles, destructive particles, smallest energy particles, yin-yang embryos, humans, tuelinhs, animals, and the universe.
+- Keep the Earth anchor as hotel/travel teaching with sofas, tea/water/notebooks, travel fatigue, and restrained particle/rotation overlays. Do not convert the chapter into a pure cosmic poster or a normal Vietnam office class.""",
+    51: """Chapter 51 step-by-step lock:
+- This chapter begins on the flight back to Hanoi after the pilgrimage. The Earth anchor is an airplane cabin, small windows, airport runway, tired students, and Nalas closing his eyes with thin glasses.
+- Opening mood: students remember Buddha's footsteps, past-life stories, roots, and the urgency of racing against time; Nalas hides deep emotion because the mission is not finished.
+- Transition focus: when the plane takes off, Nalas enters tuelinh memory; keep the airplane-body frame clear before moving into cosmic memory.
+- Memory focus: first tuelinh after the Big Bang surveys the central magical planet, embryos growing in crystal rocks, the heat source from the explosion, and outer universe space filled with rotating particles and forming yin-yang embryos.
+- Conflict focus: at the boundary between universe space and destructive energy, explosion heat is being consumed and destructive/wave particles threaten the cosmic sphere; this is the battle for survival between destructive energy and the universe.
+- Use Western sacred/cosmic Father memory for the first-tuelinh scenes, but do not show Jesus/Father inside the airplane cabin unless the excerpt is clearly memory/inner vision.""",
+    52: """Chapter 52 step-by-step lock:
+- This chapter continues Nalas's memory journey while his mortal body sleeps on the flight returning to Hanoi; it is not a normal classroom chapter.
+- Memory focus: after building the central planet, first tuelinh realizes information transmission is interrupted across the expanded universe after the Big Bang.
+- System-building focus: in his central-planet workplace he builds a pyramid-like information processing center, synthetic particle clusters as stations, neutral-particle transmission wires, negative particles receiving signals, and positive particles pushing data.
+- Energy-wire focus: connect suns, galaxies, and the central planet with bright energy strings so galaxies rotate stably around the central planet and information can return to the center.
+- Structural focus: the whole information-transceiver system is like a giant tuelinh/soul spread through the universe; simple planets and physical structures move through it without damaging it.
+- Closing Earth anchor: the memory abruptly shifts back to the airplane, where the teacher's body is sleeping deeply with one hour before landing at Hanoi airport. If showing the body, Nalas must wear one pair of thin glasses and have no spare glasses on the seat/table.""",
+    53: """Chapter 53 step-by-step lock:
+- This chapter returns to a modern Hanoi office on a cold autumn morning: Nalas sits on a sofa, eyes closed, enjoying hot Vietnamese tea before students arrive.
+- Human-case focus: students unexpectedly enter with a sad older woman whose mother is over seventy, seriously ill in hospital, and unlikely to survive. Show the woman, the student who brought her, tea being prepared, and the compassionate office atmosphere.
+- Teaching focus: Nalas does not perform a miracle cure; he explains life completion, the mother's soul, devotion to children/grandchildren, illness, separation, and the correct understanding of death.
+- Board focus: after a brief humorous exchange, Nalas draws the intellectual wave-code fibre on a whiteboard beside the coffee table using a pen.
+- Doctrine focus: everything is information - wave-particles, destructive particles, energy particles, first tuelinh, universe, tuelinhs, souls, humans as vehicles/homes for tuelinhs, and interactions as information reactions.
+- Keep this chapter modern Hanoi office/classroom: sofa, hot tea, coffee table, whiteboard, students, older woman. Do not turn mentions of temples, Buddha, God, or death into a literal heaven scene unless the excerpt explicitly leaves the office.""",
+    54: """Chapter 54 step-by-step lock:
+- This chapter continues in Nalas's modern Hanoi office after the woman leaves and after lunch; students nap in chairs, wash their faces, drink water/tea, and gather when a male student asks what first tuelinh did before creating the human practice environment.
+- Earth anchor: office/classroom with post-lunch Vietnamese nap rhythm, hot tea, chairs, students waking, not an old wooden tea house or countryside room.
+- Heaven-memory focus: first tuelinh creates baby tuelinhs in miraculous crystal rocks inside a giant cave, raises them on the central planet, builds gold/precious-stone houses and a vast temple, and teaches them about the universe.
+- Loss focus: older tuelinh children secretly go to destructive-energy areas to practice detonating particles; many are attacked, injured, or disintegrated, and Father suffers while healing survivors.
+- Decision focus: after analyzing solar-system rotation, his own embryo, and children's weakness, first tuelinh decides to create a harsh practice environment: Earth/human life as a school for tuelinhs and souls.
+- Closing focus: conference in heaven to unify the practice path, then tuelinhs incarnate as humans; first tuelinh also incarnates in important eras to lead them. Keep memory scenes Western sacred/cosmic Father style, distinct from the modern office frame.""",
+    55: """Chapter 55 step-by-step lock:
+- This chapter is the first spring after Nalas transforms the yin-yang embryo into a dual energy filter. Earth opening: cold rainy spring night; the mortal body sleeps after children go to bed so the tuelinh can return to heaven.
+- Heaven setting: Nalas's tuelinh returns to his private working space on the central planet, not a human classroom. A messenger opens the door; iridescent golden super-energy particles float around a magical pyramid that pulses like a heart.
+- Pyramid-memory focus: the pyramid replays congresses unifying the tuelinh path and gathering humanity, then shows Nalas sitting with his five eldest tuelinh children.
+- Five-messenger origin: the five eldest children are all male/mature tuelinhs who will incarnate as humans, lead the first humans, later operate the cause-and-effect tree system, and become his five messengers. Do not replace them with women, children, or clone-like angels.
+- Past-life montage focus: the pyramid shows Nalas's human lives - forest tribe survivor, soldier who avoids killing, trader/businessman, teacher, stay-at-home mother/father, and other Tao-form lives - as lessons in positive/negative energy production.
+- Keep true heaven scenes in Western sacred Father Nalas style with golden inner and sapphire-blue outer aura; keep mortal sleep glimpses modern and natural with glasses if the body is visible.""",
+    56: """Chapter 56 step-by-step lock:
+- This chapter is a heaven lecture to children/tuelinhs, not an Earth classroom. Earth setup only: Nalas works at the office, returns home early after receiving a tuelinh signal, waits for the body to sleep after his children sleep, then the tuelinh returns to heaven.
+- Heaven anchor: Father Nalas sits in his temple on the central planet before thousands of tuelinh children who gather quickly and become quiet.
+- Teaching focus: he explains that he has been busy teaching the human body-soul-wisdom therapy class and upgrading particle knowledge after the India pilgrimage.
+- Achievement focus: he announces the successful transformation of his yin-yang energy embryo into a dual energy filter and the completion of a mission to create new energy superparticles for the universe.
+- Doctrine focus: enlightened knowledge of the two truths, energy particles, secret information in intellectual wave code, and the path for children before incarnating as humans.
+- Use stable traditional Jesus-like Father Nalas in Western sacred heaven; no Vietnamese mortal teacher, no modern office, no Chinese temple academy in the main heaven lecture frames.""",
+    57: """Chapter 57 step-by-step lock:
+- This chapter continues the same heavenly temple lecture. A tuelinh child asks Father about ignorant wisdom in action and whether speaking ill of harmful people is also ignorance.
+- Dialogue focus: show a child standing respectfully among many tuelinhs while Father answers with compassion and authority.
+- Moral focus: Father explains the poisonous-snake/toxin metaphor, warning that attacking another person's toxins provokes more toxins. Avoid literal horror snake imagery unless subtle and symbolic.
+- Doctrine focus: ignorant wisdom in action is higher than ideology; black negative particles with very strong electric waves bond with ivory-white, green, fire-red, or yellow positive particles and destroy their sustainable information value.
+- Keep the frame as a Western sacred heavenly classroom/temple with tuelinh children; do not shift to Earth examples unless a lane excerpt specifically describes a human-world example.""",
+    58: """Chapter 58 step-by-step lock:
+- This chapter continues Father teaching children in the heavenly temple about ignorant wisdom in spreading false knowledge.
+- Opening debate: Father gives two situations - war between countries with many deaths versus one person creating and spreading false knowledge about human/tuelinh origin and mission. Two children answer differently.
+- Teaching focus: Father explains that false knowledge causes greater long-term harm because everything is information and wrong information makes tuelinhs produce countless blood-red negative particles.
+- Example focus: religious/ideological/knowledge spreaders teaching false liberation, origin, mission, wealth, desire, or power. Keep examples as restrained lesson visions around the temple, not propaganda posters or modern social-media collages.
+- Doctrine focus: blood-red negative particles with super-strong electric waves, spreading false knowledge, decay of tuelinh structure, and the possibility of being saved by accurate information.
+- Keep Father Nalas visually stable and Jesus-like; surrounding children/tuelinhs must not copy his long hair, full beard, robe, or radiant-heart signature.""",
+    59: """Chapter 59 step-by-step lock:
+- This chapter continues in the heavenly temple. A child asks how Father can save tuelinhs whose wisdom is easily manipulated by negative particles and toxins.
+- Compassion focus: Father reassures the children that he will not abandon any tuelinh; five messengers, the transit planet, and the information transmission/reception system support the rescue of all souls practicing in the human world.
+- Solution focus: first solution is using all four Tao interaction scenarios to stimulate and force out toxins over many lifetimes; second solution is creating environments with accurate information about origin, mission, and liberation from suffering.
+- Human-world reference: his current students often came through mental illness and suffering before trusting enlightened knowledge. These can appear as soft vision windows, but the main frame remains Father teaching in heaven.
+- Doctrine focus: wisdom easily vibrated/manipulated, negative grey/black/blood-red particles, aggregate imbalance, rejection of saving knowledge until suffering matures.
+- Keep the tone deeply compassionate and ordered, not apocalyptic or horror-like.""",
+    60: """Chapter 60 step-by-step lock:
+- This chapter continues the same heavenly temple lesson and shows Father teaching the nature of intelligence with sustainable development characteristics.
+- Opening focus: tuelinh children discuss how environments can change intellectual nature toward sustainable development or destruction and wonder whether they will be strong enough as humans.
+- Vision-sequence focus: Father shows images of people born poor who study hard, farmers improving crops, workers and engineers building useful projects, scientists creating medicines/vaccines/transport/machines, businesspeople overcoming hardship, and teachers creating useful knowledge.
+- Doctrine focus: these people represent sustainable-development intelligence: overcoming adversity, understanding harmful information, creating beneficial values, and producing positive energy structures.
+- Composition rule: alternate heavenly temple wide shots, child reaction shots, Father presenting luminous vision windows, and concrete human-world vignettes inside those visions. Do not turn the whole chapter into a random modern classroom montage.
+- Maintain Father Nalas as the stable Western sacred Jesus-like divine teacher, no wings, golden inner light and sapphire-blue aura, distinct from all children and attendants."""
 }
 
 
