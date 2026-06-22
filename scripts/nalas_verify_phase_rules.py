@@ -155,6 +155,15 @@ GLOBAL_MARKER_GROUPS = {
 }
 
 
+def forbidden_groups_for_chapter(chapter):
+    groups = {}
+    if chapter < 16:
+        groups["pre_covid_irrelevant_covid_style_note"] = [
+            "covid/pandemic-era teaching scenes should look polished and modern",
+        ]
+    return groups
+
+
 def cid(chapter):
     return f"C{chapter:03d}"
 
@@ -296,6 +305,16 @@ def check_marker_groups(chapter, label, text, groups, issues):
             )
 
 
+def check_forbidden_marker_groups(chapter, label, text, groups, issues):
+    for group_name, forbidden_markers in groups.items():
+        found = [marker for marker in forbidden_markers if has_marker(text, marker)]
+        if found:
+            issues.append(
+                f"{cid(chapter)} {label}_forbidden_phase_marker: "
+                f"{group_name} found {found}"
+            )
+
+
 def check_chapter(chapter, require_prompts):
     issues = []
     guide_path = GUIDE_DIR / f"{cid(chapter)}.md"
@@ -303,6 +322,7 @@ def check_chapter(chapter, require_prompts):
     story_groups = expected_groups_for_chapter(chapter, "story_guide")
     brief_groups = expected_groups_for_chapter(chapter, "visual_brief")
     prompt_groups = expected_groups_for_chapter(chapter, "prompt_cache")
+    forbidden_groups = forbidden_groups_for_chapter(chapter)
 
     if not guide_path.exists():
         issues.append(f"{cid(chapter)} missing_story_guide: {repo_rel(guide_path)}")
@@ -318,8 +338,10 @@ def check_chapter(chapter, require_prompts):
 
     if guide_text:
         check_marker_groups(chapter, "story_guide", guide_text, story_groups, issues)
+        check_forbidden_marker_groups(chapter, "story_guide", guide_text, forbidden_groups, issues)
     if brief_text:
         check_marker_groups(chapter, "visual_brief", brief_text, brief_groups, issues)
+        check_forbidden_marker_groups(chapter, "visual_brief", brief_text, forbidden_groups, issues)
 
     prompt_checked = False
     if require_prompts:
@@ -331,6 +353,13 @@ def check_chapter(chapter, require_prompts):
             )
         elif sample_text:
             check_marker_groups(chapter, "prompt_cache", sample_text, prompt_groups, issues)
+            check_forbidden_marker_groups(
+                chapter,
+                "prompt_cache",
+                sample_text,
+                forbidden_groups,
+                issues,
+            )
 
     return {
         "chapter": chapter,
