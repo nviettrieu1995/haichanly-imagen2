@@ -24,6 +24,15 @@ PROMPT_GUARDS = [
     "Negative prompt:",
 ]
 
+CHAPTER8_LEAK_MARKERS = [
+    "Chapter 8 step-by-step lock:",
+    "C008 is the return-to-wisdom journey",
+    "huge jade-green dragon with large head low near the ground",
+    "adult male person announced in the dream",
+    "old man and old woman appear together",
+    "If the Chapter 8 dragon appears",
+]
+
 
 def cid(chapter):
     return f"C{chapter:03d}"
@@ -155,6 +164,10 @@ def check_prompt_text(chapter, prompt_text, issues, context, expected_lanes=None
         issues.append(f"{cid(chapter)} {context}_missing_chapter_prompt_flow_lock")
     if "16:9" not in prompt_text:
         issues.append(f"{cid(chapter)} {context}_missing_16x9")
+    if int(chapter) != 8:
+        for marker in CHAPTER8_LEAK_MARKERS:
+            if marker in prompt_text:
+                issues.append(f"{cid(chapter)} {context}_chapter8_flow_leak: {marker}")
     if expected_lanes:
         for lane_index in expected_lanes:
             for side in ["START", "END"]:

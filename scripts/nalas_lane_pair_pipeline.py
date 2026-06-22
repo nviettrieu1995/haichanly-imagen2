@@ -23,7 +23,7 @@ from nalas_chapters_pipeline import (
     log,
     parse_json,
     parse_rate_limit,
-    read_dna,
+    read_dna as read_base_dna,
 )
 
 
@@ -38,6 +38,40 @@ CANONICAL_HEAVEN_FATHER_REF = (
 )
 MODERN_ERA_START_CHAPTER = 16
 EARLY_TEACHING_START_CHAPTER = 9
+
+
+CHAPTER8_DNA_LEAK_MARKERS = [
+    "Chapter 8 step-by-step lock:",
+    "C008 is the return-to-wisdom journey",
+    "huge jade-green dragon with large head low near the ground",
+    "adult male person announced in the dream",
+    "old man and old woman appear together",
+]
+
+
+def strip_chapter8_specific_dna(dna):
+    """Keep reusable character DNA, but remove C008-only plot beats for other chapters."""
+    dna = dna.replace("Core truth established in Chapter 8:", "Core incarnation truth:")
+    dna = re.sub(
+        r"\nChapter 8 step-by-step lock:\n.*?(?=\nEarth and teaching scenes:)",
+        "\n",
+        dna,
+        flags=re.S,
+    )
+    dna = re.sub(
+        r"\n- If the Chapter 8 dragon appears,.*?(?=\n- If a temple appears)",
+        "\n",
+        dna,
+        flags=re.S,
+    )
+    return re.sub(r"\n{3,}", "\n\n", dna).strip()
+
+
+def read_dna_for_chapter(chapter_number):
+    dna = read_base_dna()
+    if int(chapter_number) == 8:
+        return dna
+    return strip_chapter8_specific_dna(dna)
 
 
 def path_points_inside_root(value):
@@ -1025,7 +1059,7 @@ Negative prompt:
 
 
 def prepare_chapter_lane_pairs(manifest, chapter_number, pairs_per_batch):
-    dna = read_dna()
+    dna = read_dna_for_chapter(chapter_number)
     chapter_brief = read_chapter_brief(chapter_number)
     chapter_story_guide = read_chapter_story_guide(chapter_number)
     ch8_start_anchor, ch8_end_anchor = read_ch8_anchor_sections()
