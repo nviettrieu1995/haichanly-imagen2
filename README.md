@@ -69,7 +69,7 @@ The first run will:
 3. Generate missing lane pair prompts into `nalas_chapters_08_86/lane_pair_prompts/`.
 4. Generate images into `nalas_chapters_08_86/generated_lane_pairs/`.
 
-After prompt preparation, verify that every chapter has current flow locks in its guide, brief, and lane prompt cache:
+After prompt preparation, verify that every chapter has current flow locks in its guide, brief, and lane prompt cache. The prompt coverage check also validates canonical reference routing, so pham-tran lanes attach the mortal Nalas reference and heaven/Father lanes attach the Sacred-Heart-Jesus-like Father reference when required:
 
 ```powershell
 python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86

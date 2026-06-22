@@ -15,7 +15,7 @@ Make sure this file exists:
 
 ## Full Auto Lane Batch
 
-Preflight prompt coverage after preparing/regenerating prompts:
+Preflight prompt coverage after preparing/regenerating prompts. This also checks canonical reference routing for pham-tran mortal Nalas and heaven-Father Nalas:
 
 ```powershell
 python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86

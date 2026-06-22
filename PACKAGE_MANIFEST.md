@@ -4,7 +4,7 @@ This is a clean source repo for the Nalas Chapters 008-086 lane-batch image pipe
 
 ## Included
 
-- `scripts/*.py`: extraction, prompt preparation, timing-plan QA, prompt-coverage QA, auto lane batch, sync, and verification tools.
+- `scripts/*.py`: extraction, prompt preparation, timing-plan QA, prompt-coverage/reference-routing QA, auto lane batch, sync, and verification tools.
 - `Nalas Nalanda 1 (English).pdf`
 - `Nalas Nalanda 2 (English).pdf`
 - `Nalas Nalanda 3 (English).pdf`

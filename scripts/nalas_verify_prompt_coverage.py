@@ -13,6 +13,23 @@ TEXT_DIR = PIPELINE_ROOT / "chapter_text"
 STORY_GUIDE_DIR = PIPELINE_ROOT / "chapter_story_guides"
 VISUAL_BRIEF_DIR = PIPELINE_ROOT / "chapter_visual_briefs"
 PAIR_PROMPT_DIR = PIPELINE_ROOT / "lane_pair_prompts"
+CHARACTER_REF_DIR = PIPELINE_ROOT / "character_refs"
+CANONICAL_PHAM_TRAN_REF = (
+    CHARACTER_REF_DIR / "pham_tran_canonical" / "pham_tran_canonical.png"
+)
+CANONICAL_HEAVEN_FATHER_REF = (
+    CHARACTER_REF_DIR / "heaven_father_canonical" / "heaven_father_canonical.png"
+)
+
+REFERENCE_FLAGS = ("use_pham_tran_ref", "use_divine_nalas_ref")
+REFERENCE_EXPECTATIONS = {
+    # C008 needs both the sleeping/waking mortal body and heaven-Father presence.
+    8: {"min_pham": 1, "min_divine": 1},
+    # C016 is the Covid-era Earth/classroom chapter, not a heaven-Father chapter.
+    16: {"min_pham": 1, "max_divine": 0},
+    # C021 shifts into the heaven temple after the opening sleep transition.
+    21: {"min_pham": 1, "min_divine": 1},
+}
 
 
 PROMPT_GUARDS = [
@@ -78,6 +95,29 @@ def repo_rel(path):
         return str(path.relative_to(ROOT))
     except ValueError:
         return str(path)
+
+
+def check_reference_assets():
+    issues = []
+    for label, image_path in [
+        ("pham_tran_canonical", CANONICAL_PHAM_TRAN_REF),
+        ("heaven_father_canonical", CANONICAL_HEAVEN_FATHER_REF),
+    ]:
+        if not image_path.exists():
+            issues.append(f"missing_reference_image: {repo_rel(image_path)}")
+            continue
+        sidecar = image_path.with_suffix(".asset.json")
+        if not sidecar.exists():
+            issues.append(f"{label}_missing_asset_sidecar: {repo_rel(sidecar)}")
+            continue
+        try:
+            metadata = json.loads(read_text(sidecar))
+        except Exception as exc:
+            issues.append(f"{label}_invalid_asset_sidecar_json: {exc}")
+            continue
+        if metadata.get("approved") is not True:
+            issues.append(f"{label}_reference_not_approved: {repo_rel(sidecar)}")
+    return issues
 
 
 def list_chapters(args):
@@ -156,6 +196,105 @@ def check_lane_targets(chapter, plan, issues):
         )
 
 
+def item_key(item):
+    try:
+        return (int(item.get("lane_index", -1)), item.get("side"))
+    except (TypeError, ValueError):
+        return (-1, item.get("side"))
+
+
+def check_reference_routing(chapter, plan, issues):
+    items = plan.get("items", [])
+    batches = plan.get("batches", [])
+    item_by_key = {}
+    pham_count = 0
+    divine_count = 0
+
+    for item in items:
+        key = item_key(item)
+        if key in item_by_key:
+            issues.append(
+                f"{cid(chapter)} duplicate_reference_item_key: lane={key[0]} side={key[1]}"
+            )
+        item_by_key[key] = item
+        for flag in REFERENCE_FLAGS:
+            if flag not in item:
+                issues.append(
+                    f"{cid(chapter)} missing_reference_flag: lane={key[0]} side={key[1]} flag={flag}"
+                )
+            elif not isinstance(item.get(flag), bool):
+                issues.append(
+                    f"{cid(chapter)} non_boolean_reference_flag: lane={key[0]} side={key[1]} flag={flag}"
+                )
+        pham_count += int(item.get("use_pham_tran_ref") is True)
+        divine_count += int(item.get("use_divine_nalas_ref") is True)
+
+    expectation = REFERENCE_EXPECTATIONS.get(int(chapter))
+    if expectation:
+        if pham_count < expectation.get("min_pham", 0):
+            issues.append(
+                f"{cid(chapter)} reference_expectation_min_pham_failed: "
+                f"pham={pham_count} expected>={expectation['min_pham']}"
+            )
+        if divine_count < expectation.get("min_divine", 0):
+            issues.append(
+                f"{cid(chapter)} reference_expectation_min_divine_failed: "
+                f"divine={divine_count} expected>={expectation['min_divine']}"
+            )
+        if "max_divine" in expectation and divine_count > expectation["max_divine"]:
+            issues.append(
+                f"{cid(chapter)} reference_expectation_max_divine_failed: "
+                f"divine={divine_count} expected<={expectation['max_divine']}"
+            )
+
+    for batch in batches:
+        batch_no = int(batch.get("batch", 0))
+        batch_items = batch.get("items", [])
+        for flag in REFERENCE_FLAGS:
+            if flag not in batch:
+                issues.append(f"{cid(chapter)} batch_{batch_no:03d}_missing_reference_flag: {flag}")
+            elif not isinstance(batch.get(flag), bool):
+                issues.append(
+                    f"{cid(chapter)} batch_{batch_no:03d}_non_boolean_reference_flag: {flag}"
+                )
+
+        expected_pham = False
+        expected_divine = False
+        for batch_item in batch_items:
+            key = item_key(batch_item)
+            plan_item = item_by_key.get(key)
+            if plan_item is None:
+                issues.append(
+                    f"{cid(chapter)} batch_{batch_no:03d}_unknown_reference_item: "
+                    f"lane={key[0]} side={key[1]}"
+                )
+                continue
+            for flag in REFERENCE_FLAGS:
+                if flag not in batch_item:
+                    issues.append(
+                        f"{cid(chapter)} batch_{batch_no:03d}_item_missing_reference_flag: "
+                        f"lane={key[0]} side={key[1]} flag={flag}"
+                    )
+                elif batch_item.get(flag) != plan_item.get(flag):
+                    issues.append(
+                        f"{cid(chapter)} batch_{batch_no:03d}_item_reference_flag_mismatch: "
+                        f"lane={key[0]} side={key[1]} flag={flag}"
+                    )
+            expected_pham = expected_pham or bool(plan_item.get("use_pham_tran_ref"))
+            expected_divine = expected_divine or bool(plan_item.get("use_divine_nalas_ref"))
+
+        if bool(batch.get("use_pham_tran_ref")) != expected_pham:
+            issues.append(
+                f"{cid(chapter)} batch_{batch_no:03d}_pham_ref_aggregate_mismatch: "
+                f"batch={batch.get('use_pham_tran_ref')} expected={expected_pham}"
+            )
+        if bool(batch.get("use_divine_nalas_ref")) != expected_divine:
+            issues.append(
+                f"{cid(chapter)} batch_{batch_no:03d}_divine_ref_aggregate_mismatch: "
+                f"batch={batch.get('use_divine_nalas_ref')} expected={expected_divine}"
+            )
+
+
 def check_prompt_text(chapter, prompt_text, issues, context, expected_lanes=None):
     for guard in PROMPT_GUARDS:
         if guard not in prompt_text:
@@ -204,6 +343,7 @@ def check_prompt_plan(chapter, issues):
         issues.append(f"{cid(chapter)} plan_chapter_mismatch: {plan.get('chapter')}")
 
     check_lane_targets(chapter, plan, issues)
+    check_reference_routing(chapter, plan, issues)
 
     batches = plan.get("batches", [])
     pairs_per_batch = max(1, int(plan.get("pairs_per_batch", 1)))
@@ -321,8 +461,9 @@ def main():
 
     chapters = list_chapters(args)
     results = [verify_chapter(chapter, require_prompts=not args.skip_prompts) for chapter in chapters]
-    issues = [issue for item in results for issue in item["issues"]]
     prompts_required = not args.skip_prompts
+    global_issues = check_reference_assets() if prompts_required else []
+    issues = global_issues + [issue for item in results for issue in item["issues"]]
     summary = {
         "chapters": len(results),
         "story_guides_ok": sum(1 for item in results if item["story_guide_ok"]),
@@ -337,7 +478,7 @@ def main():
         "first_issue": issues[0] if issues else None,
         "ok": not issues,
     }
-    payload = {"summary": summary, "chapters": results}
+    payload = {"summary": summary, "global_issues": global_issues, "chapters": results}
 
     if args.json:
         print(json.dumps(payload, ensure_ascii=False, indent=2))
