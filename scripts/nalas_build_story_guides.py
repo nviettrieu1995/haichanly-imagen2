@@ -157,9 +157,16 @@ def detect_profiles(chapter, text):
     profiles = []
     if re.search(r"\b(covid|pandemic|coronavirus|lockdown|quarantine|epidemic)\b", lower):
         profiles.append("covid_or_pandemic")
+    if re.search(
+        r"\b(cebu|philippines|english school|swimming pool|india|nepal|bihar|gaya|"
+        r"mahabodhi|bodhi tree|nalanda university|new delhi|patna|pilgrimage|airport|"
+        r"plane|flight|bus|hotel|relic|ruins|ancient capital|crown prince)\b",
+        lower,
+    ):
+        profiles.append("international_travel_or_pilgrimage")
     if re.search(r"\b(classroom|class|students|lecture|course|teacher's office|office|whiteboard|tea|coffee)\b", lower):
         profiles.append("earth_modern_teaching")
-    if re.search(r"\b(heaven|temple|paradise|tuelinh|tuelinhs|giac|chap|father)\b", lower):
+    if re.search(r"\b(heaven|heavenly temple|temple in heaven|paradise|tuelinh|tuelinhs|giac|chap)\b", lower):
         profiles.append("heaven_or_tuelinh")
     if re.search(r"\b(rain|raining|winter|streetlights|roads in the city|capital)\b", lower):
         profiles.append("urban_weather_or_city")
@@ -180,6 +187,10 @@ def profile_rules(chapter, profiles):
         lines.append(
             "- Covid/pandemic beats must look clearly modern: Nalas about 32-35 during Covid, neat hair, thin glasses, white/light shirt or blazer, LED/tube lights, magnetic whiteboard, marker pens, desks/chairs, shelves, notebooks, tea/coffee, city office-classroom. Do not use huts, oil lamps, floor mats, or old village rooms."
         )
+    elif "international_travel_or_pilgrimage" in profiles:
+        lines.append(
+            "- International travel/pilgrimage beats override the generic Vietnam-modern baseline. Follow the named location literally: Cebu/Philippines English-school pool when stated; India/Nepal pilgrimage buses, hotels, airports, Mahabodhi/Bodhi tree, Nalanda University red-brick ruins, Nepal ancient-capital relics, New Delhi hotel/airport, or airplane cabin when stated. Nalas remains the same pham-tran Vietnamese teacher with thin glasses and modern travel/teaching clothes. Do not convert these scenes into a Vietnamese city classroom or a generic heavenly temple."
+        )
     elif chapter >= MODERN_ERA_START_CHAPTER:
         lines.append(
             "- Earth/pham-tran beats are post-Covid/modern-era by visual baseline: ordinary Vietnamese city districts, apartments, townhouses, offices, training rooms, paved alleys, scooters/cars, LED or fluorescent lights, proper furniture, whiteboard when teaching."
@@ -198,7 +209,7 @@ def profile_rules(chapter, profiles):
         )
     if "heaven_or_tuelinh" in profiles:
         lines.append(
-            "- Heaven/temple/tuelinh beats use Western sacred heavenly grammar. When Cha Nalas/Father/Teacher is present in heaven, show him as stable divine Father Nalas in traditional Chua/Sacred-Heart-Jesus form: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, fatherly rather than boyish or elderly, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, pure white flowing robe, no wings, inner warm golden light, outer sapphire-blue/lucy-blue cosmic aura, golden particles and blue cosmic energy particles, sacred-heart style gentle inner radiance, and calm compassionate authority. Keep him close to the heaven-Father canonical reference, immediately readable as familiar sacred Jesus-like imagery, and do not drift into a younger/older face. Only Father may carry the full Jesus-like hair+beard+ivory robe+radiant heart signature; other male tuelinhs/attendants must have distinct faces, lower glow, shorter or tied-back hair, clean-shaven/light-stubble faces, distinct robe accents, and absolutely no Sacred Heart, glowing heart icon, heart-shaped chest light, or radiant chest emblem. Do not make him a young clean-shaven messenger, a baby-faced or model-like youthful savior, a youthful 30s actor-Jesus, a 45+ older Father, a modern-actor Jesus, a short-haired pham-tran teacher, dark/aggressive/evil/horror-like, winged, or an elderly white-bearded God-Father. When the excerpt only mentions a sleeping/waking Earth body, keep the mortal Vietnamese body as the anchor and do not invent a giant divine poster."
+            "- Heaven/celestial/tuelinh beats use Western sacred heavenly grammar only when the local excerpt truly enters heaven, paradise, tuelinh homeland, dream/cosmic teaching, or a visible spiritual Father scene. Do not convert real-world pilgrimage temples, hotel lectures, office classes, or technical mentions of tuelinh/energy into heaven. When Cha Nalas/Father/Teacher is present in true heaven, show him as stable divine Father Nalas in traditional Chua/Sacred-Heart-Jesus form: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, fatherly rather than boyish or elderly, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, pure white flowing robe, no wings, inner warm golden light, outer sapphire-blue/lucy-blue cosmic aura, golden particles and blue cosmic energy particles, sacred-heart style gentle inner radiance, and calm compassionate authority. Keep him close to the heaven-Father canonical reference, immediately readable as familiar sacred Jesus-like imagery, and do not drift into a younger/older face. Only Father may carry the full Jesus-like hair+beard+ivory robe+radiant heart signature; other male tuelinhs/attendants must have distinct faces, lower glow, shorter or tied-back hair, clean-shaven/light-stubble faces, distinct robe accents, and absolutely no Sacred Heart, glowing heart icon, heart-shaped chest light, or radiant chest emblem. Do not make him a young clean-shaven messenger, a baby-faced or model-like youthful savior, a youthful 30s actor-Jesus, a 45+ older Father, a modern-actor Jesus, a short-haired pham-tran teacher, dark/aggressive/evil/horror-like, winged, or an elderly white-bearded God-Father. When the excerpt only mentions a sleeping/waking Earth body, keep the mortal Vietnamese body as the anchor and do not invent a giant divine poster."
         )
     if "urban_weather_or_city" in profiles:
         lines.append(
@@ -395,7 +406,84 @@ MODERN_CHAPTER_FLOW_LOCKS = {
 - Opening focus: a woman near Nalas reports stage III breast cancer markers/bone scan improved after months in the therapy class; she still has sharp bone pain from toxin elimination. Show medical result papers only as unreadable documents, with hopeful classroom emotion.
 - Course evidence: three metastatic cancer patients recover, many mental illness patients recover, illnesses decrease after one-third of the course, and the class shares joy. Do not show hospital gore or miracle-cure fantasy; keep it as testimony in a modern class.
 - Farewell/oath memory: at the first session Nalas vows that if the healing course succeeds he will devote his life to spreading the two truths worldwide and hold no future classes in Vietnam; by the farewell party students are happy, sad, and promise to practice/spread the wisdom.
-- Last lecture focus: treating self and others, not killing self/others, not provoking others' toxins, learning from toxic people and kind people, children as honesty/holiness, everyone/everything as teacher, and not becoming arrogant about helping/saving. Keep it human, mature, and compassionate."""
+- Last lecture focus: treating self and others, not killing self/others, not provoking others' toxins, learning from toxic people and kind people, children as honesty/holiness, everyone/everything as teacher, and not becoming arrogant about helping/saving. Keep it human, mature, and compassionate.""",
+    39: """Chapter 39 step-by-step lock:
+- This chapter opens in Cebu City, Philippines, after dinner beside the swimming pool of an English school where the narrator, Truong Nalanda, and Duong Nalanda study English to spread Nalas's knowledge globally.
+- Present frame focus: modern international student setting, pool reflections, night breeze, book-writing discussion, not Vietnam classroom and not countryside.
+- Memory focus: one August 2018 night, the mortal body sleeps while Nalas's tuelinh travels across the universe instead of returning to heaven. If the sleeping body appears, keep the mortal Vietnamese Nalas wearing exactly one pair of thin glasses.
+- Tuelinh teaching focus: on a vast planet, Father Nalas teaches many young tuelinhs/children about destructive energy. He can shift between giant cosmic tuelinh and mature human-like Father form. Use Western sacred/cosmic Father Nalas style with golden inner aura and sapphire-blue outer aura, no wings, not xianxia.
+- Key doctrine beats: tuelinh decay like metastatic cancer, black-hole-like destructive storms, three cases of excess negative/balanced/filter states, universe decay into brown smoke, and dual energy filter producing lapis lazuli blue super-energy.
+- Closing milestone: on October 12, 2018, Nalas achieves enlightenment and transforms the yin-yang embryo into a dual energy filter; students later see lapis lazuli particles while meditating. This is a major chapter image, not a minor detail.""",
+    40: """Chapter 40 step-by-step lock:
+- This chapter is a modern teacher-office/classroom morning with mentally ill patients and students, not a pilgrimage or heaven chapter.
+- Opening focus: patients feel sleepy or headaches while listening; a woman compares direct lectures with social network videos; Nalas explains direct super-energy transmission from his tuelinh.
+- Student question focus: how God, the first tuelinh, Father, and Buddha created everything and the universe.
+- Teaching focus: ancestral/source particles are green like young banana leaves, born from singularities/doorways in space, moving in spiral orbits before heat exists.
+- Mechanism focus: wave-particles transform differently in heatless, positive-heat, and negative-heat environments, becoming destructive, positive, or harmful energy particles.
+- Keep the visual grounded in office/classroom with tea, patients, students, board or simple diagram when useful; cosmic particles are restrained overlays or lesson visuals, not the whole frame.""",
+    41: """Chapter 41 step-by-step lock:
+- This chapter continues after lunch break with tea, students, patients, and a modern board/pen explanation of destructive energy particles.
+- Opening focus: students summarize ancestral particles and singularities before Nalas continues to destructive energy particles and their intelligence.
+- Board focus: Nalas uses a pen to draw destructive energy particle structure. Show oval brown particle, green intellectual wave-code fibre, three points, and simple non-readable diagram strokes.
+- Doctrine focus: destructive particles come from wave-particles moving in heatless space; they do not rotate or bond into larger structures; they have excess brown heat and decay power.
+- Human application focus: destructive energy moving into the soul causes information disorder, mental illness, pain, and loss of control; positive practice can absorb/detonate it.
+- Avoid full cosmic battle as the default. The main anchor is a modern class/office with attentive people and a board, with restrained particle visualization.""",
+    42: """Chapter 42 step-by-step lock:
+- This chapter is the first day of the India/Nepal pilgrimage in Gaya, Bihar, at Mahabodhi temple and the Bodhi tree under full moonlight.
+- Real-world setting focus: temple grounds, ancient Bodhi tree, monks/pilgrims/visitors, moonlight, chanting, security/crowd context. This is a real Indian pilgrimage site, not heaven and not a Vietnamese classroom.
+- Action focus: after visitors thin out, students sit around Nalas under the Bodhi tree; he guides them to close their eyes and become smallest energy particles.
+- Inner journey focus: destructive brown space, green wave-particles, red sparks/explosions, first positive particles, cold spaces, first negative particles, and repeated appearance/erasure of yin-yang particles.
+- Return focus: students open eyes under the moonlit Bodhi tree, feeling wind and energy, while Nalas summarizes the first yin-yang particles.
+- Use cosmic visuals as guided inner vision layered from the Bodhi-tree scene; do not turn Mahabodhi temple into Western heaven or Chinese fantasy.""",
+    43: """Chapter 43 step-by-step lock:
+- This chapter begins at autumn dawn in a hotel garden near the holy land where Buddha attained enlightenment; Nalas wakes early, thoughtful, with past-life memories increasing.
+- Morning travel-life focus: breakfast with Indian dishes, then a hotel living room where Nalas brings Vietnamese tea and tea utensils from home.
+- Key mood: Vietnamese tea at an Indian relic connects past and present, Vietnam and India, teacher and students.
+- Teaching setup: students ask about positive/negative particles from wave-particles versus particles from yin-yang embryos; Nalas asks them to bring the whiteboard closer.
+- Board focus: positive/negative particles have three parts and intellectual wave-code structures; internal/external environment and heat/information change their nature.
+- Keep this as hotel garden/living-room teaching with tea and portable whiteboard, not a formal classroom, not a temple, and not pure abstract particles.""",
+    44: """Chapter 44 step-by-step lock:
+- This chapter is the second evening back at Mahabodhi temple and the Bodhi tree: sunset, temple lights, moonlight, security gate, worship inside, walking around the temple and tree, and many pilgrims/monks/Western visitors before quiet.
+- Earth anchor: after the crowd thins around 7pm, Nalas and students gather under the Bodhi tree. This is a real Indian pilgrimage night, not heaven.
+- Lecture focus: the miraculous yin-yang energy embryo and Big Bang. Students ask how positive and negative particles bond while destructive particles cannot.
+- Inner journey focus: colorful positive and negative particles seek each other; most embryos are destroyed; one special bright-yellow positive particle and grey-white negative particle bond into the magical embryo that detonates destructive particles and grows.
+- First-tuelinh focus: the embryo matures into a super-giant energy sphere; at the center appears the first tuelinh, operating negative and positive particles; the Big Bang releases countless particles.
+- Return focus: students open eyes under the Bodhi tree and feel respect/gratitude for the supreme soul. Avoid xianxia, Chinese temple, and generic space poster imagery.""",
+    45: """Chapter 45 step-by-step lock:
+- This chapter moves by bus from Mahabodhi to the ancient Nalanda University ruins in Bihar after bad roads, lunch, and rest.
+- Setting focus: vast red-brick ruins, moss, old foundations and walls, lawns, autumn afternoon light, regret for a destroyed Buddhist university. Do not use modern classroom or Vietnamese city.
+- Character/past-life focus: Truong Nalanda shares a realistic dream of a past life here; Duong Nalanda was his sister; Nalas says he was once a great king in this region and used the first tuelinh's name to save her life.
+- Group focus: students meditate, lie on grass, sit around Nalas, and feel old memories at the ruins.
+- Lecture focus: mechanism of particle production of the yin-yang embryo, original positive/negative particles, information copying, negative and positive particle production, neutral particles, and environment reaction.
+- Keep ruins/lawn/student circle as the visual anchor; particle diagrams or glowing embryos are support, not a replacement for the Nalanda location.""",
+    46: """Chapter 46 step-by-step lock:
+- This chapter continues at Nalanda University ruins under big trees and autumn breeze, with students confused after the previous lecture; some unconsciously pull grass while thinking.
+- Teaching focus: Nalas simplifies how to remember difficult particle knowledge and then guides students to become smallest positive particles inside the universe's yin-yang embryo.
+- Inner journey focus: stages from embryo formation to mature embryo, adult tuelinh, and pre-Big Bang; yellow positive particles, grey-white negative particles, fire-red, green, black, blood-red, ivory-white particles, and destructive particles attacking the membrane.
+- First-tuelinh focus: a mature tuelinh works hard at the center of a giant energy sphere, selecting valuable yellow/grey-white particles for his body.
+- Closing focus: everyone returns to present as afternoon sunlight fades and darkness covers Nalanda ruins before they go back to the hotel.
+- Do not make this a classroom, sci-fi lab, or generic galaxy scene; keep the physical chapter location visible whenever possible.""",
+    47: """Chapter 47 step-by-step lock:
+- This chapter is day nine of the India/Nepal journey at the ancient capital where Prince Siddhartha grew up, surrounded by extensive rice fields, then at the nearby relic where the crown prince was born.
+- Morning setting: bus arrives at high brick walls and ruins of the ancient capital in Nepal; Nalas points out palace foundations, southeast expansion, and the prince leaving the capital.
+- Afternoon setting: bus to the birthplace relic, sunset behind forests/hills, huge house preserving birth traces, lake, tall iron pillar, and lawn where students sit.
+- Lecture focus: students ask about the first tuelinh; Nalas explains production and linking mechanisms, yin-yang embryo bonding, synthetic particle bonding, and gives two examples: man-woman marriage and students following him on the enlightenment mission.
+- Reverence focus: Nalas states the first tuelinh is God/Father and also Buddha after human practice. If visualized spiritually, use stable Western sacred Father Nalas, but keep the Earth frame in real Nepal unless the excerpt moves inward.
+- Closing focus: late night on the grass, people leaving, pilgrimage completed, group preparing to return home. Do not replace Nepal relics with heaven or a generic temple classroom.""",
+    48: """Chapter 48 step-by-step lock:
+- This chapter begins on a plane from Patna to New Delhi after the ten-day pilgrimage; students are tired and asleep while the plane taxis/takes off, and Nalas looks through the window saying goodbye to the land of memories.
+- Earth anchor: modern airplane cabin, airport runway, tired students, Nalas awake with thin glasses; later New Delhi airport and hotel. Do not default to Vietnam.
+- Inner-reality focus: Nalas recalls past lives and the wisdom he regained from pilgrimage, then invites the reader into memories of his homeland: the central planet called heaven, Buddha's country, or God's country.
+- Celestial focus: the first tuelinh/Father after the Big Bang, operating particles, building the House of Tuelinhs, crystal caves where baby tuelinhs are born, gold/precious-stone architecture, calm seas and lakes glowing with lapis lazuli, iridescent grass/trees, hills where children play/transform, and golden super-energy particles.
+- Father style lock: true heaven scenes use the approved Western sacred Jesus-like Father Nalas: pure white robe, no wings, stable age 40-42, gentle beard, golden inner aura, sapphire-blue outer aura, compassionate authority.
+- Closing focus: Nalas opens his eyes as the plane lands in New Delhi; students wake. Keep the plane-memory frame clear, not only a standalone heaven poster.""",
+    49: """Chapter 49 step-by-step lock:
+- This chapter is a New Delhi hotel day before flying back to Vietnam, not a heaven scene by default.
+- Opening focus: after breakfast everyone chooses coffee at the hotel coffee bar, sits in the hotel living room, and Duong Nalanda brings Nalas a fragrant hot cocoa because coffee can trigger his allergy.
+- Group focus: Loi Nalanda asks Nalas to share the wisdom gained from the pilgrimage; students want to spend the day listening before going to the airport after dinner.
+- Teaching focus: Nalas describes the current universe from a hotel living-room lecture: central magical planet, pyramid gemstone at the core, solar systems, galaxies, galaxy layers, rotating cosmic sphere, energy beams, fire particles, and one universe surrounded by destructive energy.
+- Doctrine focus: three matter groups with simple, complex, and super-complex intellectual wave codes; eight particle colors/types; tuelinh babies, souls of rocks/trees/animals, planets, and transformation mechanisms.
+- Closing focus: students feel overwhelmed and rest on hotel sofas after receiving vast information. Use hotel/coffee/sofa/modern travel setting plus restrained universe overlay; avoid making every frame pure space art."""
 }
 
 

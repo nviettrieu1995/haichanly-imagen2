@@ -112,7 +112,8 @@ EARTH_STAGE_RULE = """Pham-tran timeline / setting rule:
 - Early/pre-teaching ordinary life, especially Chapter 8: the setting is a poor, modest Vietnamese countryside/village home, not a city apartment or urban district. Keep the period modern enough for 2014-2019: clean T-shirt/polo/casual shirt, simple trousers, thin glasses, electric bulb or fluorescent tube light, fan when natural, cement or plain tile floor, painted or worn plaster/brick walls, simple wooden bed/table/chairs, notebooks/books, and low rural houses or a dark quiet village outside the window. The village may feel poor and mộc mạc, but never ancient, costume-drama, thầy đồ, monk, or old dynastic China. Avoid high-rise buildings, city skyline, many urban lights, glass office towers, apartment blocks, busy traffic, and polished city interiors in this early quê period.
 - Later teaching/classroom period: when the excerpt shows Nalas teaching classes, students/disciples, lectures, tea/coffee, rented classrooms, improved learning rooms, or organized study groups, move the Earth setting into a clean, bright, modern Vietnamese learning room in an ordinary city district. He has traveled, gathered disciples, and the disciples contribute to the class, so the room can be khang trang: proper tables and chairs, orderly shelves, books, notebooks, tea or coffee cups, potted plants, modest wall lights, and an organized serious classroom feel. Do not make it a rustic tea house, antique wooden room, ancient classroom, corporate luxury office, hotel, temple fantasy, or historical costume room.
 - Covid / pandemic teaching period, around 2020: when the excerpt enters Covid-19, pandemic, lockdown, quarantine, infectious disease, or post-pandemic mental-health class material, raise the production value clearly above earlier scenes. Nalas is about 32-35, neat and formal: white button-down shirt or light dress shirt, optionally a dark blazer, tidy hair, thin glasses, compassionate and knowledgeable. Use a proper modern Vietnamese office-classroom or training room: LED ceiling panels or fluorescent tube lights, office-style desks and chairs, a real magnetic whiteboard or whiteboard on wheels, visible marker pens and eraser, organized notes, bookshelves, tea/coffee, and students seated like a serious modern class. The whiteboard may be clean or contain simple non-readable marker strokes/diagrams; avoid fake legible text. Avoid hospital drama unless the excerpt is medical; avoid sci-fi lab, corporate luxury, hotel styling, old wooden tea room, and ancient classroom.
-- Post-Covid modern era: from Chapter 16 onward, Earth/pham-tran scenes are never the old oil-lamp poverty look and must not become rural river/countryside scenes. Nalas is about 32-35 during Covid and gradually older after that. Keep the approved face/body continuity, but make him more mature, established, and teacher-like. Default to normal Vietnamese city districts in 2020-2026: ordinary wards, urban neighborhoods, modern homes, apartments, townhouses, offices, classrooms, rented training rooms, paved streets, alleys, shopfronts, streetlights, scooters/cars when natural, electric lights, whiteboards, office desks/chairs, shelves, notebooks, tea/coffee, phones or laptops only when natural, and a world that has visibly moved forward. If water is explicitly necessary, make it an urban canal/lake/riverfront promenade with concrete paths, railings, streetlights, buildings, apartments/townhouses, traffic, and city context; never scenic countryside-water."""
+- Post-Covid modern era: from Chapter 16 onward, Earth/pham-tran scenes are never the old oil-lamp poverty look and must not become rural river/countryside scenes. Nalas is about 32-35 during Covid and gradually older after that. Keep the approved face/body continuity, but make him more mature, established, and teacher-like. Default to normal Vietnamese city districts in 2020-2026: ordinary wards, urban neighborhoods, modern homes, apartments, townhouses, offices, classrooms, rented training rooms, paved streets, alleys, shopfronts, streetlights, scooters/cars when natural, electric lights, whiteboards, office desks/chairs, shelves, notebooks, tea/coffee, phones or laptops only when natural, and a world that has visibly moved forward. If water is explicitly necessary, make it an urban canal/lake/riverfront promenade with concrete paths, railings, streetlights, buildings, apartments/townhouses, traffic, and city context; never scenic countryside-water.
+- International travel/pilgrimage exception: when the excerpt names Cebu/Philippines, India, Nepal, Bihar, Gaya, Mahabodhi, Bodhi tree, Nalanda University, New Delhi, Patna, airport, plane, bus, hotel, relic, ruins, or pilgrimage, follow that named place literally. Keep Nalas as the same Vietnamese pham-tran teacher with thin glasses and modern travel clothes, but do not force the setting back into Vietnam or a generic office-classroom."""
 
 
 PHAM_TRAN_PHASE_TIMELINE = """Phase timeline lock:
@@ -120,12 +121,12 @@ PHAM_TRAN_PHASE_TIMELINE = """Phase timeline lock:
 2. Guided study / meeting the spiritual teacher: still grounded and modest, with travel/visits and skeptical human emotion. If a male guide leads him to a woman teacher, show a real adult male guide and the woman teacher as concrete story characters, not vague symbols. Keep the setting rural/modest or transitional unless the excerpt clearly moves elsewhere.
 3. After he begins teaching / gathering disciples: the environment improves. Use cleaner, brighter Vietnamese learning rooms, proper tables/chairs, bookshelves, notebooks, tea/coffee, organized students, and a room that feels supported by disciples. This can look modern and khang trang, but not corporate luxury or a hotel.
 4. Covid and post-Covid: clearly modern 2020+ office-classroom/training-room language. Use LED/tube lights, magnetic whiteboard or whiteboard on wheels, markers/eraser, desks/chairs, shelves, notebooks, tea/coffee, and a neat formal Nalas around age 32-35 during Covid.
-Chapter mapping: C008 belongs to phases 1-2, C009-C015 belong to phase 3 unless the local excerpt explicitly says flashback/past life, and C016+ belongs to phase 4."""
+Chapter mapping: C008 belongs to phases 1-2, C009-C015 belong to phase 3 unless the local excerpt explicitly says flashback/past life, and C016+ belongs to phase 4. International travel/pilgrimage chapters still follow their named real-world location instead of defaulting to Vietnam."""
 
 
 STORY_FOCUS_PRIORITY_RULE = """Story focus hierarchy:
 1. Character identity and relationship are the first priority: Nalas's correct mortal/divine form, Giac/Chap/five messengers, students, mothers, patients, named examples, and whether the scene is Earth, dream, or heaven.
-2. Setting and timeline are the second priority: C008 poor modern countryside, C009-C015 early teaching rooms, C016+ modern/Covid/post-Covid office-classrooms, and Western sacred heaven for true celestial scenes.
+2. Setting and timeline are the second priority: C008 poor modern countryside, C009-C015 early teaching rooms, C016+ modern/Covid/post-Covid office-classrooms, named international travel/pilgrimage locations when the excerpt says Cebu/India/Nepal/New Delhi, and Western sacred heaven for true celestial scenes.
 3. The local action/emotion is the third priority: a question, tea pause, class reaction, rain outside the office, sleeping body, mother waiting, pandemic memory, group practice, or heavenly teaching.
 4. Secondary props, energy particles, diagrams, symbolic overlays, and doctrine visuals are optional support. Use them only when they clarify the beat; do not overload a frame with every doctrine term or tiny detail."""
 
@@ -210,7 +211,29 @@ Businessman and producer toxins. Full modern class; students say repeated toxin 
     37: """C037 flow lock:
 Animals and all species. Opening recalls taming animals so their souls may become humans. Key woman: family bought a mountain for stone exploitation, mental health problems, snake/tiger hallucinations, then sold the mountain and changed business. Include animal/tree/rock/soil souls, destroyed mountain habitat, dog-slaughter neighborhood examples, and toxin images as a short film. Keep environmental and compassionate; no graphic slaughter or horror.""",
     38: """C038 flow lock:
-Final toxin-removal lecture: treating yourself and others. Opening testimony: woman reports stage III breast cancer markers/bone scan improved, with sharp bone pain from toxin elimination; show unreadable medical papers and hopeful class emotion. Course evidence: cancer and mental illness patients recover, class shares joy, farewell/oath memory, Nalas vows to spread the two truths worldwide after success and no future Vietnam classes. Last lecture covers self/others, not killing self/others, not provoking toxins, children, everyone as teacher, and humble helping."""
+Final toxin-removal lecture: treating yourself and others. Opening testimony: woman reports stage III breast cancer markers/bone scan improved, with sharp bone pain from toxin elimination; show unreadable medical papers and hopeful class emotion. Course evidence: cancer and mental illness patients recover, class shares joy, farewell/oath memory, Nalas vows to spread the two truths worldwide after success and no future Vietnam classes. Last lecture covers self/others, not killing self/others, not provoking toxins, children, everyone as teacher, and humble helping.""",
+    39: """C039 flow lock:
+Cebu City, Philippines frame plus August/October 2018 cosmic memory. Open beside an English-school swimming pool after dinner with Truong and Duong discussing English study and book writing. Then show Nalas's tuelinh leaving the sleeping mortal body to teach young tuelinhs on a vast planet about destructive energy, decay, universe collapse, dual energy filter, and lapis lazuli blue super-energy. Closing milestone: October 12, 2018 dual-filter enlightenment and students seeing lapis lazuli particles while meditating. Keep mortal body with glasses; true Father/tuelinh scenes use Western sacred Jesus-like Father Nalas, no wings.""",
+    40: """C040 flow lock:
+Modern teacher-office/classroom morning with mentally ill patients and students. Patients feel sleepy/headaches; a woman asks about direct lectures versus social network videos; Nalas explains super-energy transmission, ancestral/source particles, green young-banana-leaf wave-particles, singularity doors, spiral movement, and transformations in heatless/positive/negative heat environments. Keep office/classroom, tea, patients, students, and restrained particle diagrams; not heaven, not pilgrimage.""",
+    41: """C041 flow lock:
+After lunch break and tea in a modern office/classroom, Nalas teaches destructive energy particles and their intelligence. He draws on a board with a pen: oval brown destructive particle, green intellectual wave-code fibre, three points, vibration/intellect segments. Focus on destructive particles from heatless wave-particles, no rotation/bonding, excess brown heat, positive/negative values, and mental illness/information disorder application. Avoid pure cosmic battle as default.""",
+    42: """C042 flow lock:
+First day of India/Nepal pilgrimage at Mahabodhi temple and Bodhi tree in Gaya/Bihar under full moon. Real Indian temple grounds, monks/pilgrims/visitors, chanting, moonlight, students sitting around Nalas under the Bodhi tree. Guided inner journey: become smallest particles, witness brown destructive space, green wave-particles, red explosions, first positive/negative particles, repeated appearance/erasure of yin-yang particles. Return to moonlit Bodhi tree. This temple is real-world pilgrimage, not heaven.""",
+    43: """C043 flow lock:
+Autumn dawn hotel garden near Buddha's enlightenment land, then breakfast and hotel living room with Vietnamese tea utensils. Nalas and students share Vietnamese tea, then bring a whiteboard closer for the lesson. Focus on positive/negative particles from wave-particles, three-part particle structure, internal/external environment, heat as information, and the difficulty of forming yin-yang particles. Hotel garden/living room, tea, and portable board anchor the chapter; not formal classroom or pure abstract space.""",
+    44: """C044 flow lock:
+Second evening at Mahabodhi temple/Bodhi tree: sunset, temple lights, moonlight, security gate, worship, walking around the tree, pilgrims/monks/Western visitors. After the crowd thins, students gather under the tree for the lesson on miraculous yin-yang energy embryo and Big Bang. Inner journey: colorful particles seek each other; one bright-yellow positive particle and one grey-white negative particle bond, survive destructive attacks, mature into a giant sphere, reveal the first tuelinh, then Big Bang releases particles. Return to Bodhi tree.""",
+    45: """C045 flow lock:
+Bus from Mahabodhi to ancient Nalanda University ruins in Bihar; bad roads, lunch/rest, red-brick walls/foundations, moss, vast lawns, autumn afternoon, regret for the destroyed Buddhist university. Truong remembers a past life; Duong was his sister; Nalas says he was once king here and used the first tuelinh name to save her. Students meditate/rest on grass, then Nalas teaches particle production of the yin-yang embryo. Keep Nalanda ruins/lawn visible, not a generic class.""",
+    46: """C046 flow lock:
+Continuation at Nalanda University ruins under large trees and cool autumn breeze. Students are confused after difficult lectures, some pulling grass unconsciously. Nalas guides them to become positive particles inside the universe's yin-yang embryo and observe production stages: embryo, mature embryo, adult tuelinh, pre-Big Bang, yellow/grey-white/fire-red/green/black/blood-red/ivory particles, destructive attacks, first tuelinh selecting particles. Return to fading afternoon and hotel.""",
+    47: """C047 flow lock:
+Day nine in Nepal: ancient capital where Prince Siddhartha grew up, high brick walls, rice fields, palace foundations, southeast exit; then bus to birthplace relic at sunset with huge house, lake, tall iron pillar, lawn. Students ask about the first tuelinh; Nalas explains production/linking, yin-yang embryo bonding, synthetic particle bonding, marriage example and teacher-student mission example. He identifies first tuelinh as God/Father/Buddha. Keep real Nepal relics unless excerpt moves inward.""",
+    48: """C048 flow lock:
+Plane from Patna to New Delhi after pilgrimage. Students sleep from exhaustion; Nalas stays awake by the airplane window, then closes eyes and recalls wisdom/past lives. Inner memory shows the central heavenly planet/House of Tuelinhs after Big Bang: divine Father/first tuelinh, crystal caves for baby tuelinhs, gold and precious-stone architecture, calm lapis-lazuli seas/lakes, glowing grass/trees/hills, golden super-energy. End with plane landing New Delhi and students waking. Keep plane-memory frame clear.""",
+    49: """C049 flow lock:
+New Delhi hotel day before flying back to Vietnam. After breakfast, students choose coffee at hotel coffee bar; Duong brings Nalas hot cocoa; Loi asks him to share pilgrimage wisdom. Hotel living room lecture on current universe: central magical planet, pyramid gemstone, solar systems/galaxies/layers, rotating cosmic sphere, energy beams, fire particles, one universe outside destructive energy, three matter groups, eight particle colors/types, tuelinh babies, souls of rocks/trees/animals, transformation mechanisms. Students rest on sofas afterward."""
 }
 
 
@@ -218,6 +241,7 @@ VIETNAM_VISUAL_IDENTITY = """Vietnamese visual identity rule:
 Use an international modern cinematic/editorial look: premium lensing, controlled natural light, restrained color grade, tactile realism, mature composition. Modernity should come from camera grammar and polish, not from adding modern props unless the excerpt requires them.
 Keep the cultural ground clearly Vietnam through faces, body language, warm family/classroom atmosphere, books, tea/coffee, plants, and practical rooms. The pham-tran timeline changes by story stage: early Chapter 8/pre-teaching scenes are poor modern Vietnamese countryside, with low houses, sparse lights, simple electric lighting, cement/tile floors, modest furniture, and a quiet rural night; later teaching/Covid/post-Covid scenes move into cleaner, brighter city classrooms or office-classrooms. Poverty should read as modest present-day rural life, not old dynastic deprivation, oil-lamp nostalgia, or patched costume. If an early frame needs atmosphere, choose a simple village home, lane, yard, or window view with low houses and few lights, not high-rises or a city skyline. In later classroom/lecture/tea/coffee scenes, Vietnam may look cleaner, brighter, more spacious, and better funded: clean teaching rooms, proper tables and chairs, shelves, notebooks, cups of tea or coffee, and organized disciples/students, while keeping a warm Vietnamese human atmosphere. In Covid/pandemic-era and all post-Covid Earth scenes, make the world distinctly modern and polished: LED/tube lighting, office-like tables and chairs, a proper magnetic whiteboard, marker pens, eraser, organized seating, and a serious modern training-room feel. Avoid rural river-delta/water-village nostalgia in modern teaching scenes; if water is unavoidable after the modern shift, use an urban canal/lake/riverfront with concrete paths, streetlights, apartments/townhouses, and city context.
 Phase override: C008 is the poor modern countryside / return-to-wisdom phase. C009-C015 are early teaching and disciple-gathering chapters, so Earth scenes default to cleaner rented classrooms or supported learning rooms unless the local excerpt is a flashback. C016+ is the Covid/post-Covid modern office-classroom era.
+International travel override: when the excerpt names Cebu/Philippines, India, Nepal, Bihar, Gaya, Mahabodhi, Bodhi tree, Nalanda University, New Delhi, Patna, airport, plane, bus, hotel, relic, ruins, or pilgrimage, follow that named real-world place literally while keeping Nalas as the same Vietnamese pham-tran teacher with thin glasses and modern travel clothes.
 World split rule:
 - Pham tran / Earth / ordinary life: clearly Vietnamese, grounded, modern-cinematic, humble, no Jesus/church/angel styling, no halo or luminous ring/crown/corona above any human head.
 - Thien duong / thien gioi / heaven / dream / tuelinh / cosmic memory / golden spiritual space: show Cha Nalas Nalanda in his stable divine Father manifestation, a Western sacred / traditional Christian Sacred-Heart Jesus heavenly form rather than the pham-tran Vietnamese teacher. Use Renaissance/Baroque-inspired heaven, white-gold clouds, cathedral-like depth, marble/ivory/gold atmosphere, Jesus-like compassion, saintly calm, angelic or light-messenger presence when supported by the excerpt. His heavenly identity must be stable and close to the canonical heaven-Father reference: one fixed traditional Jesus-like portrait in every lane, apparent age 40-42, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, pure white flowing robe, no wings, inner warm golden light, outer sapphire-blue/lucy-blue cosmic aura, golden particles and blue cosmic energy particles, sacred-heart style gentle inner radiance, and calm compassionate Jesus-like authority. No other male tuelinh, attendant, or messenger should share this full signature; surrounding male figures should mostly be short-haired or clean-shaven/light-stubble, with lower glow, distinct robe accents, and no Sacred Heart / glowing heart icon / heart-shaped chest light / radiant chest emblem. Do not make him elderly, grey-haired, white-bearded, clean-shaven, youthful, baby-faced, short-haired, youthful 30s actor-Jesus, 45+ old Father, model-like fantasy handsome, or visually identical to Giac/Chap.
@@ -256,7 +280,7 @@ COMMON_NEGATIVE_PROMPT = (
 
 
 CELESTIAL_SCENE_TERMS = re.compile(
-    r"\b(dream|dreams|dreamed|temple|lake in heaven|tuelinh space|cosmic|"
+    r"\b(dream|dreams|dreamed|heavenly temple|temple in heaven|lake in heaven|tuelinh space|cosmic|"
     r"golden energy|spiritual space|dragon|memory travel)\b",
     flags=re.I,
 )
@@ -292,9 +316,20 @@ DIVINE_NALAS_PRESENCE_TERMS = re.compile(
 EXPLICIT_EARTH_SETTING_TERMS = re.compile(
     r"\b(streetlights|roads in the city|capital|classroom|students|student|"
     r"office|rented classroom|house to lecture|coffee|cafe|hospital|ward street|"
-    r"apartment|townhouse|shopfront|scooters|cars)\b",
+    r"apartment|townhouse|shopfront|scooters|cars|hotel|airport|plane|flight|bus|"
+    r"pilgrimage|relic|ruins|mahobadhi|mahabodhi|bodhi tree|nalanda university|"
+    r"cebu|philippines|india|nepal|new delhi|patna|bihar|gaya)\b",
     flags=re.I,
 )
+
+INTERNATIONAL_TRAVEL_TERMS = re.compile(
+    r"\b(cebu|philippines|english school|swimming pool|india|nepal|bihar|gaya|"
+    r"mahabodhi|bodhi tree|nalanda university|new delhi|patna|pilgrimage|airport|"
+    r"plane|flight|bus|hotel|relic|ruins|ancient capital|crown prince)\b",
+    flags=re.I,
+)
+
+INTERNATIONAL_TRAVEL_CHAPTERS = {39, 42, 43, 44, 45, 46, 47, 48, 49}
 
 EARTH_TEACHING_TERMS = re.compile(
     r"\b(human world|human life|classroom|students|student|lecture|lectures|"
@@ -427,10 +462,28 @@ def chapter_is_early_teaching(chapter_number):
     return EARLY_TEACHING_START_CHAPTER <= int(chapter_number) < MODERN_ERA_START_CHAPTER
 
 
+def chapter_is_international_travel(chapter_number):
+    try:
+        return int(chapter_number) in INTERNATIONAL_TRAVEL_CHAPTERS
+    except (TypeError, ValueError):
+        return False
+
+
 def frame_visual_mode_note(excerpt, anchor, chapter_number):
+    text = f"{excerpt}\n{anchor}"
     if frame_is_celestial(excerpt, anchor):
         has_divine_nalas = frame_has_divine_nalas_presence(excerpt, anchor, chapter_number)
-        if chapter_is_modern_era(chapter_number):
+        if INTERNATIONAL_TRAVEL_TERMS.search(text) or chapter_is_international_travel(chapter_number):
+            mortal_room = (
+                "If the sleeping, waking, or traveling mortal body appears, keep the Earth layer "
+                "in the literal international travel/pilgrimage setting named by the excerpt: "
+                "Cebu/Philippines English-school pool, India/Nepal pilgrimage bus, Mahabodhi/Bodhi "
+                "tree, Nalanda University red-brick ruins, Nepal relic, New Delhi hotel, airport, "
+                "or airplane cabin. Nalas remains the same Vietnamese pham-tran teacher wearing "
+                "thin glasses and modern travel/teaching clothes. Do not convert the Earth layer "
+                "into a Vietnamese classroom or city street."
+            )
+        elif chapter_is_modern_era(chapter_number):
             mortal_room = (
                 "If the sleeping or waking mortal body appears, keep that body in the modern "
                 "Vietnamese era: around Covid, Nalas is about 32-35, neat and formal, and the room "
@@ -491,6 +544,17 @@ def frame_visual_mode_note(excerpt, anchor, chapter_number):
                 "and sacred, without Chinese palace, pagoda, red lantern, pearl-chasing, or xianxia styling."
             )
         return note
+    if INTERNATIONAL_TRAVEL_TERMS.search(text) or chapter_is_international_travel(chapter_number):
+        return (
+            "This lane is pham tran / Earth / real-world international travel or pilgrimage unless "
+            "the local excerpt explicitly moves into heaven, dream, tuelinh, or cosmic memory. Keep "
+            "the named setting literal: Cebu/Philippines English-school pool, India/Nepal pilgrimage "
+            "bus or relic, Mahabodhi temple and Bodhi tree, ancient Nalanda University red-brick ruins, "
+            "Nepal birthplace/capital relic, New Delhi hotel/airport, or airplane cabin. Nalas remains "
+            "the Vietnamese mortal teacher with thin glasses and modern travel/teaching clothes. Do not "
+            "use Jesus, church, angel, cathedral, halo, Western heavenly imagery, Vietnamese city-classroom "
+            "default, or Chinese temple fantasy in these Earth travel scenes."
+        )
     return (
         "This lane is pham tran / Earth / ordinary life unless the local excerpt explicitly "
         "moves into heaven or dream. Keep it Vietnamese, grounded, and modern-cinematic; do not "
@@ -518,6 +582,16 @@ def frame_sleep_body_note(excerpt, anchor, chapter_story_guide="", lane_index=0)
 def frame_earth_stage_note(excerpt, anchor, chapter_number):
     text = f"{excerpt}\n{anchor}"
     if frame_is_celestial(excerpt, anchor):
+        if INTERNATIONAL_TRAVEL_TERMS.search(text) or chapter_is_international_travel(chapter_number):
+            return (
+                "Earth stage note: if the mortal body or real-world layer appears inside this "
+                "celestial/memory lane, keep it in the literal international travel setting named "
+                "by the excerpt: Cebu/Philippines, India/Nepal pilgrimage, Mahabodhi/Bodhi tree, "
+                "Nalanda University ruins, Nepal relic, New Delhi hotel/airport, or airplane cabin. "
+                "Keep Nalas as the approved Vietnamese pham-tran teacher with thin glasses and modern "
+                "travel clothes. Do not force the Earth layer into Vietnam, a generic classroom, or old "
+                "countryside styling."
+            )
         if chapter_is_modern_era(chapter_number):
             return (
                 "Earth stage note: if the sleeping or waking mortal body appears inside this "
@@ -539,7 +613,7 @@ def frame_earth_stage_note(excerpt, anchor, chapter_number):
             "Earth stage note: if the sleeping or waking mortal body appears inside this celestial "
             "lane, keep that body in the approved Vietnamese pham-tran identity; otherwise do not "
             "force the Earth classroom setting into true heaven/dream imagery."
-        )
+            )
     if COVID_STAGE_TERMS.search(text):
         return (
             "Earth stage note: this is the Covid/pandemic-era teaching or public-health period. "
@@ -558,6 +632,18 @@ def frame_earth_stage_note(excerpt, anchor, chapter_number):
             "unless the excerpt is medical; avoid sci-fi lab, corporate luxury, hotel styling, old "
             "wooden tea room, rustic poverty, countryside riverbank, village canal, temple fantasy, "
             "or ancient classroom."
+        )
+    if INTERNATIONAL_TRAVEL_TERMS.search(text) or chapter_is_international_travel(chapter_number):
+        return (
+            "Earth stage note: this excerpt is real-world international travel/pilgrimage. Follow "
+            "the named place literally instead of the generic C016+ Vietnam baseline: Cebu/Philippines "
+            "English-school pool, India/Nepal pilgrimage roads and buses, Mahabodhi temple/Bodhi tree, "
+            "Nalanda University red-brick ruins, Nepal ancient-capital or birthplace relic with lake/"
+            "iron pillar, New Delhi hotel/airport, or airplane cabin. Nalas remains the same approved "
+            "Vietnamese mortal teacher with thin metal glasses, modern clean travel/teaching clothes, "
+            "and compassionate scholarly presence. Avoid Vietnamese city classroom defaults, old rural "
+            "poverty rooms, Chinese temple fantasy, and pure heaven styling unless the excerpt explicitly "
+            "enters heaven or cosmic memory."
         )
     if chapter_is_modern_era(chapter_number):
         age_note = (
