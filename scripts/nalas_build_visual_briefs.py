@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PIPELINE_ROOT = ROOT / "nalas_chapters_08_86"
 TEXT_DIR = PIPELINE_ROOT / "chapter_text"
 BRIEF_DIR = PIPELINE_ROOT / "chapter_visual_briefs"
+GUIDE_DIR = PIPELINE_ROOT / "chapter_story_guides"
 EARLY_TEACHING_START_CHAPTER = 9
 MODERN_ERA_START_CHAPTER = 16
 
@@ -50,12 +51,27 @@ def chapter_title(text):
     return lines[0] if lines else "Untitled chapter"
 
 
+def chapter_flow_lock(chapter):
+    guide_path = GUIDE_DIR / f"C{chapter:03d}.md"
+    if not guide_path.exists():
+        return ""
+    guide_text = guide_path.read_text(encoding="utf-8", errors="replace")
+    match = re.search(
+        rf"(Chapter {chapter} step-by-step lock:\n.*?)(?=\n- Story focus priority:|\Z)",
+        guide_text,
+        flags=re.S,
+    )
+    return match.group(1).strip() if match else ""
+
+
 def build_brief(chapter):
     text_path = TEXT_DIR / f"C{chapter:03d}.txt"
     text = text_path.read_text(encoding="utf-8")
     words = re.findall(r"\S+", text)
     title = chapter_title(text)
     opening = compact(excerpt_at(words, 0.0))
+    flow_lock = chapter_flow_lock(chapter)
+    flow_lock_section = f"\nChapter flow lock from story guide:\n{flow_lock}\n" if flow_lock else ""
     modern_era_note = ""
     if chapter >= MODERN_ERA_START_CHAPTER:
         modern_era_note = (
@@ -114,6 +130,7 @@ This brief is derived from the chapter text, and every image lane must still obe
 
 Opening anchor:
 {opening}
+{flow_lock_section.rstrip()}
 
 Visual direction:
 - Prefer concrete scenes, people, settings, actions, and emotional states named in the local excerpt.

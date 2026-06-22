@@ -329,7 +329,73 @@ MODERN_CHAPTER_FLOW_LOCKS = {
 - Setting baseline: modern classroom with serious students; teacher asks about experiences breaking toxic ice in two interaction groups.
 - Student case: a student reports nearly twenty years of demon/ancestor possession phenomena and asks why the knowledge heals mental illness.
 - Doctrine focus: meditation and worship rituals do not produce true enlightenment; they can reveal old soul memories but not complete the human practice mission.
-- Late focus: harmful ritual teachers, animal killing, sudden death, reincarnation with possession/mental illness, and forgiving harm to animals/others/self. Keep the tone compassionate, not horror."""
+- Late focus: harmful ritual teachers, animal killing, sudden death, reincarnation with possession/mental illness, and forgiving harm to animals/others/self. Keep the tone compassionate, not horror.""",
+    28: """Chapter 28 step-by-step lock:
+- This chapter is eliminating toxins as a national leader, not a generic healing-class chapter.
+- Setting baseline: modern Vietnamese therapy classroom/training room; Nalas enters, students report strong body/soul reactions and improved illness, then he drinks hot tea before teaching.
+- Key student case: a depressed male student with fear, anxiety, fast heartbeat, medication history, and repeated dreams of being a general ordering killings. Show him as a present-day student sharing in class; dream/leader images should be restrained memory overlays, not battlefield spectacle.
+- National-leader focus: leadership toxins include arrogance, exploiting people, unfair taxes, disaster/epidemic profiteering, oppression, inciting hatred, invasion, and causing soldiers/people to die.
+- Closing practice: the student and class face harmful leader-memory information, awaken positive/neutral/negative particles, and use enlightened wisdom to neutralize toxins. Keep it civic, compassionate, and non-graphic.""",
+    29: """Chapter 29 step-by-step lock:
+- This chapter continues after lunch break from the leader lesson into toxins as citizens of the nation.
+- Setting baseline: the same modern classroom after a few hours' break; students become quiet when Nalas enters; he starts after the first cup of tea.
+- Opening student case: a student reports difficulty breathing, headache, fear, sweating, and recognizing past-life harm as a leader; this proves that toxin removal can prevent future illness for children and elders.
+- Citizen focus: leader is not master of the people; every leader is also a citizen. Show law, rights, obligations, working citizens, families, study, poverty, deception, theft, prohibited trade, and social unity as modern human examples.
+- Closing practice: students speak to the tuelinh within, grateful for suffering and the three secrets, determined to squeeze out citizen-role toxins and help everyone/species. Avoid propaganda posters, flags as the only subject, or generic patriotic imagery.""",
+    30: """Chapter 30 step-by-step lock:
+- This chapter is toxins in love between men and women. Keep it as a serious modern classroom discussion, not romance-poster imagery.
+- Opening focus: a student asks about same-sex love in different countries/religions; Nalas answers through smallest energy particles, the family model, and male/female yin-yang simulation.
+- Human examples: love betrayal, fear of betrayal, mental illness, loss of self-control, sexual harassment, coercive or exploitative behavior, suicide pressure, and teaching young people about genuine love. Treat these as compassionate consequence scenes, never explicit sexuality or shock images.
+- Doctrine focus: man/woman as symbolic positive/negative particle functions, family reproduction, yin-yang embryo movement, toxins absorbing/radiating information, and sustainable vs destructive transformation.
+- Closing practice: forgiveness around past-life love harms, building genuine love/family, and neutralizing harmful love information. Keep all figures adult and clothed; no erotic staging.""",
+    31: """Chapter 31 step-by-step lock:
+- This chapter continues on Sunday afternoon from love toxins into husband-wife/spouse relationship toxins.
+- Opening focus: a student asks about gender reassignment and how to practice positive energy after understanding the two truths; show as respectful classroom Q&A, not body spectacle.
+- Key case: a Vietnamese woman shares suffering with a gambling-addicted husband, family debt, parents paying debts, pressure raising children, and wanting divorce. She should be visible when the excerpt reaches that story.
+- Spouse focus: divorce, incompatibility, ignorance of why people marry, greed through spouse/relatives, bribery via a wife, and pressure/compression in married life. Use modern homes/offices/classroom examples, not melodrama.
+- Closing practice: husband and wife learning to understand each other's toxins, preserve family through respect/love, forgive past spouse harms, and build happy married life. Keep tone compassionate and non-judgmental.""",
+    32: """Chapter 32 step-by-step lock:
+- This chapter is the relationship between parents and children and must show modern family pressure, not only abstract energy diagrams.
+- Opening focus: Nalas asks whether parents have the right to decide children's education, career, future, and life; students answer that each person has an independent soul.
+- Student examples: academic pressure leading to suicide note, abortion from fear or economics, parents not providing education, wealthy family property discrimination, neglected sick parents, and children hating parents. Show these carefully as aftermath, family tension, or classroom retelling, not graphic scenes.
+- Doctrine focus: parents symbolize yin-yang embryo; children symbolize smallest particles born from it. Children can reflect parents' wisdom/toxins like a mirror.
+- Closing practice: release painful parent-child memories, awaken particle groups, use love/solidarity and enlightened wisdom to heal the parent-child relationship.""",
+    33: """Chapter 33 step-by-step lock:
+- This chapter is sibling relationships as a symbol of synthetic energy particles in tuelinh structure.
+- Opening focus: Nalas asks students to guess the sibling symbol; students guess yin-yang embryo or tuelinhs, then he explains synthetic positive/neutral/negative energy particles.
+- Doctrine focus: neutral particles transmit information, positive particles protect reliable sustainable information, negative particles vibrate signals; blocked information creates hallucination, depression, anxiety, and schizophrenia.
+- Human examples: siblings competing for wealth, land, money, positions, throne/power, and even knowledge. The Buddha/Devadatta example appears as a restrained historical/Buddhist teaching reference only when the excerpt reaches it; do not turn the whole chapter into ancient temple fantasy.
+- Closing practice: awaken sibling-related particles, let enlightened wisdom re-encode toxins, and release competition. Use modern family scenes and classroom explanation first.""",
+    34: """Chapter 34 step-by-step lock:
+- This chapter opens with course-comparison Q&A before the employer-employee lesson.
+- Opening focus: student asks why this body-wisdom-mind healing course is stronger than previous courses; Nalas explains one pandemic-year research break, transforming smallest-particle knowledge into understandable lectures, and stronger soul/brain reactions.
+- Course setting: modern Covid/post-Covid classroom or teacher office with hot tea, LED/tube lights, whiteboard/marker, organized students, patients and relatives persevering through strong reactions.
+- Employer-employee focus: social Tao roles, cause/effect of being boss/employee/leader/rich/poor, mutual benefit, employers not exploiting and employees not harming/resenting.
+- Closing practice: both sides understand the two truths, help each other, eliminate toxins, and produce sustainable energy particles. Keep workplace examples modern and ordinary.""",
+    35: """Chapter 35 step-by-step lock:
+- This chapter is researcher and inventor toxins, framed by the idea that suffering can become practice material.
+- Opening focus: Nalas starts a new lecture by asking students to learn from all events, toxic actions, kind actions, suffering, and liberation.
+- Student emotion: a student says human life from birth to sickness/old age/death feels harsh and tiring; Nalas reframes practice as step-by-step climbing a high mountain with the two truths as super-power.
+- Research/invention focus: agriculture, tools, medicine, body/world/space knowledge, enlightened knowledge, and the dark side of inventing poisons, stimulants, weapons, animal-harming methods, harmful products, and destructive technologies.
+- Closing focus: special body-wisdom-soul healing class, information encoded into the soul, head/forehead reactions, and healing diseases of ignorant intellect, soul, and body. Use labs, notebooks, tools, and classroom sparingly; no sci-fi lab clutter.""",
+    36: """Chapter 36 step-by-step lock:
+- This chapter is businessman/producer toxins and should feel distinct from employer-employee.
+- Opening focus: full modern class; Nalas asks if repeated toxin lessons are boring; students say the lessons are valuable because reactions and illnesses have reduced.
+- Key teaching beat: a student says Nalas is not a business person because he collects no tuition; Nalas laughs and explains his energy filter as a factory, enlightened knowledge as valuable goods, super-energy particles as products, and teaching as distribution/technology transfer.
+- Student case: a male student says mental health is nearly cured after seeing demons/God/Buddha promising wealth; Nalas redirects him away from ritual wealth dreams toward realistic small-scale business, learning, ethics, and feeding/educating children.
+- Closing focus: production/business as a way to create sustainable energy particles by sharing enlightened wisdom. Keep examples contemporary: shops, small business, production tables, family finances, class discussion; no luxury wealth fantasy.""",
+    37: """Chapter 37 step-by-step lock:
+- This chapter is relationships with animals and all species.
+- Opening focus: Nalas recalls the commandment to tame animals so their souls may become humans to practice; students define animals, plants, rocks, vegetation, insects, and smaller life.
+- Key case: a woman whose family bought a mountain for stone exploitation, suffered mental health problems and hallucinations of snakes/tigers, then sold the mountain and changed business after learning the teacher's knowledge.
+- Other cases: animal souls, tree/rock/soil souls, destroying mountains, dog-slaughter neighborhoods, restaurants, sudden family suffering, and students seeing snakes/tigers/dogs in illness. Keep these as compassionate environmental and moral consequence scenes, not graphic slaughter or horror.
+- Closing practice: accept toxin images like a short film, activate kindness toward animals/all species, race against time to help all species, and re-encode the yin-yang embryo.""",
+    38: """Chapter 38 step-by-step lock:
+- This chapter is the final toxin-removal lecture: treating yourself and others, with a major healing-course evidence sequence.
+- Opening focus: a woman near Nalas reports stage III breast cancer markers/bone scan improved after months in the therapy class; she still has sharp bone pain from toxin elimination. Show medical result papers only as unreadable documents, with hopeful classroom emotion.
+- Course evidence: three metastatic cancer patients recover, many mental illness patients recover, illnesses decrease after one-third of the course, and the class shares joy. Do not show hospital gore or miracle-cure fantasy; keep it as testimony in a modern class.
+- Farewell/oath memory: at the first session Nalas vows that if the healing course succeeds he will devote his life to spreading the two truths worldwide and hold no future classes in Vietnam; by the farewell party students are happy, sad, and promise to practice/spread the wisdom.
+- Last lecture focus: treating self and others, not killing self/others, not provoking others' toxins, learning from toxic people and kind people, children as honesty/holiness, everyone/everything as teacher, and not becoming arrogant about helping/saving. Keep it human, mature, and compassionate."""
 }
 
 
