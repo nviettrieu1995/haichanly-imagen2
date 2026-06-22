@@ -3,6 +3,11 @@ import argparse
 import re
 from pathlib import Path
 
+try:
+    from nalas_chapters_pipeline import repair_pdf_spacing_artifacts
+except ModuleNotFoundError:
+    from scripts.nalas_chapters_pipeline import repair_pdf_spacing_artifacts
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PIPELINE_ROOT = ROOT / "nalas_chapters_08_86"
@@ -34,6 +39,7 @@ def parse_chapter_list(value):
 
 
 def compact(text):
+    text = repair_pdf_spacing_artifacts(text)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -67,8 +73,9 @@ def chapter_flow_lock(chapter):
 def build_brief(chapter):
     text_path = TEXT_DIR / f"C{chapter:03d}.txt"
     text = text_path.read_text(encoding="utf-8")
-    text_lower = text.lower()
-    words = re.findall(r"\S+", text)
+    repaired_text = repair_pdf_spacing_artifacts(text)
+    text_lower = repaired_text.lower()
+    words = re.findall(r"\S+", repaired_text)
     title = chapter_title(text)
     opening = compact(excerpt_at(words, 0.0))
     flow_lock = chapter_flow_lock(chapter)
@@ -78,7 +85,7 @@ def build_brief(chapter):
         r"\b(Cebu|Philippines|English school|swimming pool|India|Nepal|Bihar|Gaya|"
         r"Mahabodhi|Bodhi tree|Nalanda University|New Delhi|Patna|pilgrimage|"
         r"relic|ruins|ancient capital)\b",
-        text,
+        repaired_text,
         flags=re.I,
     ):
         international_travel_note = (

@@ -27,6 +27,66 @@ PROMPT_DIR = PIPELINE_ROOT / "image_prompts"
 IMAGE_DIR = PIPELINE_ROOT / "generated_images"
 LOG_DIR = PIPELINE_ROOT / "logs"
 MANIFEST_PATH = PIPELINE_ROOT / "chapters_manifest.json"
+MAX_EXCERPT_CHARS = 1000
+
+PDF_SPACING_REPAIRS = [
+    ("a nd", "and"),
+    ("an d", "and"),
+    ("T he", "The"),
+    ("t he", "the"),
+    ("th em", "them"),
+    ("the m", "them"),
+    ("gr oups", "groups"),
+    ("gr oup", "group"),
+    ("c hatted", "chatted"),
+    ("fi lter", "filter"),
+    ("w hether", "whether"),
+    ("dr eam", "dream"),
+    ("s ublime", "sublime"),
+    ("practis ing", "practising"),
+    ("intellec t", "intellect"),
+    ("p articular", "particular"),
+    ("hum ans", "humans"),
+    ("h ave", "have"),
+    ("i nside", "inside"),
+    ("ev er", "ever"),
+    ("ot hers", "others"),
+    ("pe ople", "people"),
+    ("bel ieve", "believe"),
+    ("extraordin ary", "extraordinary"),
+    ("knowledg e", "knowledge"),
+    ("le sson", "lesson"),
+    ("last ed", "lasted"),
+    ("c reated", "created"),
+    ("suf fering", "suffering"),
+    ("mu st", "must"),
+    ("pr actice", "practice"),
+    ("unders tand", "understand"),
+    ("rele ased", "released"),
+    ("neu tral", "neutral"),
+    ("infor mational", "informational"),
+    ("embr yo", "embryo"),
+    ("c annot", "cannot"),
+    ("receiv ed", "received"),
+    ("dest ruction", "destruction"),
+    ("tal ented", "talented"),
+    ("il lness", "illness"),
+    ("enlig htened", "enlightened"),
+    ("nega tive", "negative"),
+    ("dev elop", "develop"),
+    ("develo pment", "development"),
+    ("esse nce", "essence"),
+    ("c omplete", "complete"),
+    ("fou r", "four"),
+    ("n o", "no"),
+    ("incar nating", "incarnating"),
+    ("participat ed", "participated"),
+    ("ac cept", "accept"),
+    ("e nergy", "energy"),
+    ("th at", "that"),
+    ("o f", "of"),
+    ("a re", "are"),
+]
 
 CHAPTER_DURATIONS_MIN = {
     8: 25, 9: 25, 10: 29, 11: 39, 12: 28, 13: 25, 14: 22, 15: 54,
@@ -76,6 +136,24 @@ def clean_text(text):
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
+
+
+def repair_pdf_spacing_artifacts(text):
+    text = text.replace("\u00ad", "")
+    text = re.sub(r"\b(Covid|COVID)\s*-\s*19\b", r"\1-19", text)
+    for bad, good in PDF_SPACING_REPAIRS:
+        def replace_match(match):
+            value = match.group(0)
+            if value.isupper():
+                return good.upper()
+            if value[:1].isupper():
+                return good[:1].upper() + good[1:]
+            return good
+
+        text = re.sub(rf"\b{re.escape(bad)}\b", replace_match, text, flags=re.I)
+    text = re.sub(r"\b([A-Za-z]+)\s*-\s*([A-Za-z]+)\b", r"\1-\2", text)
+    text = re.sub(r"\s+([,.;:!?])", r"\1", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def clean_page_text(text):
@@ -225,17 +303,62 @@ def normalize_manifest_paths(manifest):
     return manifest
 
 
+def split_sentence_units(text, target_words):
+    text = repair_pdf_spacing_artifacts(text)
+    if not text:
+        return []
+    rough_sentences = [
+        item.strip()
+        for item in re.findall(r".+?(?:[.!?][\"')\]]*(?=\s+|$)|$)", text)
+        if item.strip()
+    ]
+    if not rough_sentences:
+        rough_sentences = [text]
+    units = []
+    max_words = max(30, int(target_words * 1.6))
+    for sentence in rough_sentences:
+        sentence_words = re.findall(r"\S+", sentence)
+        if len(sentence_words) <= max_words:
+            units.append(sentence)
+            continue
+        for start in range(0, len(sentence_words), max_words):
+            units.append(" ".join(sentence_words[start : start + max_words]))
+    return units
+
+
 def excerpt_segments(text, count):
+    text = repair_pdf_spacing_artifacts(text)
     words = re.findall(r"\S+", text)
     if not words:
         return [""] * count
+    target_words = max(20, math.ceil(len(words) / max(1, count)))
+    units = split_sentence_units(text, target_words)
+    unit_word_counts = [len(re.findall(r"\S+", unit)) for unit in units]
     segments = []
+    unit_index = 0
+    consumed_words = 0
     for index in range(count):
-        start = math.floor(index * len(words) / count)
-        end = math.floor((index + 1) * len(words) / count)
-        excerpt = " ".join(words[start:end])
-        excerpt = re.sub(r"\s+", " ", excerpt).strip()
-        segments.append(excerpt[:900])
+        if unit_index >= len(units):
+            start = math.floor(index * len(words) / count)
+            end = math.floor((index + 1) * len(words) / count)
+            excerpt = " ".join(words[start:end])
+            segments.append(re.sub(r"\s+", " ", excerpt).strip()[:MAX_EXCERPT_CHARS])
+            continue
+        if index == count - 1:
+            excerpt_units = units[unit_index:]
+            unit_index = len(units)
+            segments.append(" ".join(excerpt_units)[:MAX_EXCERPT_CHARS])
+            continue
+        target_end = math.floor((index + 1) * len(words) / count)
+        excerpt_units = []
+        while unit_index < len(units) and (
+            not excerpt_units or consumed_words < target_end
+        ):
+            excerpt_units.append(units[unit_index])
+            consumed_words += unit_word_counts[unit_index]
+            unit_index += 1
+        excerpt = re.sub(r"\s+", " ", " ".join(excerpt_units)).strip()
+        segments.append(excerpt[:MAX_EXCERPT_CHARS])
     return segments
 
 

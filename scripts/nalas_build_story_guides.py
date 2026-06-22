@@ -5,6 +5,11 @@ import re
 from collections import Counter
 from pathlib import Path
 
+try:
+    from nalas_chapters_pipeline import repair_pdf_spacing_artifacts
+except ModuleNotFoundError:
+    from scripts.nalas_chapters_pipeline import repair_pdf_spacing_artifacts
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PIPELINE_ROOT = ROOT / "nalas_chapters_08_86"
@@ -109,6 +114,7 @@ def parse_chapter_list(value):
 
 def compact(text):
     text = text.replace("\ufffd", "'")
+    text = repair_pdf_spacing_artifacts(text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
@@ -117,11 +123,39 @@ def words_of(text):
     return re.findall(r"[A-Za-z][A-Za-z'-]{2,}", text)
 
 
-def excerpt_at(words, ratio, count=130):
-    if not words:
+def excerpt_at(text, ratio, count=130):
+    text = repair_pdf_spacing_artifacts(text)
+    if not text:
         return ""
-    start = int(max(0, min(1, ratio)) * max(0, len(words) - count))
-    return compact(" ".join(words[start : start + count]))
+    sentences = [
+        item.strip()
+        for item in re.findall(r".+?(?:[.!?][\"')\]]*(?=\s+|$)|$)", text)
+        if item.strip()
+    ]
+    if not sentences:
+        words = re.findall(r"\S+", text)
+        start = int(max(0, min(1, ratio)) * max(0, len(words) - count))
+        return compact(" ".join(words[start : start + count]))
+
+    sentence_counts = [len(re.findall(r"\S+", sentence)) for sentence in sentences]
+    total_words = sum(sentence_counts)
+    target_start = int(max(0, min(1, ratio)) * max(0, total_words - count))
+    running = 0
+    start_index = 0
+    for index, word_count in enumerate(sentence_counts):
+        if running + word_count > target_start:
+            start_index = index
+            break
+        running += word_count
+
+    excerpt_units = []
+    excerpt_words = 0
+    for sentence in sentences[start_index:]:
+        excerpt_units.append(sentence)
+        excerpt_words += len(re.findall(r"\S+", sentence))
+        if excerpt_words >= count:
+            break
+    return compact(" ".join(excerpt_units))
 
 
 def chapter_title(text, manifest_item=None):
@@ -751,16 +785,16 @@ def custom_chapter_flow_rules(chapter):
 def build_guide(chapter, manifest_item=None):
     text_path = TEXT_DIR / f"C{chapter:03d}.txt"
     text = text_path.read_text(encoding="utf-8", errors="replace")
+    repaired_text = repair_pdf_spacing_artifacts(text)
     title = chapter_title(text, manifest_item)
-    word_list = re.findall(r"\S+", text)
-    key_terms = find_key_terms(text)
-    profiles = detect_profiles(chapter, text)
+    key_terms = find_key_terms(repaired_text)
+    profiles = detect_profiles(chapter, repaired_text)
     samples = [
-        ("Opening", excerpt_at(word_list, 0.00)),
-        ("Early turn", excerpt_at(word_list, 0.18)),
-        ("Middle", excerpt_at(word_list, 0.45)),
-        ("Late turn", excerpt_at(word_list, 0.72)),
-        ("Closing", excerpt_at(word_list, 0.92)),
+        ("Opening", excerpt_at(repaired_text, 0.00)),
+        ("Early turn", excerpt_at(repaired_text, 0.18)),
+        ("Middle", excerpt_at(repaired_text, 0.45)),
+        ("Late turn", excerpt_at(repaired_text, 0.72)),
+        ("Closing", excerpt_at(repaired_text, 0.92)),
     ]
     key_terms_text = "\n".join(f"- {term}" for term in key_terms) if key_terms else "- Use the exact local lane excerpt as the main subject."
     sample_text = "\n".join(f"- {label}: {excerpt}" for label, excerpt in samples if excerpt)
