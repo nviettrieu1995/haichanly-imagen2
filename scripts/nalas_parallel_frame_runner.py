@@ -22,9 +22,10 @@ from nalas_chapters_pipeline import (
     parse_rate_limit,
 )
 from nalas_lane_pair_pipeline import (
-    CANONICAL_PHAM_TRAN_REF,
     PAIR_PROMPT_DIR,
+    plan_paths_match_current_root,
     prepare_chapter_lane_pairs,
+    reference_paths_for_batch,
     verify_chapter_pairs,
     write_pair_manifest,
 )
@@ -84,6 +85,9 @@ def ensure_plans(start_chapter, end_chapter, images_per_minute, pairs_per_batch,
         plan_path = PAIR_PROMPT_DIR / f"C{chapter_number:03d}" / "chapter_lane_pair_plan.json"
         if plan_path.exists():
             plan = json.loads(plan_path.read_text(encoding="utf-8"))
+            if not plan_paths_match_current_root(plan):
+                say(f"C{chapter_number:03d}: cached lane plan points outside this repo, regenerating")
+                plan = prepare_chapter_lane_pairs(manifest, chapter_number, pairs_per_batch)
         else:
             plan = prepare_chapter_lane_pairs(manifest, chapter_number, pairs_per_batch)
         plans.append(plan)
@@ -106,6 +110,8 @@ def collect_missing_frame_jobs(plans, max_jobs):
                     "target": target,
                     "prompt_file": prompt_path,
                     "use_pham_tran_ref": bool(item.get("use_pham_tran_ref", True)),
+                    "use_divine_nalas_ref": bool(item.get("use_divine_nalas_ref", False)),
+                    "visual_dna_tags": list(item.get("visual_dna_tags", [])),
                 }
             )
             if max_jobs and len(jobs) >= max_jobs:
@@ -161,8 +167,13 @@ def run_frame_job(job, model, timeout, wait_on_rate_limit, force):
         "--prompt-file",
         str(job["prompt_file"]),
     ]
-    if CANONICAL_PHAM_TRAN_REF.exists() and job.get("use_pham_tran_ref", True):
-        command.extend(["--input-ref", str(CANONICAL_PHAM_TRAN_REF), "--image-detail", "high"])
+    for ref_path in reference_paths_for_batch(
+        job["chapter"],
+        job.get("use_pham_tran_ref", True),
+        job.get("use_divine_nalas_ref", False),
+        job.get("visual_dna_tags", []),
+    ):
+        command.extend(["--input-ref", str(ref_path), "--image-detail", "high"])
     attempt = 1
     while True:
         say(f"{label}: start attempt {attempt}")

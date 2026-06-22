@@ -37,9 +37,74 @@ C008_YOUNG_PHAM_TRAN_REF = PIPELINE_ROOT / "character_refs" / "pham_tran_c008_yo
 CANONICAL_HEAVEN_FATHER_REF = (
     PIPELINE_ROOT / "character_refs" / "heaven_father_canonical" / "heaven_father_canonical.png"
 )
+VISUAL_DNA_REF_DIR = PIPELINE_ROOT / "character_refs" / "visual_dna"
+MAX_INPUT_REFERENCE_IMAGES = 6
 MODERN_ERA_START_CHAPTER = 16
 EARLY_TEACHING_START_CHAPTER = 9
-PROMPT_RULESET_VERSION = "2026-06-22-family-two-daughters-c008-face-lock-v2"
+PROMPT_RULESET_VERSION = "2026-06-22-visual-dna-library-v3"
+
+
+VISUAL_DNA_REFS = {
+    "teacher_sleep": VISUAL_DNA_REF_DIR / "teacher" / "mortal_nalas_locked_age_bed.png",
+    "teacher_study": VISUAL_DNA_REF_DIR / "teacher" / "mortal_nalas_locked_age_study.png",
+    "father_close": VISUAL_DNA_REF_DIR / "father" / "father_nalas_close_children.jpg",
+    "father_teaching": VISUAL_DNA_REF_DIR / "father" / "father_nalas_teaching_children.jpg",
+    "heaven_luminous": VISUAL_DNA_REF_DIR / "heaven" / "heaven_luminous_water.jpg",
+    "heaven_children": VISUAL_DNA_REF_DIR / "heaven" / "heaven_children_glowing_stones.jpeg",
+    "messengers_group": VISUAL_DNA_REF_DIR / "messengers" / "five_messengers_group.png",
+    "energy_gold": VISUAL_DNA_REF_DIR / "energy" / "positive_gold_particle.png",
+    "energy_green": VISUAL_DNA_REF_DIR / "energy" / "positive_green_particle.png",
+    "energy_red": VISUAL_DNA_REF_DIR / "energy" / "positive_red_particle.png",
+    "energy_negative": VISUAL_DNA_REF_DIR / "energy" / "negative_black_particle.png",
+    "energy_neutral": VISUAL_DNA_REF_DIR / "energy" / "neutral_particle.png",
+    "embryo_yin_yang": VISUAL_DNA_REF_DIR / "embryo" / "yin_yang_embryos.jpeg",
+    "particle_structure": VISUAL_DNA_REF_DIR / "embryo" / "particle_structure_16.png",
+    "energy_filter": VISUAL_DNA_REF_DIR / "embryo" / "crystal_energy_filter.jpg",
+    "tue_thanh": VISUAL_DNA_REF_DIR / "tuelinh" / "tue_thanh_gold_spirit.png",
+    "tue_da_am": VISUAL_DNA_REF_DIR / "tuelinh" / "tue_da_am_dark_spirit.png",
+}
+
+VISUAL_DNA_TAG_REFS = {
+    "sleep": ["teacher_sleep"],
+    "teacher": ["teacher_study"],
+    "father": ["father_close", "father_teaching"],
+    "heaven": ["heaven_luminous"],
+    "heaven_children": ["heaven_children"],
+    "messengers": ["messengers_group"],
+    "energy_positive": ["energy_gold"],
+    "energy_gold": ["energy_gold"],
+    "energy_green": ["energy_green"],
+    "energy_red": ["energy_red"],
+    "energy_negative": ["energy_negative"],
+    "energy_neutral": ["energy_neutral"],
+    "energy": ["energy_gold"],
+    "embryo": ["embryo_yin_yang"],
+    "particle_structure": ["particle_structure"],
+    "energy_filter": ["energy_filter"],
+    "tue_thanh": ["tue_thanh"],
+    "tue_da_am": ["tue_da_am"],
+}
+
+VISUAL_DNA_TAG_PRIORITY = [
+    "sleep",
+    "teacher",
+    "father",
+    "messengers",
+    "heaven_children",
+    "heaven",
+    "embryo",
+    "energy_filter",
+    "particle_structure",
+    "energy_negative",
+    "energy_red",
+    "energy_green",
+    "energy_gold",
+    "energy_neutral",
+    "energy_positive",
+    "energy",
+    "tue_da_am",
+    "tue_thanh",
+]
 
 
 CHAPTER8_DNA_LEAK_MARKERS = [
@@ -118,6 +183,45 @@ def atomic_write_text(path, text):
     finally:
         if tmp_path.exists():
             tmp_path.unlink()
+
+
+def append_existing_ref(refs, path):
+    path = Path(path)
+    if not path.exists():
+        return
+    resolved = path.resolve()
+    if any(existing.resolve() == resolved for existing in refs):
+        return
+    refs.append(path)
+
+
+def append_visual_dna_ref(refs, name):
+    path = VISUAL_DNA_REFS.get(name)
+    if path:
+        append_existing_ref(refs, path)
+
+
+def reference_paths_for_batch(chapter_number, use_pham_tran_ref=True, use_divine_nalas_ref=False, visual_dna_tags=None):
+    tags = set(visual_dna_tags or [])
+    refs = []
+    if use_pham_tran_ref:
+        pham_ref = CANONICAL_PHAM_TRAN_REF
+        if int(chapter_number) == 8 and C008_YOUNG_PHAM_TRAN_REF.exists():
+            pham_ref = C008_YOUNG_PHAM_TRAN_REF
+        append_existing_ref(refs, pham_ref)
+        append_visual_dna_ref(refs, "teacher_sleep" if "sleep" in tags else "teacher_study")
+    if use_divine_nalas_ref:
+        append_existing_ref(refs, CANONICAL_HEAVEN_FATHER_REF)
+        append_visual_dna_ref(refs, "father_close")
+
+    for tag in VISUAL_DNA_TAG_PRIORITY:
+        if tag not in tags:
+            continue
+        for ref_name in VISUAL_DNA_TAG_REFS.get(tag, []):
+            append_visual_dna_ref(refs, ref_name)
+            if len(refs) >= MAX_INPUT_REFERENCE_IMAGES:
+                return refs[:MAX_INPUT_REFERENCE_IMAGES]
+    return refs[:MAX_INPUT_REFERENCE_IMAGES]
 
 
 PHAM_TRAN_CHARACTER_DNA = """Canonical pham-tran Nalas reference:
@@ -567,6 +671,57 @@ C008_VISIBLE_DIVINE_FATHER_TERMS = re.compile(
 )
 
 
+HEAVEN_CHILDREN_DNA_TERMS = re.compile(
+    r"\b(heavenly children|children in heaven|tuelinh children|young tuelinhs|baby tuelinhs|"
+    r"my children|eldest children|five eldest)\b",
+    flags=re.I,
+)
+
+ENERGY_DNA_TERMS = re.compile(
+    r"\b(smallest energy particle|energy particles?|particle groups?|positive particles?|"
+    r"negative particles?|neutral particles?|synthetic particles?|super-energy particles?|"
+    r"superparticles?|wave-particles?|intellectual wave|lapis lazuli|shiny yellow|"
+    r"yellow positive|green positive|fire-red|red positive|blood-red|grey-white|black particle|"
+    r"golden particles?|blue cosmic energy particles?)\b",
+    flags=re.I,
+)
+
+ENERGY_GREEN_DNA_TERMS = re.compile(r"\b(green|banana-leaf|xanh)\b", flags=re.I)
+ENERGY_RED_DNA_TERMS = re.compile(r"\b(fire-red|blood-red|red positive|red particle|fire particle)\b", flags=re.I)
+ENERGY_GOLD_DNA_TERMS = re.compile(r"\b(gold|golden|yellow|shiny yellow)\b", flags=re.I)
+ENERGY_NEGATIVE_DNA_TERMS = re.compile(r"\b(negative|black|grey-white|gray-white|blood-red|dark)\b", flags=re.I)
+ENERGY_NEUTRAL_DNA_TERMS = re.compile(r"\b(neutral)\b", flags=re.I)
+
+EMBRYO_DNA_TERMS = re.compile(
+    r"\b(yin[- ]?yang|yin and yang|energy embryo|embryo|miraculous embryo|root embryo)\b",
+    flags=re.I,
+)
+
+ENERGY_FILTER_DNA_TERMS = re.compile(
+    r"\b(single energy filter|dual energy filter|energy filter|filter transformation|"
+    r"transform.*filter|dual-filter|single-filter)\b",
+    flags=re.I,
+)
+
+PARTICLE_STRUCTURE_DNA_TERMS = re.compile(
+    r"\b(three points|particle structure|structure of .*particle|segments?|"
+    r"oval .*particle|brown destructive particle|energy particle structure)\b",
+    flags=re.I,
+)
+
+TUELINH_DNA_TERMS = re.compile(
+    r"\b(tuelinh|tuelinhs|souls?|spirits?|wisdom spirit|incarnate|incarnation)\b",
+    flags=re.I,
+)
+
+TUE_DA_AM_DNA_TERMS = re.compile(
+    r"\b(negative information|negative particles?|toxins?|ignorant wisdom|ignorance|"
+    r"hallucination|depression|anxiety|demon|devil|dark|black|destructive energy|"
+    r"trapped souls?)\b",
+    flags=re.I,
+)
+
+
 def frame_is_celestial(excerpt, anchor):
     text = f"{excerpt}\n{anchor}"
     if CELESTIAL_SCENE_TERMS.search(text) or HEAVEN_SETTING_TERMS.search(text):
@@ -664,6 +819,16 @@ def frame_has_divine_nalas_presence(excerpt, anchor, chapter_number):
         flags=re.I,
     ):
         return True
+    if re.search(r"\b(?:Father,|Father\s+(?:how|what|why|when|where)\b)", text):
+        return True
+    if chapter_int == 9 and re.search(
+        r"\b(Nalas Nalanda created|created humans|created many gathering points|"
+        r"he summoned the animals|he gave four commandments|he had four commandments|"
+        r"my four commandments|I brought you down here|I suggest)\b",
+        text,
+        flags=re.I,
+    ):
+        return True
     if DIVINE_NALAS_PRESENCE_TERMS.search(text):
         return True
     if frame_needs_pham_tran_reference(excerpt, anchor) and re.search(
@@ -673,6 +838,66 @@ def frame_has_divine_nalas_presence(excerpt, anchor, chapter_number):
     ):
         return False
     return False
+
+
+def ordered_visual_dna_tags(tags):
+    tags = set(tags)
+    ordered = [tag for tag in VISUAL_DNA_TAG_PRIORITY if tag in tags]
+    ordered.extend(sorted(set(tags).difference(ordered)))
+    return ordered
+
+
+def visual_dna_tags_for_frame(
+    excerpt,
+    anchor,
+    chapter_number,
+    lane_index,
+    side,
+    force_celestial=False,
+    use_pham_tran_ref=False,
+    use_divine_nalas_ref=False,
+):
+    text = f"{excerpt}\n{anchor}"
+    tags = set()
+    if use_pham_tran_ref:
+        tags.add("teacher")
+    if SLEEP_BODY_TERMS.search(text):
+        tags.add("sleep")
+    if force_celestial or frame_is_celestial(excerpt, anchor):
+        tags.add("heaven")
+    if use_divine_nalas_ref:
+        tags.add("father")
+    if HEAVEN_CHILDREN_DNA_TERMS.search(text):
+        tags.add("heaven_children")
+    if MESSENGER_SCENE_TERMS.search(text):
+        tags.add("messengers")
+    if EMBRYO_DNA_TERMS.search(text):
+        tags.add("embryo")
+    if ENERGY_FILTER_DNA_TERMS.search(text):
+        tags.add("energy_filter")
+    if PARTICLE_STRUCTURE_DNA_TERMS.search(text):
+        tags.add("particle_structure")
+    if ENERGY_DNA_TERMS.search(text):
+        tags.add("energy")
+        if ENERGY_GREEN_DNA_TERMS.search(text):
+            tags.add("energy_green")
+        if ENERGY_RED_DNA_TERMS.search(text):
+            tags.add("energy_red")
+        if ENERGY_GOLD_DNA_TERMS.search(text):
+            tags.add("energy_gold")
+        if ENERGY_NEGATIVE_DNA_TERMS.search(text):
+            tags.add("energy_negative")
+        if ENERGY_NEUTRAL_DNA_TERMS.search(text):
+            tags.add("energy_neutral")
+        if "energy" in tags and not any(
+            tag in tags for tag in ["energy_green", "energy_red", "energy_gold", "energy_negative", "energy_neutral"]
+        ):
+            tags.add("energy_positive")
+    if TUELINH_DNA_TERMS.search(text):
+        tags.add("tue_da_am" if TUE_DA_AM_DNA_TERMS.search(text) else "tue_thanh")
+    elif TUE_DA_AM_DNA_TERMS.search(text) and (force_celestial or frame_is_celestial(excerpt, anchor)):
+        tags.add("tue_da_am")
+    return ordered_visual_dna_tags(tags)
 
 
 def chapter_is_modern_era(chapter_number):
@@ -1244,23 +1469,33 @@ def prepare_chapter_lane_pairs(manifest, chapter_number, pairs_per_batch):
             ("end", end_excerpt, end_anchor),
         ]:
             filename = f"C{chapter_number:03d}_lane_{lane_index:03d}_{side}.png"
+            force_celestial = frame_forced_celestial(chapter_number, lane_index, side)
+            use_pham_tran_ref = frame_needs_pham_tran_reference(excerpt, anchor, force_celestial)
+            use_divine_nalas_ref = frame_needs_divine_nalas_reference(
+                excerpt,
+                anchor,
+                chapter_number,
+                force_celestial,
+            )
+            visual_dna_tags = visual_dna_tags_for_frame(
+                excerpt,
+                anchor,
+                chapter_number,
+                lane_index,
+                side,
+                force_celestial,
+                use_pham_tran_ref,
+                use_divine_nalas_ref,
+            )
             item = {
                 "chapter": chapter_number,
                 "lane_index": lane_index,
                 "side": side,
                 "filename": filename,
                 "target": str(output_dir / filename),
-                "use_pham_tran_ref": frame_needs_pham_tran_reference(
-                    excerpt,
-                    anchor,
-                    frame_forced_celestial(chapter_number, lane_index, side),
-                ),
-                "use_divine_nalas_ref": frame_needs_divine_nalas_reference(
-                    excerpt,
-                    anchor,
-                    chapter_number,
-                    frame_forced_celestial(chapter_number, lane_index, side),
-                ),
+                "use_pham_tran_ref": use_pham_tran_ref,
+                "use_divine_nalas_ref": use_divine_nalas_ref,
+                "visual_dna_tags": visual_dna_tags,
                 "prompt": lane_frame_prompt(
                     chapter,
                     lane_index,
@@ -1289,6 +1524,9 @@ def prepare_chapter_lane_pairs(manifest, chapter_number, pairs_per_batch):
         batch_no = len(batches) + 1
         batch_lanes = lanes[start : start + pairs_per_batch]
         batch_items = [item for lane in batch_lanes for item in lane["items"]]
+        batch_tags = ordered_visual_dna_tags(
+            tag for item in batch_items for tag in item.get("visual_dna_tags", [])
+        )
         prompt_path = prompt_dir / f"C{chapter_number:03d}_lane_batch_{batch_no:03d}.txt"
         output_stem = output_dir / f"_lane_batch_{batch_no:03d}.png"
         lines = [
@@ -1319,11 +1557,13 @@ def prepare_chapter_lane_pairs(manifest, chapter_number, pairs_per_batch):
                         "target": item["target"],
                         "use_pham_tran_ref": item["use_pham_tran_ref"],
                         "use_divine_nalas_ref": item["use_divine_nalas_ref"],
+                        "visual_dna_tags": item["visual_dna_tags"],
                     }
                     for item in batch_items
                 ],
                 "use_pham_tran_ref": any(item["use_pham_tran_ref"] for item in batch_items),
                 "use_divine_nalas_ref": any(item["use_divine_nalas_ref"] for item in batch_items),
+                "visual_dna_tags": batch_tags,
             }
         )
 
@@ -1409,13 +1649,13 @@ def run_pair_batches(chapter_plan, start_batch, limit_batches, model, timeout, w
             "--prompt-file",
             batch["prompt_file"],
         ]
-        pham_tran_ref = CANONICAL_PHAM_TRAN_REF
-        if int(chapter_plan["chapter"]) == 8 and C008_YOUNG_PHAM_TRAN_REF.exists():
-            pham_tran_ref = C008_YOUNG_PHAM_TRAN_REF
-        if pham_tran_ref.exists() and batch.get("use_pham_tran_ref", True):
-            command.extend(["--input-ref", str(pham_tran_ref), "--image-detail", "high"])
-        if CANONICAL_HEAVEN_FATHER_REF.exists() and batch.get("use_divine_nalas_ref", False):
-            command.extend(["--input-ref", str(CANONICAL_HEAVEN_FATHER_REF), "--image-detail", "high"])
+        for ref_path in reference_paths_for_batch(
+            chapter_plan["chapter"],
+            batch.get("use_pham_tran_ref", True),
+            batch.get("use_divine_nalas_ref", False),
+            batch.get("visual_dna_tags", []),
+        ):
+            command.extend(["--input-ref", str(ref_path), "--image-detail", "high"])
         attempt = 1
         while True:
             log(f"C{chapter_plan['chapter']:03d} lane batch {batch['batch']:03d}: start attempt {attempt}")

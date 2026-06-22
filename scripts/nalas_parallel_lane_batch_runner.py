@@ -22,12 +22,10 @@ from nalas_chapters_pipeline import (
     parse_rate_limit,
 )
 from nalas_lane_pair_pipeline import (
-    CANONICAL_HEAVEN_FATHER_REF,
-    CANONICAL_PHAM_TRAN_REF,
-    C008_YOUNG_PHAM_TRAN_REF,
     PAIR_PROMPT_DIR,
     plan_paths_match_current_root,
     prepare_chapter_lane_pairs,
+    reference_paths_for_batch,
     write_pair_manifest,
 )
 
@@ -107,6 +105,7 @@ def collect_missing_batch_jobs(plans, max_batches, force=False, only_divine_ref=
                     "targets": targets,
                     "use_pham_tran_ref": bool(batch.get("use_pham_tran_ref", True)),
                     "use_divine_nalas_ref": bool(batch.get("use_divine_nalas_ref", False)),
+                    "visual_dna_tags": list(batch.get("visual_dna_tags", [])),
                 }
             )
             if max_batches and len(jobs) >= max_batches:
@@ -172,13 +171,13 @@ def run_batch_job(job, model, timeout, wait_on_rate_limit, force):
         "--prompt-file",
         str(job["prompt_file"]),
     ]
-    pham_tran_ref = CANONICAL_PHAM_TRAN_REF
-    if int(job["chapter"]) == 8 and C008_YOUNG_PHAM_TRAN_REF.exists():
-        pham_tran_ref = C008_YOUNG_PHAM_TRAN_REF
-    if pham_tran_ref.exists() and job.get("use_pham_tran_ref", True):
-        command.extend(["--input-ref", str(pham_tran_ref), "--image-detail", "high"])
-    if CANONICAL_HEAVEN_FATHER_REF.exists() and job.get("use_divine_nalas_ref", False):
-        command.extend(["--input-ref", str(CANONICAL_HEAVEN_FATHER_REF), "--image-detail", "high"])
+    for ref_path in reference_paths_for_batch(
+        job["chapter"],
+        job.get("use_pham_tran_ref", True),
+        job.get("use_divine_nalas_ref", False),
+        job.get("visual_dna_tags", []),
+    ):
+        command.extend(["--input-ref", str(ref_path), "--image-detail", "high"])
 
     attempt = 1
     while True:

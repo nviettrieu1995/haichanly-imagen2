@@ -1,0 +1,34 @@
+{
+  "version": "2026-06-22-visual-dna-library-v3",
+  "source_root": "D:\\ai_coding\\download\\haichanlyvideo\\DNA HÌNH ẢNH VIDEO BOOK",
+  "rules": [
+    "Mortal Nalas Nalanda keeps the approved Vietnamese teacher face, age, body, and thin glasses.",
+    "Heavenly Father Nalas Nalanda uses the Western sacred Jesus-like Father form.",
+    "Five messengers are mature male celestial messengers, never female, children, or Father clones.",
+    "Earth scenes follow the chapter phase: poor modern countryside before teaching, improved rented classrooms in early teaching, modern office-classroom from Covid onward.",
+    "Nalas's own Earth family, when explicitly shown, is wife plus two daughters."
+  ],
+  "references": {
+    "teacher_sleep": "teacher/mortal_nalas_locked_age_bed.png",
+    "teacher_study": "teacher/mortal_nalas_locked_age_study.png",
+    "father_close": "father/father_nalas_close_children.jpg",
+    "father_teaching": "father/father_nalas_teaching_children.jpg",
+    "father_hand": "father/father_nalas_hand_children.jpg",
+    "heaven_luminous": "heaven/heaven_luminous_water.jpg",
+    "heaven_crystal": "heaven/heaven_crystal_water.jpg",
+    "heaven_children": "heaven/heaven_children_glowing_stones.jpeg",
+    "messengers_group": "messengers/five_messengers_group.png",
+    "energy_gold": "energy/positive_gold_particle.png",
+    "energy_green": "energy/positive_green_particle.png",
+    "energy_red": "energy/positive_red_particle.png",
+    "energy_negative": "energy/negative_black_particle.png",
+    "energy_neutral": "energy/neutral_particle.png",
+    "embryo_yin_yang": "embryo/yin_yang_embryos.jpeg",
+    "particle_structure": "embryo/particle_structure_16.png",
+    "energy_filter": "embryo/crystal_energy_filter.jpg",
+    "tue_thanh": "tuelinh/tue_thanh_gold_spirit.png",
+    "tue_thanh_city": "tuelinh/tue_thanh_city_network.png",
+    "tue_da_am": "tuelinh/tue_da_am_dark_spirit.png",
+    "tue_da_am_close": "tuelinh/tue_da_am_close_chest.png"
+  }
+}
