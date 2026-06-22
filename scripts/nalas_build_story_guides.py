@@ -625,7 +625,97 @@ MODERN_CHAPTER_FLOW_LOCKS = {
 - Opening focus: modern classroom, Nalas explaining that Tao is the worldview of the universe and cannot abandon family/social/national/teacher-student life.
 - Social Tao content groups: treating animals, protecting natural resources, employee-employer relations, employer-employee duties, products/livelihood/production, love/social/work relationships, human trafficking rescue, respect across age/race/religion, and helping people in danger.
 - Visual examples should be modern and ordinary: animal rescue/protection, forest/water/resource protection, ethical workplace/factory/office, rescuing/reporting trafficking as a safe civic scene, and people helping one another.
-- Composition rule: no graphic violence, slaughter, sexualized scenes, or propaganda posters; keep Nalas and students in the modern classroom as the anchor and show Social Tao examples as grounded vignettes or board-supported lesson visuals."""
+- Composition rule: no graphic violence, slaughter, sexualized scenes, or propaganda posters; keep Nalas and students in the modern classroom as the anchor and show Social Tao examples as grounded vignettes or board-supported lesson visuals.""",
+    72: """Chapter 72 step-by-step lock:
+- This chapter is the Unified Tao through National Tao, not a generic patriotic poster.
+- Opening focus: modern classroom; Nalas asks students to recall the value of National Tao, then drinks hot tea before continuing.
+- National Tao content groups: head of state and territory/people, leaders and managers serving the nation, and ordinary people's relationship with country, territory, laws, obligations, resources, and leaders.
+- Negative examples include war, invasion, terrorism, corruption, epidemics mishandled, poverty, exploitation, nepotism, superstition in religion/belief, destructive policies, and natural-resource harm. Show these as restrained civic vignettes, not violent spectacle.
+- Positive examples include peace policy, anti-corruption, disaster/epidemic response, education, protecting resources, productive citizens, unity across ethnicities/religions/countries, and rejecting war. Keep Nalas/classroom as anchor with modern civic scenes and subtle particle overlays.""",
+    73: """Chapter 73 step-by-step lock:
+- This chapter is the Unified Tao through Teacher-Student Tao after the National Tao lecture lunch break.
+- Opening focus: students discuss how leaders spreading enlightened knowledge produce many yellow particles; Nalas uses that to explain the power of knowledge.
+- Content groups: teacher treats student, student treats teacher, students treat each other, and the value of knowledge itself.
+- Negative examples include teachers abusing/harming students, teaching theft/violence/superstition/false origin knowledge, students disrespecting or harming teachers, students spreading division, and harmful knowledge such as weapons, animal-destruction methods, scams, addiction, superstition, extremist knowledge, and false religion/spirituality.
+- Positive examples include teachers caring for students, students respecting/applying/protecting teachers, students helping each other avoid harmful acts, and creating/spreading accurate enlightened knowledge. Keep the visual world as modern classroom, school/learning contexts, and knowledge-sharing vignettes; no sensational abuse imagery.""",
+    74: """Chapter 74 step-by-step lock:
+- This chapter begins in Nalas's modern office when students quietly enter and find him sitting with eyes closed in a meditative/memory state; a student refreshes his tea and everyone waits respectfully.
+- Human case: students ask about a murdered mother and child and the husband affected by depression/mental illness and a trapped soul/evil-spirit influence. Treat this as compassionate office retelling, never graphic murder.
+- Teaching focus: journey after the end of human life, transiting planet, suicide/accident/sudden death/being killed, souls trapped at the death location, and the Executive Council receiving souls after enlightened preaching.
+- Distinction: prayer rituals without enlightened teaching do not return the soul; preaching enlightened wisdom to the dead person's location and relatives can help the soul return.
+- Composition rule: alternate office/tea/student Q&A, restrained memory overlays of a death-location soul, and symbolic transiting-planet reception; no horror demons, gore, or sensational crime scenes.""",
+    75: """Chapter 75 step-by-step lock:
+- This chapter starts a new technical lecture after difficult particle knowledge, with excited students ready to learn how life reactions produce energy particles through the four Tao forms.
+- Subject lock: grey negative energy particles with strong electric waves, the reaction that produces ignorance in ideology.
+- Structure: four environments and five stages - desire, decoding/encoding, ideology creation, action, and intellectual wave-code fibre/causal particles.
+- Example lock: adultery creates grey negative particles through desire, attraction to a young woman at work, denial of positive information from faithful wife/family, ideology of self-satisfaction, and hidden action. Show only adult, non-explicit, emotionally restrained modern vignettes.
+- Composition rule: mostly modern classroom with board/diagram and calm teacher; particle mechanics are overlays. Avoid erotic staging, explicit adultery, moral-shock melodrama, or pure abstract diagrams without the classroom frame.""",
+    76: """Chapter 76 step-by-step lock:
+- This chapter is the action-level counterpart to C075: black negative particles with very strong electric waves.
+- Opening focus: lunch-break student conversation about Nalas teaching all day without fatigue and students standing to see him in a crowded class.
+- Teaching focus: ignorance in action harms people, animals, and all things at large scale and can include killing; it still follows four environments and five production stages.
+- Example lock: pig slaughter business. A man starts a slaughterhouse, becomes wealthy, denies positive information about not killing, and each slaughter produces black causal particles. Show business/decision/industrial context only in restrained, non-graphic ways; no visible killing, gore, suffering animals, or slaughter close-ups.
+- Composition rule: modern classroom and ethical business vignettes with subdued black-particle overlays; keep it analytical and compassionate, not horror or shock imagery.""",
+    77: """Chapter 77 step-by-step lock:
+- This chapter is ignorance in spreading false knowledge: blood-red negative particles with super-strong electric waves.
+- Opening focus: Nalas begins class after students finish talking; he asks what is special after grey and black particle lessons, then explains using toxins to remove toxins.
+- Teaching focus: false knowledge about origin, mission, practice, superstition, destructive methods, and values that harm sustainable development; use blood-red wave-code overlays sparingly.
+- Example locks: spreading superstitious/prayer/ritual knowledge and the Devadatta-Buddha sangha-harmony story. The Devadatta example should appear only when the excerpt reaches it, as a restrained historical teaching vignette, not the chapter's default setting.
+- Composition rule: modern classroom remains the anchor; show misinformation/spiritual-pride scenes as lesson windows. No demon horror, no attack spectacle, no Chinese temple fantasy, and no fake religious poster.""",
+    78: """Chapter 78 step-by-step lock:
+- This chapter uses the hot teapot on the table as the concrete analogy for destructive energy detonation.
+- Opening focus: Nalas asks how to boil water and brew tea; students mention electric kettle, pot, heat, teapot material, water temperature, tea quality, and brewing time.
+- Teaching focus: destructive energy detonation requires tools, pressure, compression, the human body/soul/tuelinh, ideology, action, the four Tao forms, and the two truths.
+- Method steps: immerse in negative thoughts only after interaction with a Tao content, use the truth of the universe to avoid sinking into suffering, then use the truth of enlightenment to create positive thought and detonate destructive energy.
+- Composition rule: keep hot tea/teapot/electric kettle/classroom visible in opening lanes; later show guided inner-practice overlays. Do not make it a generic cosmic explosion or dangerous self-harm-looking scene.""",
+    79: """Chapter 79 step-by-step lock:
+- This chapter teaches practice producing green positive particles, the development-level positive counterpart.
+- Setting baseline: modern classroom/training room, students analyzing particle reactions; if Covid/post-Covid cues appear, use polished LED/whiteboard/office-classroom style.
+- Teaching focus: green positive particles with strong electric waves, positive particle controlling negative particle, positive/negative environments, five stages, and collecting a green particle at the causal tree on the central planet.
+- Human meaning: producing green positive particles through development actions, letting go of attachment/selfishness, relying on positive people/knowledge, and thinking about origin/mission/liberation methods.
+- Composition rule: use classroom, board diagrams, calm student practice, green light overlays, and concrete development/helping vignettes; avoid all-green one-note palette or pure abstract particle wallpaper.""",
+    80: """Chapter 80 step-by-step lock:
+- This chapter teaches practice producing fire-red positive particles, distinct from C079 by spreading development values.
+- Opening focus: students analyze the morning example and compare green/fire-red/yellow production; Nalas explains the value of spreading sustainable development.
+- Teaching focus: fire-red particles with very strong electric waves, desire to spread values, positive particle controlling negative particle, five stages, action to spread useful values, and causal-tree collection.
+- Human examples include becoming a teacher, researching, sharing valuable knowledge/methods, and spreading values that help people and all species.
+- Composition rule: modern classroom anchor plus teaching/research/spreading-value vignettes with warm fire-red overlays. Avoid aggressive flames, war imagery, or pure red fantasy magic.""",
+    81: """Chapter 81 step-by-step lock:
+- This chapter teaches yellow positive particles, the solidarity/unified positive energy higher than green and fire-red.
+- Opening focus: Nalas asks why yellow unified positive particles are most valuable; students explain comprehensive information, solidarity, super-strong waves, and protection by weak grey-white negative particles.
+- Key metaphor: solid house of ignorance, cool lake/water, lush green forest, sun of spreading values, and united people standing on the porch who can see inside the house and share outside truths without entering and causing conflict.
+- Teaching focus: solidarity to spread sustainable values, envy/inequality comparisons, positive and negative environments, five stages, and yellow particle collection at the causal tree.
+- Composition rule: modern classroom remains the base, with the house/porch/sun/forest/lake as a clear conceptual visualization. Avoid literal text, flags, religious symbols, or a flat infographic.""",
+    82: """Chapter 82 step-by-step lock:
+- This chapter is the emotional and technical culmination: Energy Filter - Unified Tao of the Universe.
+- Opening emotion: Nalas and students drink hot tea with mixed happiness and regret after the mental-health research course succeeds; many patients recover, but he regrets not opening class earlier and leaving Vietnam soon to spread knowledge worldwide.
+- Single energy filter: conditions include enough yellow particles in all four Tao interactions and dedication to unity/spreading enlightened knowledge; Father/Nalas directly helps transform qualified tuelinhs near end of human life.
+- Dual energy filter: after single filter, produce shiny yellow positive superparticles and lapis-lazuli blue negative superparticles, replace synthetic particles, store/fire destructive energy, and produce superparticles for universe operation.
+- Composition rule: alternate tea/classroom emotion with refined filter visualizations in gold and lapis blue. Keep Father/divine form only when the excerpt truly shifts to celestial help; otherwise use mortal Nalas in modern classroom with glasses.""",
+    83: """Chapter 83 step-by-step lock:
+- This short chapter explains the Hymn / Great Mantra Nalas Nalanda as praise and gratitude to Father Nalas, not a normal classroom lecture.
+- Visual mode: sacred, textless hymn atmosphere. Show practitioners or tuelinhs uniting with Father Nalas's root power, peace, healing, and return to homeland through golden and sapphire-blue light.
+- If Father appears, use the stable Western sacred Jesus-like Father form, no wings, warm golden inner light, sapphire-blue aura, and compassionate authority.
+- Do not render the hymn lyrics as fake text, calligraphy, subtitles, scrolls, or book pages. The image should imply singing/chanting and gratitude through faces, posture, light, and space.
+- Composition rule: no magical spell poster, no occult ritual, no Asian temple/calligraphy styling; keep it premium, reverent, and textless.""",
+    84: """Chapter 84 step-by-step lock:
+- This short chapter explains the symbol of the Unified Tao of the Universe.
+- Symbol lock: a textless four-wing golden emblem inspired by the word Tao, with four branches for Family Tao, Social Tao, National Tao, and Teacher-Student Tao, intersecting at a central mind/soul point.
+- Motion lock: clockwise/upward/golden when positive particles are produced; inverted/dimmed only when the excerpt discusses negative particles; shiny golden upgrade when single energy filter is achieved; outward golden emblems when the energy embryo produces superparticles.
+- Avoid readable letters, fake Chinese/Vietnamese calligraphy, Taijitu/yin-yang icon, religious talisman, logo design, UI diagram, or flat infographic.
+- Composition rule: can be symbolic/celestial, but keep it tied to tuelinh transformation and the four human Tao forms through subtle human-life vignettes around the emblem.""",
+    85: """Chapter 85 step-by-step lock:
+- This chapter is a practical method for helping trapped tuelinhs and souls return to the transiting planet.
+- Subject: souls trapped at places of death due to killing, murder, suicide, accident, disaster, war, epidemic, or sudden death; helping requires enlightened knowledge and may be followed by the hymn/great mantra.
+- Conditions: helpers must study the full Nalas Nalanda knowledge first, stay fearless and compassionate, preach to living people when present, and direct the sermon toward trapped souls.
+- Steps: preach origin, mission, suffering/tribulations in four Tao forms, toxins/good elements, sustainable vs decay path, liberation method, unified Tao, and value of transiting planet; then chant the hymn three times as gratitude/support.
+- Composition rule: modern location/house/land with a calm helper speaking, translucent listening souls, and a soft path to the transiting planet. No ghost-horror, exorcism, occult ritual, demon monster, or sensational haunted-house style.""",
+    86: """Chapter 86 step-by-step lock:
+- This chapter is an application/regimen summary for mental-health-related illnesses, not a mystical scene.
+- Subject: relatives reading chapters to patients, playing lecture videos/audio before and after sleep, repeated daily listening/reading, patient gradually becoming awake enough to study independently, and later helping others.
+- Visual anchors: modern Vietnamese home/bedroom/living room, books, phone/tablet/speaker, caregiver sitting near patient, night and morning routines, calm supervision, ordinary medical/medication context if mentioned.
+- Sensitive rule: do not depict distress as horror, possession, restraints, hospital drama, or demon imagery; show care, patience, information re-encoding as gentle light, and family support.
+- Medical caution for imagery: do not imply instant miracle cure in a single frame; show a process of repeated listening, reading, stabilization, and compassionate relatives."""
 }
 
 
