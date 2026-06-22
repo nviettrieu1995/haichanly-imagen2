@@ -132,6 +132,14 @@ PHAM_TRAN_GLASSES_RULE = """Mortal Nalas glasses lock:
 Whenever the pham-tran / Earth / mortal teacher body of Nalas Nalanda is visible, he must wear his thin metal eyeglasses on his face. This includes sleeping, resting, studying, teaching, walking, drinking tea/coffee, Covid-era classes, and any modern Vietnamese room scene. The glasses are a core identity marker, not an optional prop. Make the thin metal rims or a small lens glint visibly readable even in mid-shots; do not merely imply glasses with a bare-looking face. Do not show a bare-faced mortal Nalas. Do not place a spare pair of glasses on the bed, table, floor, notebook, or bedside if he is visible; exactly one pair exists, and it is worn on his face. This rule applies to the mortal Vietnamese body only; the pure divine Father manifestation in heaven remains a separate sacred form unless the lane also shows the mortal Earth body."""
 
 
+PHAM_TRAN_AGE_CONTINUITY_LOCK = """Mortal Nalas age continuity lock:
+Keep the pham-tran / Earth Nalas as one continuous person across all lanes in a chapter and across both images in a start/end pair. The approved reference controls face shape, glasses, body type, calm scholarly compassion, and grounded build; the local chapter controls age stage. Do not let lighting, sleep, dream glow, camera angle, or emotion turn him into a different younger or older man.
+- Chapter 8 / before wisdom returns: apparent age 30-32 but still before the Covid teaching era, same rounded-square Vietnamese face with gentle fullness, same solid grounded adult body, short dark hair, thin glasses, clean T-shirt/polo/casual shirt. He may look tired, humble, or thoughtful, but not elderly, 40+, grey-haired, deeply wrinkled, frail, receding-haired, or like a middle-aged senior teacher. He also must not become a baby-faced college student, slim youthful actor, narrow-faced handsome youth, thin-necked model, or a different younger man. Keep the mature father-teacher identity even when subtly de-aged.
+- Chapters 9-15 / early teaching: the same person, only slightly more established and teacher-like, about early-30s unless the excerpt says otherwise. Do not jump between boyish youth and old master.
+- Covid chapter / Chapter 16: about 32-35, neat and formal, same face/body continuity with thin glasses. Later chapters can mature gradually, but age must progress smoothly, not randomly within one chapter.
+If the canonical reference appears older than the current chapter stage, borrow identity, glasses, rounded-square face proportions, gentle fullness, and solid body silhouette from it, then only subtly de-age for Chapter 8 rather than copying older skin or grey hair. If the local excerpt shows sleep, keep the same age as the awake frame; sleep must not make him look older."""
+
+
 FIVE_MESSENGERS_DNA = """Five messengers visual DNA:
 When the text mentions Giac, Chap, the two messengers, several messengers, or the five messengers of the first tuelinh, do not make them generic identical angels, identical white-haired men, Father Nalas clones, children, women, or random students. Their true forms are five mature male messengers. Keep them as a coherent five-member celestial working group: mature calm male faces, white-ivory Western sacred garments, early-Christian / Greco-Roman-inspired simple tunics and mantles, role-colored sashes or light seams, restrained sacred posture, no wings unless the excerpt strongly needs symbolic angelic language, and no Chinese/xianxia styling. Avoid East Asian wrap robes, cross-collar hanfu shapes, kimono-like overlapping collars, monk robes, topknots, and court-sage styling for true messenger forms. Messenger hair must be short or neatly tied back; no shoulder-length loose waves, no full Jesus beard, no Father-like face, and no chest-centered holy glow. Giac and Chap appearing in dreams before the disguise sequence are both adult men, never one male and one female. Only when the local excerpt explicitly says a messenger disguises himself as an old man or old woman should the image show that temporary disguise; the underlying messenger identity remains male.
 - Giac: insight / discernment messenger. Slightly older than Chap, leaner oval face, higher cheekbones, calm analytical eyes, precise upright posture, almost still. Restrained gold-white aura. Gesture: one hand lightly tracing a small gold-white geometry or clear-light thread near the hands/chest. Position: often nearest Father, watching, measuring, asking. Never use a halo, crown, beard-heavy Jesus face, or warm rose color.
@@ -947,7 +955,31 @@ def frame_earth_stage_note(excerpt, anchor, chapter_number):
     )
 
 
-def frame_negative_prompt(excerpt, anchor, force_celestial=False):
+def mortal_age_negative_prompt(chapter_number):
+    chapter_number = int(chapter_number)
+    if chapter_number == 8:
+        return (
+            ", age drift on mortal Nalas, different age between start and end, different Nalas face, "
+            "older Chapter 8 mortal Nalas, elderly Chapter 8 Nalas, middle-aged Chapter 8 teacher, "
+            "40-year-old Chapter 8 Nalas, 45-year-old Chapter 8 Nalas, grey hair on Chapter 8 Nalas, "
+            "deep wrinkles on Chapter 8 Nalas, receding hairline on Chapter 8 Nalas, frail older Nalas, "
+            "baby-faced Chapter 8 Nalas, teenage-looking Nalas, college-boy Nalas, slim young actor Nalas, "
+            "K-drama youthful Nalas, narrow-faced youthful Nalas, thin-necked model Nalas, "
+            "handsome unrelated younger man replacing Nalas"
+        )
+    if chapter_number == MODERN_ERA_START_CHAPTER:
+        return (
+            ", age drift on mortal Nalas, different age between start and end, different Nalas face, "
+            "elderly Covid Nalas, 45-year-old Covid Nalas, 50-year-old Covid Nalas, grey-haired Covid Nalas, "
+            "frail Covid Nalas, teenage-looking Covid Nalas, college-boy Covid Nalas, unrelated younger man replacing Nalas"
+        )
+    return (
+        ", age drift on mortal Nalas, different age between start and end, different Nalas face, "
+        "unrelated younger man replacing Nalas, unrelated older man replacing Nalas"
+    )
+
+
+def frame_negative_prompt(excerpt, anchor, chapter_number, force_celestial=False):
     sleep_negative = ""
     if SLEEP_BODY_TERMS.search(f"{excerpt}\n{anchor}"):
         sleep_negative = (
@@ -983,8 +1015,8 @@ def frame_negative_prompt(excerpt, anchor, force_celestial=False):
             "wings on Father Nalas, angel wings on Father Nalas, dark tone on Father Nalas, aggressive face, "
             "evil expression, horror-like Father Nalas, distorted Father face"
         )
-        return f"{celestial_common}{celestial_identity_negative}{sleep_negative}"
-    return f"{COMMON_NEGATIVE_PROMPT}, {EARTH_ONLY_NEGATIVE_PROMPT}{sleep_negative}"
+        return f"{celestial_common}{celestial_identity_negative}{sleep_negative}{mortal_age_negative_prompt(chapter_number)}"
+    return f"{COMMON_NEGATIVE_PROMPT}, {EARTH_ONLY_NEGATIVE_PROMPT}{sleep_negative}{mortal_age_negative_prompt(chapter_number)}"
 
 
 def chapter_flow_note(chapter_number):
@@ -1120,6 +1152,8 @@ Character and world DNA, with mandatory fidelity rule:
 
 {PHAM_TRAN_GLASSES_RULE}
 
+{PHAM_TRAN_AGE_CONTINUITY_LOCK}
+
 {DIVINE_NALAS_CHARACTER_DNA}
 
 {FIVE_MESSENGERS_DNA}
@@ -1165,7 +1199,7 @@ Visual direction:
 Transform the exact excerpt into cinematic spiritual realism for a premium book/audiobook plate. Make the image emotionally clear and concrete using only the people, setting, action, and spiritual layer supported by this lane's excerpt and chapter brief. Do not pull imagery from another chapter or another part of the chapter. Do not render written words from the excerpt. No subtitles, no labels, no watermark, no logo. Avoid collage, panels, split-screen, UI, and poster layouts.
 
 Negative prompt:
-{frame_negative_prompt(excerpt, anchor, force_celestial=force_celestial)}."""
+{frame_negative_prompt(excerpt, anchor, chapter['chapter'], force_celestial=force_celestial)}."""
 
 
 def prepare_chapter_lane_pairs(manifest, chapter_number, pairs_per_batch):
