@@ -255,7 +255,29 @@ Same heavenly temple lecture about ignorant wisdom in spreading false knowledge.
     59: """C059 flow lock:
 Same heavenly temple lecture. A child asks how Father can save tuelinhs whose wisdom is easily manipulated and rejects true knowledge. Father reassures them he abandons no tuelinh; five messengers, transit planet, and information transmission/reception system support rescue. Solutions: four Tao interaction scenarios force out toxins over lifetimes; accurate-information environments teach origin, mission, and liberation. Human-world suffering/mental illness may appear as soft vision windows only.""",
     60: """C060 flow lock:
-Same heavenly temple lesson on sustainable-development intelligence. Children discuss environment changing intelligence and fear human incarnation. Father shows vision windows: poor people who study hard, farmers improving crops, workers/engineers building useful projects, scientists making medicines/vaccines/transport/machines, businesspeople overcoming hardship, and teachers creating useful knowledge. Alternate Father/children temple shots with human-world vignettes inside luminous visions; not a random modern classroom montage."""
+Same heavenly temple lesson on sustainable-development intelligence. Children discuss environment changing intelligence and fear human incarnation. Father shows vision windows: poor people who study hard, farmers improving crops, workers/engineers building useful projects, scientists making medicines/vaccines/transport/machines, businesspeople overcoming hardship, and teachers creating useful knowledge. Alternate Father/children temple shots with human-world vignettes inside luminous visions; not a random modern classroom montage.""",
+    61: """C061 flow lock:
+Same heavenly temple sermon, not Earth. Tuelinh children are excited that many have miraculous embryos and can accompany humans; Father introduces the more miraculous grey-white weak negative plus fire-red very-strong positive embryo that spreads sustainable development values. Use stable Western sacred Jesus-like Father, children/tuelinhs, and restrained non-Chinese particle diagrams.""",
+    62: """C062 flow lock:
+Closing heavenly sermon before the physical body wakes. Father says the sermon is nearly over because the mortal body is about to wake, then explains the transformation from different wisdom embryos into energy filters by reducing negative waves/toxins and increasing positive particles. Stay in Western sacred heaven unless the excerpt explicitly shows modern mortal Nalas waking with glasses.""",
+    63: """C063 flow lock:
+Modern Vietnamese winter classroom in freezing rain; the room becomes warm from Nalas's lecture. Key testimony: former restaurant/slaughter family, depression, recovery, stopping animal killing. Teaching moves into animal souls, plants/rocks/soil, wave-particles, destructive energy, yin-yang embryo, and first tuelinh. Anchor with classroom, student testimony, tea, warmth/sweat; no graphic slaughter or standalone space poster.""",
+    64: """C064 flow lock:
+Modern class on the Tuelinh transformation journey. Students discuss animal souls becoming tuelinhs/humans; Nalas warns against killing animals and destroying forests/mountains/minerals. Cover ignorant ideology/action/false knowledge versus helping life, spreading sustainable values, and solidarity. Use classroom Q&A, board diagrams, and restrained particle-path overlays, not generic mystic posters.""",
+    65: """C065 flow lock:
+Modern office visit: Duong, Truong Nalanda, and students arrive from provinces with fruit, candies, tea, and questions about healing and the transiting planet. Lesson shows transit-planet resting places, cause-and-effect tree, Return of Tao/Executive/Administrative councils, and five adult male messengers. Hell/prison gates are symbolic particle illusions, no gore, no Chinese bureaucracy.""",
+    66: """C066 flow lock:
+Modern Vietnamese home near Tet: Nalas waters orchids on the balcony beside kumquat/peach plants, then drinks hot tea with Ms. Phuong, Dzung, Nga, cakes/fruit. Discuss US dorm/campus trapped souls, forensic/autopsy souls following Ms. Phuong, particle copying/bombardment, pain, and overuse of meditation powers. Warm family-like scene with restrained translucent soul-energy, not horror.""",
+    67: """C067 flow lock:
+Modern office with students and a worn-looking man confused by many religious/spiritual practices: tantra, meditation, pure land, rituals, spirit/demon/ancestor voices, third eye/chakra loss of control. Nalas compassionately explains origin/mission and why rituals/spells/supernatural powers do not create sustainable energy. Buddha/God/devil visions are mental toxin-movie imagery, not true room visitors.""",
+    68: """C068 flow lock:
+Hot Hanoi summer office/classroom. Truong, Duong, and students bring iced coffee, fruit, and cakes; Nalas drinks coffee despite allergy, sneezes, then clarifies cause and effect as universal transformation, not religious punishment. Inner journey: students become smallest particles guided by shiny yellow Nalas-particle through wave-particles, destructive particles, yin-yang embryo, first tuelinh, galaxies, energy wiring, and baby tuelinhs. Keep coffee/tea/student frame visible.""",
+    69: """C069 flow lock:
+Modern class on cause and effect for tuelinhs/souls in human practice. First tuelinh designs incarnation milestones, family, marriage, illness, death, and environment into practice plans. Cause-effect system: protected space, giant pyramid twenty times adult height, five adult male messengers working on a plane at the top, stored causal particles, and four Tao rule sets. Alternate classroom and celestial-system views; no female/child messengers or Chinese court styling.""",
+    70: """C070 flow lock:
+Unified Tao through Family Tao in a modern course memory. Nalas drinks hot tea; students ask how four Tao forms produce particles and unite with the universe. Cover marriage, husband-wife fidelity/conflict/forgiveness, spouse death with or without children, spouse with social status, parent-child, siblings, ancestors/dead family. Use contemporary classroom plus restrained family vignettes; no explicit sexuality, no melodrama, no generic teacher-only repetition.""",
+    71: """C071 flow lock:
+Unified Tao through Social Tao after the long Family Tao lecture. Modern classroom anchor. Content groups: animals, natural resources, employee-employer/employer-employee, products/livelihood/production, love/social/work relationships, human trafficking rescue/reporting, age/race/religion respect, helping people in danger. Show modern animal protection, environmental protection, ethical workplace, civic rescue, and people helping each other; no graphic violence or propaganda poster."""
 }
 
 
@@ -352,7 +374,7 @@ INTERNATIONAL_TRAVEL_TERMS = re.compile(
 )
 
 INTERNATIONAL_TRAVEL_CHAPTERS = {39, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52}
-HEAVEN_FATHER_LECTURE_CHAPTERS = {55, 56, 57, 58, 59, 60}
+HEAVEN_FATHER_LECTURE_CHAPTERS = {55, 56, 57, 58, 59, 60, 61, 62}
 
 EARTH_TEACHING_TERMS = re.compile(
     r"\b(human world|human life|classroom|students|student|lecture|lectures|"

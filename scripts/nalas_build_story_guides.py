@@ -559,7 +559,73 @@ MODERN_CHAPTER_FLOW_LOCKS = {
 - Vision-sequence focus: Father shows images of people born poor who study hard, farmers improving crops, workers and engineers building useful projects, scientists creating medicines/vaccines/transport/machines, businesspeople overcoming hardship, and teachers creating useful knowledge.
 - Doctrine focus: these people represent sustainable-development intelligence: overcoming adversity, understanding harmful information, creating beneficial values, and producing positive energy structures.
 - Composition rule: alternate heavenly temple wide shots, child reaction shots, Father presenting luminous vision windows, and concrete human-world vignettes inside those visions. Do not turn the whole chapter into a random modern classroom montage.
-- Maintain Father Nalas as the stable Western sacred Jesus-like divine teacher, no wings, golden inner light and sapphire-blue aura, distinct from all children and attendants."""
+- Maintain Father Nalas as the stable Western sacred Jesus-like divine teacher, no wings, golden inner light and sapphire-blue aura, distinct from all children and attendants.""",
+    61: """Chapter 61 step-by-step lock:
+- This chapter remains in the same heavenly temple sermon, not an Earth classroom.
+- Opening focus: tuelinh children are excited because many of them have the miraculous energy embryo and may accompany/help humans after incarnation.
+- Teaching turn: Father interrupts gently and introduces the more miraculous grey-white weak negative particle plus fire-red very-strong positive particle embryo.
+- Doctrine focus: this embryo spreads sustainable development values, balances positive/negative energy, and detonates destructive particles through low-toxicity, low-heat, low-vibration transformation.
+- Composition rule: keep Father Nalas in Western sacred Jesus-like heavenly form, with children/tuelinhs listening, luminous non-Chinese particle diagrams, and small vision windows only when needed.""",
+    62: """Chapter 62 step-by-step lock:
+- This chapter is the closing part of the heavenly temple sermon before the physical human body wakes.
+- Opening focus: children recognize the previous embryo type among many tuelinhs and listen as Father says the sermon is nearly over because his mortal body is about to wake.
+- Teaching focus: Father explains that every wisdom type is natural in tuelinhs/humans, but even strong embryos must transform into energy filters before fully detonating destructive energy.
+- Transformation path: reduce negative particle electric waves/toxins while increasing positive particles from weak to strong, very strong, then super strong.
+- Earth-body reference: if the excerpt shows waking, use modern mortal Nalas with glasses in a believable sleeping/waking pose; otherwise stay in Western sacred heaven with the same Jesus-like Father.""",
+    63: """Chapter 63 step-by-step lock:
+- This chapter returns to a modern Vietnamese classroom in freezing winter rain; the room becomes strangely warm from Nalas's lecture even without a heater.
+- Opening human case: a student shares that his family slaughtered animals for a restaurant, then suffered business decline, depression, and loss of control before recovery through the knowledge and stopping the business.
+- Teaching focus: killing animals creates black negative particles and blocks practice; eating meat/vegetarian debate is secondary, while not killing or ordering slaughter matters.
+- Cosmic lesson: guide students as smallest particles through wave-particles, destructive particles, yin-yang embryos, first tuelinh, trees/rocks/soil souls, animal souls, and the animal-to-human practice path.
+- Composition rule: anchor scenes in the winter classroom with students, tea, sweat/warmth, and compassionate testimony; cosmic mechanisms appear as restrained class-guided visualizations, not standalone space posters or graphic slaughter.""",
+    64: """Chapter 64 step-by-step lock:
+- This chapter is a modern class on the Tuelinh's Journey of Transformation, with students discussing animal souls becoming tuelinhs/humans before Nalas corrects and expands the lesson.
+- Opening focus: students talk excitedly about trees/rocks/soil to animals to humans, while Nalas warns not to destroy animals, forests, mountains, minerals, or life forms.
+- Negative paths: ignorant wisdom in ideology, ignorant wisdom in action, and spreading false knowledge; show decay and negative particles as restrained instructional overlays, never horror.
+- Positive paths: helping people/animals/all things, spreading sustainable development values, and building solidarity through accurate knowledge.
+- Composition rule: modern classroom, whiteboard/diagrams, student discussion, and specific moral examples should drive the images; avoid generic mystical posters and avoid literal demons except as subdued toxin-imagery if named.""",
+    65: """Chapter 65 step-by-step lock:
+- This chapter opens in Nalas's modern office: Duong, Truong Nalanda, and students arrive from far provinces with bags of fruit, candies, tea, and questions.
+- Human frame: recovered students discuss mental illness healing, spreading knowledge, and whether patients should learn about the transiting planet.
+- Transiting-planet lesson: show it as a spiritual/celestial administrative realm with resting places like inns/hotels/villas/bridges, the Return of Tao Council, Executive Council, Administrative Council, and the cause-and-effect tree.
+- Five messengers: all five are adult male messengers operating the cause-and-effect system; do not make them women, children, clones, or identical to Father Nalas.
+- Hell/prison gates: Nalas says demons/beasts are illusions from particle reactions, so visualize them symbolically and restrained, with no gore or sensational horror; keep office lecture and compassion visible when possible.""",
+    66: """Chapter 66 step-by-step lock:
+- This chapter is a modern Vietnamese home near Tet, not a temple or old countryside scene.
+- Opening focus: Nalas waters orchids on the balcony in cold weather beside kumquat/peach/New Year plants, then drinks hot tea with Ms. Phuong and her children Dzung and Nga.
+- Story focus: Dzung's return from US study, helping trapped souls at dorm/campus, and Ms. Phuong's forensic/autopsy work causing resentful souls to follow and bombard her with toxic particles.
+- Teaching focus: trapped souls, resentment, particle copying/bombardment, mental illness, shoulder/neck/head pain, and the danger of overusing meditation/supernatural powers.
+- Composition rule: warm family-like Tet visit, tea, fruit/cakes, balcony plants, modern home, and restrained translucent soul-energy overlays; no demon horror or antique rural styling.""",
+    67: """Chapter 67 step-by-step lock:
+- This chapter takes place in Nalas's modern office with students and a worn-looking man affected by many spiritual/religious practices.
+- Character focus: the man has dull eyes, pale tired skin, tension, illness, and confusion from tantra, meditation, pure land prayer, rituals, spirit/demon/ancestor voices, third-eye/chakra loss of control, and followers becoming possessed.
+- Teaching focus: Nalas compassionately challenges false methods and explains origin, mission, smallest particles, Earth practice, and why rituals/spells/supernatural powers cannot create sustainable enlightened energy.
+- Visual distinction: Buddha/God/devil/dead-soul images are mental toxin-movie imagery or delusion, not true deities appearing in the room.
+- Composition rule: modern office/classroom, tea, students listening, worn man gradually calming; keep it clinical and humane, not exorcism horror.""",
+    68: """Chapter 68 step-by-step lock:
+- This chapter opens in a hot Hanoi summer office/classroom with Nalas drinking hot tea; Truong, Duong Nalanda, and students enter with iced coffee, fruit, and cakes.
+- Story beat: Nalas knowingly drinks fragrant iced coffee despite allergy, sneezes and gets a runny nose, then uses the moment to clarify that coffee allergy is not the true law of cause and effect.
+- Teaching focus: cause and effect is a universal transformation mechanism, not a religious punishment or Buddhist/Hindu-only idea.
+- Inner journey: students close their eyes and become smallest particles; Nalas appears as a shiny yellow guide particle through wave-particles, destructive particles, yin-yang embryos, first tuelinh, galaxies, energy wiring, and baby tuelinhs.
+- Composition rule: keep the lecture anchored by modern Hanoi summer, iced coffee/tea/student dialogue, then use restrained cosmic visualizations as guided lesson sequences; avoid pure generic space art.""",
+    69: """Chapter 69 step-by-step lock:
+- This chapter continues a modern class lecture about the law of cause and effect for tuelinhs and souls in human-world practice.
+- First-tuelinh planning focus: show his analysis that human interaction scenarios, milestones, marriage, illness, death, environment, family, parents, and place/time of incarnation must be linked into practice plans.
+- Cause-and-effect system: a protected space beside the universe pyramid, a giant pyramid twenty times taller than an adult, five adult male messengers working on a large plane at the top, and stored positive/negative causal particles around it.
+- Four Tao rules: family Tao, social Tao, teacher-student Tao, and national Tao; include both prohibited harms and required positive values.
+- Composition rule: alternate modern classroom explanation with clear celestial-system visualizations; keep five messengers male and distinct, no Chinese court bureaucracy, no generic angels replacing the actual system.""",
+    70: """Chapter 70 step-by-step lock:
+- This chapter is the Unified Tao through Family Tao, framed as a modern course memory after the narrator explains the lectures were edited into an easier order.
+- Opening focus: Nalas with hot tea, students asking how four Tao forms produce particles and unify with the universe.
+- Family Tao content: marriage between man and woman, husband-wife fidelity, adultery temptation, spouse death with or without children, spouse with social status, how couples treat each other, parent-child duties, siblings, ancestors, and dead/living family links.
+- Human examples should be contemporary and restrained: classroom Q&A, family table conversations, couples in conflict or forgiveness, widowed parent caring for children, leader-spouse ethical pressure, sibling sharing/competition.
+- Composition rule: keep sensitive issues non-explicit and adult; use modern Vietnamese classroom plus concrete family vignettes, with particle diagrams as support rather than the main image.""",
+    71: """Chapter 71 step-by-step lock:
+- This chapter continues the Unified Tao through Social Tao after students discuss the previous Family Tao lecture running long.
+- Opening focus: modern classroom, Nalas explaining that Tao is the worldview of the universe and cannot abandon family/social/national/teacher-student life.
+- Social Tao content groups: treating animals, protecting natural resources, employee-employer relations, employer-employee duties, products/livelihood/production, love/social/work relationships, human trafficking rescue, respect across age/race/religion, and helping people in danger.
+- Visual examples should be modern and ordinary: animal rescue/protection, forest/water/resource protection, ethical workplace/factory/office, rescuing/reporting trafficking as a safe civic scene, and people helping one another.
+- Composition rule: no graphic violence, slaughter, sexualized scenes, or propaganda posters; keep Nalas and students in the modern classroom as the anchor and show Social Tao examples as grounded vignettes or board-supported lesson visuals."""
 }
 
 
