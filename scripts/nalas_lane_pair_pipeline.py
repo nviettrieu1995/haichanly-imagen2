@@ -133,9 +133,9 @@ Whenever the pham-tran / Earth / mortal teacher body of Nalas Nalanda is visible
 
 
 FIVE_MESSENGERS_DNA = """Five messengers visual DNA:
-When the text mentions Giac, Chap, the two messengers, several messengers, or the five messengers of the first tuelinh, do not make them generic identical angels, identical white-haired men, Father Nalas clones, children, women, or random students. Their true forms are five mature male messengers. Keep them as a coherent five-member celestial working group: mature calm male faces, white-ivory base garments, role-colored sashes or light seams, restrained sacred posture, no wings unless the excerpt strongly needs symbolic angelic language, and no Chinese/xianxia styling. Giac and Chap appearing in dreams before the disguise sequence are both adult men, never one male and one female. Only when the local excerpt explicitly says a messenger disguises himself as an old man or old woman should the image show that temporary disguise; the underlying messenger identity remains male.
+When the text mentions Giac, Chap, the two messengers, several messengers, or the five messengers of the first tuelinh, do not make them generic identical angels, identical white-haired men, Father Nalas clones, children, women, or random students. Their true forms are five mature male messengers. Keep them as a coherent five-member celestial working group: mature calm male faces, white-ivory Western sacred garments, early-Christian / Greco-Roman-inspired simple tunics and mantles, role-colored sashes or light seams, restrained sacred posture, no wings unless the excerpt strongly needs symbolic angelic language, and no Chinese/xianxia styling. Avoid East Asian wrap robes, cross-collar hanfu shapes, kimono-like overlapping collars, monk robes, topknots, and court-sage styling for true messenger forms. Messenger hair must be short or neatly tied back; no shoulder-length loose waves, no full Jesus beard, no Father-like face, and no chest-centered holy glow. Giac and Chap appearing in dreams before the disguise sequence are both adult men, never one male and one female. Only when the local excerpt explicitly says a messenger disguises himself as an old man or old woman should the image show that temporary disguise; the underlying messenger identity remains male.
 - Giac: insight / discernment messenger. Slightly older than Chap, leaner oval face, higher cheekbones, calm analytical eyes, precise upright posture, almost still. Restrained gold-white aura. Gesture: one hand lightly tracing a small gold-white geometry or clear-light thread near the hands/chest. Position: often nearest Father, watching, measuring, asking. Never use a halo, crown, beard-heavy Jesus face, or warm rose color.
-- Chap: compassion / attachment-testing messenger. Slightly younger or softer than Giac, fuller kinder face, warmer eyes, humble protective posture, emotionally responsive but not weak. Rose-gold or amber-white aura. Gesture: open palm near the heart or a protective hand lowered toward suffering people. Visual marker: rose-gold sash, warm light held in the palm, or a soft rose aura around the hands. Never give Chap a Sacred Heart, heart-shaped chest light, radiant chest emblem, or the Father's chest glow when Father Nalas is present. Never clone Giac's lean analytical face or gold-white geometry marker.
+- Chap: compassion / attachment-testing messenger. Slightly younger or softer than Giac, fuller kinder face, warmer eyes, humble protective posture, emotionally responsive but not weak. Rose-gold or amber-white aura. Gesture: open palm near the heart line or a protective hand lowered toward suffering people, with the glow clearly in the palm and away from the center of his chest. Visual marker: rose-gold sash, warm light held in the palm, or a soft rose aura around the hands. Never give Chap a Sacred Heart, heart-shaped chest light, radiant chest emblem, central chest glow between both hands, or the Father's chest glow when Father Nalas is present. Never clone Giac's lean analytical face or gold-white geometry marker.
 - Messenger Three: order / law / causal record. Upright and symmetrical, quiet judge-like composure, blue-white aura. Visual marker: blue-white luminous grid, archive table, or orderly light tablets with no readable text. Gesture: holding the structure steady, not comforting.
 - Messenger Four: healing / transformation / toxin removal. Gentle guardian presence, green-gold aura, softer grounded stance. Visual marker: clean botanical light, green-gold healing current, or particles clearing black toxins. Never demonic, horror, plague doctor, or frightening.
 - Messenger Five: transmission / transit / path between realms. Slender quiet guide, silver-violet aura, slightly turned body as if opening a route. Visual marker: silver-violet gateway, path, arc, or transit ribbon when supported by the excerpt. Never make this figure another gold-white Giac.
@@ -385,13 +385,18 @@ COMMON_NEGATIVE_PROMPT = (
     "ao nau peasant costume, antique tea house, old wooden tea-room classroom, bamboo blinds, "
     "low floor mats, sitting on floor, historical peasant village, medieval interior, "
     "rustic ancient classroom, dark blank old chalkboard, floating market, river-delta tourism postcard, "
-    "ancient rural costume drama, scenic travel-poster countryside, wooden sampan as default mood"
+    "ancient rural costume drama, scenic travel-poster countryside, wooden sampan as default mood, "
+    "East Asian wrap robe, cross-collar hanfu, kimono-like overlapping collar, monk-like wrap robe, "
+    "long-haired bearded messenger, Jesus-like messenger, shoulder-length loose hair on messenger, "
+    "full beard on messenger, Father-like messenger face, central chest glow on messenger, "
+    "messenger holding light at the center of his chest"
 )
 
 
 CELESTIAL_SCENE_TERMS = re.compile(
     r"\b(dream|dreams|dreamed|heavenly temple|temple in heaven|lake in heaven|tuelinh space|cosmic|"
-    r"golden energy|spiritual space|dragon|memory travel)\b",
+    r"temple of Nalas Nalanda|golden energy|sparkling golden energy space|spiritual space|"
+    r"dragon|memory travel|tour around the universe|throughout the memories|central planet)\b",
     flags=re.I,
 )
 
@@ -414,10 +419,18 @@ HEAVEN_LECTURE_TERMS = re.compile(
     flags=re.I,
 )
 
+MESSENGER_SCENE_TERMS = re.compile(
+    r"\b(Giac|Chap|two messengers|five messengers|several messengers|"
+    r"the messengers|male messengers|adult men|two adult men)\b",
+    flags=re.I,
+)
+
 DIVINE_NALAS_PRESENCE_TERMS = re.compile(
-    r"\b(Father|my children|twenty-four mature tuelinhs|mature tuelinhs|"
+    r"\b(Father Nalas|Cha Nalas|my children|twenty-four mature tuelinhs|mature tuelinhs|"
     r"Mind Dharma|teacher's place of work and teaching in heaven|"
     r"You summon|summon twenty-four|when I incarnate|I teach this knowledge|"
+    r"Father (?:said|asked|replied|answered|summoned|taught|teaches|lectured|"
+    r"explained|showed|waited|sat|stood|appeared|smiled|looked)|"
     r"the teacher (?:said|asked|replied|answered|summoned|taught|teaches|lectured)|"
     r"Nalas Nalanda (?:said|asked|replied|answered|summoned|taught|teaches|lectured|waited))\b",
     flags=re.I,
@@ -498,12 +511,49 @@ SLEEP_BODY_LOGIC_RULE = (
     "geometry; the pose must look like someone could actually sleep that way."
 )
 
+VISIBLE_MORTAL_BODY_TERMS = re.compile(
+    r"\b(sleeping body|sleeping mortal body|sleeping human body|sleeping earthly body|"
+    r"body asleep|body was asleep|body fell asleep|fell into a deep sleep|deep sleep|"
+    r"when he sleeps|starting to go to sleep|fall into a deep sleep|waking body|"
+    r"waking him up|woke up|sat up|couldn't sleep|on Earth|journey on Earth|"
+    r"Earth body|body is 29 years old|body was 29 years old|29 years old|"
+    r"getting married|married and has children|wife|friends and relatives|"
+    r"middle of the house|inside the house|glass windows|moonlight|courtyard|yard|"
+    r"opened the door|stepped out|walked to the garden|left side of the house|"
+    r"staring intently at him|looking at him|ran straight into the house|closed the door|"
+    r"look through the window|standing in front of them|step out and approach|"
+    r"rooster crowed|meet that person|lead him to meet a woman|woman has spiritual abilities|"
+    r"old man came to his house|older man|older woman came to him|went to meet the woman)\b",
+    flags=re.I | re.S,
+)
+
+INTERNAL_FATHER_ONLY_TERMS = re.compile(
+    r"\b(awaken Father|awaken the connection between father and his body|"
+    r"father and his body|father in his body|father within him|"
+    r"awakened the father in his body|body general)\b",
+    flags=re.I,
+)
+
+C008_VISIBLE_DIVINE_FATHER_TERMS = re.compile(
+    r"\b(temple of Nalas Nalanda|lake in heaven|returning to visit your homeland|"
+    r"sparkling golden energy space|tour around the universe|re-visiting the memories|"
+    r"Giac immediately said to him.*Fathe\s*r|qualified to transform.*Fathe\s*r|"
+    r"greeted,\s*[\"“]?Fathe\s*r|he come to visit)\b",
+    flags=re.I | re.S,
+)
+
 
 def frame_is_celestial(excerpt, anchor):
     text = f"{excerpt}\n{anchor}"
     if CELESTIAL_SCENE_TERMS.search(text) or HEAVEN_SETTING_TERMS.search(text):
         return True
     if HEAVEN_LECTURE_TERMS.search(text) and not EXPLICIT_EARTH_SETTING_TERMS.search(text):
+        return True
+    if (
+        MESSENGER_SCENE_TERMS.search(text)
+        and not EXPLICIT_EARTH_SETTING_TERMS.search(text)
+        and not MODERN_TEACHING_STAGE_TERMS.search(text)
+    ):
         return True
     if EARTH_TEACHING_TERMS.search(text):
         return False
@@ -526,15 +576,7 @@ def frame_needs_pham_tran_reference(excerpt, anchor, force_celestial=False):
     text = f"{excerpt}\n{anchor}"
     if not (force_celestial or frame_is_celestial(excerpt, anchor)):
         return True
-    return bool(
-        re.search(
-            r"\b(mortal body|human body|form body|sleeping body|waking body|earthly body|"
-            r"body asleep|body was asleep|fell into a deep sleep|sleeping on Earth|"
-            r"waking on Earth|on Earth|Earth body)\b",
-            text,
-            flags=re.I,
-        )
-    )
+    return bool(VISIBLE_MORTAL_BODY_TERMS.search(text))
 
 
 def frame_needs_divine_nalas_reference(excerpt, anchor, chapter_number, force_celestial=False):
@@ -551,6 +593,29 @@ def frame_has_divine_nalas_presence(excerpt, anchor, chapter_number):
         chapter_int = int(chapter_number)
     except (TypeError, ValueError):
         chapter_int = None
+    if chapter_int == 8 and C008_VISIBLE_DIVINE_FATHER_TERMS.search(text):
+        return True
+    if INTERNAL_FATHER_ONLY_TERMS.search(text) and not re.search(
+        r"\b(Father (?:said|asked|replied|answered|taught|teaches|lectured|"
+        r"appeared|sat|stood|showed|summoned)|Father Nalas|Cha Nalas|my children|"
+        r"temple in heaven|lake in heaven|returned to heaven|teacher's place of work and teaching in heaven)\b",
+        text,
+        flags=re.I,
+    ):
+        return False
+    if chapter_int == 8 and re.search(
+        r"\b(two messengers|Giac|Chap|five messengers|adult men|two adult men|"
+        r"dragon|old man|older man|old woman|older woman|went into his dream|go into his dream)\b",
+        text,
+        flags=re.I,
+    ) and not re.search(
+        r"\b(Father (?:said|asked|replied|answered|taught|teaches|lectured|"
+        r"appeared|sat|stood|showed|summoned)|Father Nalas|Cha Nalas|my children|"
+        r"temple in heaven|lake in heaven|teacher's place of work and teaching in heaven)\b",
+        text,
+        flags=re.I,
+    ):
+        return False
     if chapter_int in HEAVEN_FATHER_LECTURE_CHAPTERS:
         earth_only_setup = re.search(
             r"\b(works at the office|returned home early|returned home earlier|"
@@ -697,6 +762,40 @@ def frame_visual_mode_note(excerpt, anchor, chapter_number):
         "lecture, healing, or human-world teaching scene, do not show Jesus, angels, cathedral "
         "clouds, or heaven above the room; keep the scene pham tran Vietnam."
     )
+
+
+def frame_messenger_identity_note(excerpt, anchor):
+    text = f"{excerpt}\n{anchor}"
+    if not MESSENGER_SCENE_TERMS.search(text):
+        return "No special messenger identity lock needed unless Giac, Chap, or the five messengers are visible."
+    note = (
+        "Messenger identity lock for this exact frame: every true messenger shown here must read "
+        "as a mature adult man. Giac and Chap are two different male messengers, not one man and "
+        "one woman, not children, not elderly duplicates unless the excerpt explicitly says a "
+        "temporary old-man or old-woman disguise, and not Father Nalas clones. Keep Giac leaner, "
+        "gold-white, analytical, and precise; keep Chap warmer, rose-gold/amber, softer, and "
+        "protective. Their true celestial clothes should read as Western sacred early-Christian "
+        "or Greco-Roman-inspired simple tunics/mantles with role-colored accents, not East Asian "
+        "wrap robes, cross-collar hanfu, kimono-like collars, monk robes, or court-sage costumes. "
+        "Keep messenger hair short or tied back, clean-shaven or light stubble at most; no full "
+        "Jesus beard, no shoulder-length loose hair, no Father-like face, and no bright glow "
+        "centered on the chest. "
+        "If five messengers appear, show five distinct adult male roles with separate "
+        "faces, aura colors, postures, and markers. Do not give any messenger the Father's full "
+        "Jesus-like hair+beard+ivory robe+radiant-heart signature."
+    )
+    if re.search(r"\b(two adult men|adult men|two men)\b", text, flags=re.I):
+        note += (
+            " This beat specifically asks for two adult men; do not soften it into a couple, "
+            "a male/female pair, siblings, children, girls, or vague spirits."
+        )
+    if re.search(r"\b(old man|older man|old woman|older woman)\b", text, flags=re.I):
+        note += (
+            " The old-man/old-woman figures are temporary disguise beats only. Use them only "
+            "because the local excerpt says so; do not apply old-woman form to the earlier true "
+            "two-male-messenger scenes."
+        )
+    return note
 
 
 def frame_sleep_body_note(excerpt, anchor, chapter_story_guide="", lane_index=0):
@@ -1029,6 +1128,9 @@ Character and world DNA, with mandatory fidelity rule:
 
 Current frame world mode:
 {frame_visual_mode_note(excerpt, anchor, chapter['chapter']) if not force_celestial else "C021 heaven-temple override: this frame remains in the heavenly temple / Father teaching Mind Dharma unless the excerpt explicitly shows the sleeping Earth body. Use stable divine Father Nalas in traditional Chua/Sacred-Heart-Jesus form: one fixed traditional Jesus-like portrait every time, apparent age 40-42, fatherly rather than boyish or elderly, center-parted shoulder-length wavy dark chestnut-brown hair, full neat brown beard and moustache, warm olive/light-tan Mediterranean/Semitic features, pure white flowing robe, no wings, inner warm golden light, outer sapphire-blue/lucy-blue cosmic aura, golden particles and blue cosmic energy particles, sacred-heart style gentle inner radiance, and calm compassionate authority. Keep him close to the attached heaven-Father canonical reference and readable immediately as traditional Jesus-inspired sacred Father imagery. Keep him distinct from Giac, Chap, and mature tuelinhs; only Father may have the full Jesus-like hair+beard+ivory robe+radiant heart signature. Other male tuelinhs must have different faces, lower glow, shorter or tied-back hair, clean-shaven/light-stubble faces, distinct robe accents, and no Sacred Heart / glowing heart icon / heart-shaped chest light / radiant chest emblem; no second long-haired full-bearded Jesus-like man. Do not make him young/clean-shaven, baby-faced, model-like youthful, youthful 30s actor-Jesus, 45+ old Father, modern-actor handsome, 50s/60s old, winged, dark, aggressive, evil, horror-like, or elderly white-bearded. Do not turn it into a modern Vietnamese classroom merely because Father mentions human-world practice."}
+
+Current messenger identity logic:
+{frame_messenger_identity_note(excerpt, anchor)}
 
 Current body/action logic:
 {frame_sleep_body_note(excerpt, anchor, chapter_story_guide, lane_index)}
