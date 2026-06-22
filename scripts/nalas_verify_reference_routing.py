@@ -128,7 +128,14 @@ def check_common_item(chapter, item, issues):
             if required not in lowered:
                 issues.append(f"{key} messenger_prompt_missing_lock: {required}")
 
-    if re.search(r"\b(two adult men|two men)\b", excerpt, flags=re.I):
+    messenger_two_men_scene = re.search(
+        r"\b(two adult men|adult men)\b", excerpt, flags=re.I
+    ) or (
+        int(chapter) == 8
+        and MESSENGER_TERMS.search(excerpt)
+        and re.search(r"\btwo men\b", excerpt, flags=re.I)
+    )
+    if messenger_two_men_scene:
         lowered = prompt.lower()
         if "two adult men" not in lowered or "male/female pair" not in lowered:
             issues.append(f"{key} two_adult_men_scene_missing_gender_guard")
