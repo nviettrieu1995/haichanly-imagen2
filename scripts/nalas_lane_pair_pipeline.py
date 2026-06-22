@@ -434,8 +434,8 @@ EXPLICIT_EARTH_SETTING_TERMS = re.compile(
 
 INTERNATIONAL_TRAVEL_TERMS = re.compile(
     r"\b(cebu|philippines|english school|swimming pool|india|nepal|bihar|gaya|"
-    r"mahabodhi|bodhi tree|nalanda university|new delhi|patna|pilgrimage|airport|"
-    r"plane|flight|bus|hotel|relic|ruins|ancient capital|crown prince)\b",
+    r"mahabodhi|bodhi tree|nalanda university|new delhi|patna|pilgrimage|"
+    r"relic|ruins|ancient capital)\b",
     flags=re.I,
 )
 

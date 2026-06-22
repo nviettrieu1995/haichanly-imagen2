@@ -159,8 +159,8 @@ def detect_profiles(chapter, text):
         profiles.append("covid_or_pandemic")
     if re.search(
         r"\b(cebu|philippines|english school|swimming pool|india|nepal|bihar|gaya|"
-        r"mahabodhi|bodhi tree|nalanda university|new delhi|patna|pilgrimage|airport|"
-        r"plane|flight|bus|hotel|relic|ruins|ancient capital|crown prince)\b",
+        r"mahabodhi|bodhi tree|nalanda university|new delhi|patna|pilgrimage|"
+        r"relic|ruins|ancient capital)\b",
         lower,
     ):
         profiles.append("international_travel_or_pilgrimage")

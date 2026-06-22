@@ -75,8 +75,8 @@ def build_brief(chapter):
     international_travel_note = ""
     if re.search(
         r"\b(Cebu|Philippines|English school|swimming pool|India|Nepal|Bihar|Gaya|"
-        r"Mahabodhi|Bodhi tree|Nalanda University|New Delhi|Patna|pilgrimage|airport|"
-        r"plane|flight|bus|hotel|relic|ruins|ancient capital|crown prince)\b",
+        r"Mahabodhi|Bodhi tree|Nalanda University|New Delhi|Patna|pilgrimage|"
+        r"relic|ruins|ancient capital)\b",
         text,
         flags=re.I,
     ):

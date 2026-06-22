@@ -74,6 +74,7 @@ After prompt preparation, verify that every chapter has current flow locks in it
 ```powershell
 python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_chapter_uniqueness.py --start-chapter 8 --end-chapter 86
+python .\scripts\nalas_verify_phase_rules.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86
 ```
 
@@ -153,6 +154,7 @@ After editing one chapter, rebuild that chapter prompt cache:
 ```powershell
 python .\scripts\nalas_lane_pair_pipeline.py --prepare-chapter 21 --pairs-per-batch 1
 python .\scripts\nalas_verify_chapter_uniqueness.py --chapter 21
+python .\scripts\nalas_verify_phase_rules.py --chapter 21
 python .\scripts\nalas_verify_prompt_coverage.py --chapter 21
 ```
 
@@ -161,6 +163,7 @@ If you only edited committed guide/brief files and have not generated the prompt
 ```powershell
 python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_chapter_uniqueness.py --start-chapter 8 --end-chapter 86
+python .\scripts\nalas_verify_phase_rules.py --start-chapter 8 --end-chapter 86 --skip-prompts
 python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86 --skip-prompts
 ```
 
