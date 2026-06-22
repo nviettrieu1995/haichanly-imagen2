@@ -19,6 +19,7 @@ Preflight prompt coverage after preparing/regenerating prompts. This also checks
 
 ```powershell
 python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86
+python .\scripts\nalas_verify_chapter_uniqueness.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86
 ```
 
@@ -47,6 +48,7 @@ python .\scripts\nalas_verify_final_images.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_build_story_guides.py --start-chapter 8 --end-chapter 86 --force
 python .\scripts\nalas_build_visual_briefs.py --start-chapter 8 --end-chapter 86 --force
 python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86
+python .\scripts\nalas_verify_chapter_uniqueness.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86 --skip-prompts
 ```
 
@@ -54,6 +56,7 @@ python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter
 
 ```powershell
 python .\scripts\nalas_lane_pair_pipeline.py --prepare-chapter 21 --pairs-per-batch 1
+python .\scripts\nalas_verify_chapter_uniqueness.py --chapter 21
 python .\scripts\nalas_verify_prompt_coverage.py --chapter 21
 ```
 
