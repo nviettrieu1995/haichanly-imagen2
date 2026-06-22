@@ -18,6 +18,7 @@ Make sure this file exists:
 Preflight prompt coverage after preparing/regenerating prompts:
 
 ```powershell
+python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86
 ```
 
@@ -45,6 +46,7 @@ python .\scripts\nalas_verify_final_images.py --start-chapter 8 --end-chapter 86
 ```powershell
 python .\scripts\nalas_build_story_guides.py --start-chapter 8 --end-chapter 86 --force
 python .\scripts\nalas_build_visual_briefs.py --start-chapter 8 --end-chapter 86 --force
+python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86 --skip-prompts
 ```
 

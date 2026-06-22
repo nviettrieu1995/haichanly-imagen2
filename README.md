@@ -72,6 +72,7 @@ The first run will:
 After prompt preparation, verify that every chapter has current flow locks in its guide, brief, and lane prompt cache:
 
 ```powershell
+python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86
 ```
 
@@ -156,6 +157,7 @@ python .\scripts\nalas_verify_prompt_coverage.py --chapter 21
 If you only edited committed guide/brief files and have not generated the prompt cache yet:
 
 ```powershell
+python .\scripts\nalas_verify_timing_plan.py --start-chapter 8 --end-chapter 86
 python .\scripts\nalas_verify_prompt_coverage.py --start-chapter 8 --end-chapter 86 --skip-prompts
 ```
 
