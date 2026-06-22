@@ -158,6 +158,10 @@ PHAM_TRAN_PHASE_TIMELINE = """Phase timeline lock:
 Chapter mapping: C008 belongs to phases 1-2, C009-C015 belong to phase 3 unless the local excerpt explicitly says flashback/past life, and C016+ belongs to phase 4. International travel/pilgrimage chapters still follow their named real-world location instead of defaulting to Vietnam."""
 
 
+EARLY_RURAL_MATERIAL_LOCK = """Early rural material lock:
+When Chapter 8 or any pre-teaching pham-tran frame shows Nalas's poor countryside home, poverty must read as modest present-day rural Vietnam, not an ancient hut. Use a concrete/cement or brick house with painted, peeling, or worn plaster walls; cement or ceramic tile floor; aluminum/glass window frames; ordinary modern door; visible electric wiring, LED/fluorescent tube, simple bulb, or ceiling fan. The room can be old, damp, cracked, and poor, but it must not be nha tranh/vach dat: no mud wall, clay wall, earthen wall, woven bamboo wall, straw/thatch hut, exposed bamboo rafters, exposed thatch roof, dirt floor, oil lamp nostalgia, or patched historical peasant interior."""
+
+
 STORY_FOCUS_PRIORITY_RULE = """Story focus hierarchy:
 1. Character identity and relationship are the first priority: Nalas's correct mortal/divine form, Giac/Chap/five messengers, students, mothers, patients, named examples, and whether the scene is Earth, dream, or heaven.
 2. Setting and timeline are the second priority: C008 poor modern countryside, C009-C015 early teaching rooms, C016+ modern/Covid/post-Covid office-classrooms, named international travel/pilgrimage locations when the excerpt says Cebu/India/Nepal/New Delhi, and Western sacred heaven for true celestial scenes.
@@ -389,7 +393,9 @@ COMMON_NEGATIVE_PROMPT = (
     "East Asian wrap robe, cross-collar hanfu, kimono-like overlapping collar, monk-like wrap robe, "
     "long-haired bearded messenger, Jesus-like messenger, shoulder-length loose hair on messenger, "
     "full beard on messenger, Father-like messenger face, central chest glow on messenger, "
-    "messenger holding light at the center of his chest"
+    "messenger holding light at the center of his chest, earthen wall, woven bamboo wall, "
+    "straw hut, thatch roof, exposed bamboo rafters, exposed thatch roof, dirt floor, "
+    "ancient hut interior, nostalgic oil-lamp hut"
 )
 
 
@@ -1121,6 +1127,8 @@ Character and world DNA, with mandatory fidelity rule:
 {EARTH_STAGE_RULE}
 
 {PHAM_TRAN_PHASE_TIMELINE}
+
+{EARLY_RURAL_MATERIAL_LOCK}
 
 {STORY_FOCUS_PRIORITY_RULE}
 
