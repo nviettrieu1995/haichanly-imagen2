@@ -33,11 +33,13 @@ PAIR_MANIFEST_PATH = PIPELINE_ROOT / "lane_pairs_manifest.json"
 BRIEF_DIR = PIPELINE_ROOT / "chapter_visual_briefs"
 STORY_GUIDE_DIR = PIPELINE_ROOT / "chapter_story_guides"
 CANONICAL_PHAM_TRAN_REF = PIPELINE_ROOT / "character_refs" / "pham_tran_canonical" / "pham_tran_canonical.png"
+C008_YOUNG_PHAM_TRAN_REF = PIPELINE_ROOT / "character_refs" / "pham_tran_c008_young" / "pham_tran_c008_young.png"
 CANONICAL_HEAVEN_FATHER_REF = (
     PIPELINE_ROOT / "character_refs" / "heaven_father_canonical" / "heaven_father_canonical.png"
 )
 MODERN_ERA_START_CHAPTER = 16
 EARLY_TEACHING_START_CHAPTER = 9
+PROMPT_RULESET_VERSION = "2026-06-22-family-two-daughters-c008-face-lock-v2"
 
 
 CHAPTER8_DNA_LEAK_MARKERS = [
@@ -87,6 +89,8 @@ def path_points_inside_root(value):
 
 
 def plan_paths_match_current_root(plan):
+    if plan.get("prompt_ruleset_version") != PROMPT_RULESET_VERSION:
+        return False
     values = [
         plan.get("book_path"),
         plan.get("prompt_dir"),
@@ -117,7 +121,7 @@ def atomic_write_text(path, text):
 
 
 PHAM_TRAN_CHARACTER_DNA = """Canonical pham-tran Nalas reference:
-Use the approved pham-tran canonical reference image when it is attached by the runner. It defines the mortal Vietnamese form of Cha Nalas Nalanda in Earth scenes: an adult Vietnamese father-teacher with a rounded-square face, gentle fullness, short dark hair, thin metal eyeglasses, solid grounded body, calm scholarly expression, and compassionate teacher energy. Keep the face/body continuity, but update clothing and setting by timeline: before teaching he can wear a clean T-shirt, polo, or casual shirt in a poor but present-day Vietnamese countryside home, with sparse village lights, low modest houses, simple electric bulbs or fluorescent tube light, cement/tile floor, simple wooden furniture, and no city skyline or high-rise apartment view. He must look modern and clean, not like an old scholar, monk, thầy đồ, historical peasant, or costume-drama figure. By the Covid chapter he should read as 32-35 rather than elderly, neater and more formal in a white button-down shirt or light dress shirt, optionally a dark blazer in class. No obvious grey hair, no frailty, no 45+ styling. Keep him human, kind, learned, and ordinary; do not turn him into a warrior, monk, Chinese ancient scholar, Western Jesus figure, or slim heroic fantasy character.
+Use the approved pham-tran canonical reference image when it is attached by the runner. It defines the mortal Vietnamese form of Cha Nalas Nalanda in Earth scenes: the current approved C008 early-30s Vietnamese father-teacher identity with a rounded-square face, gentle fullness, short dark hair, thin metal eyeglasses, solid grounded body, calm scholarly expression, and compassionate teacher energy. Keep the locked face/body continuity, but update clothing and setting by timeline: before teaching he can wear a clean T-shirt, polo, or casual shirt in a poor but present-day Vietnamese countryside home, with sparse village lights, low modest houses, simple electric bulbs or fluorescent tube light, cement/tile floor, simple wooden furniture, and no city skyline or high-rise apartment view. For Chapter 8 and other pre-teaching scenes he must keep this approved age and face, reading as late-20s to early-30s, already wise and kind but not middle-aged: black hair, full hairline, smooth mature skin, no grey temples, no deep wrinkles, no sagging face, no exhausted old-uncle styling. Express wisdom through eyes, posture, books, and quiet light, not through age markers. Do not over-reshape or over-de-age his face; preserve the approved identity. He must look modern and clean, not like an old scholar, monk, thầy đồ, historical peasant, or costume-drama figure. By the Covid chapter he should read as 32-35 rather than elderly, neater and more formal in a white button-down shirt or light dress shirt, optionally a dark blazer in class. No obvious grey hair, no frailty, no 45+ styling. Keep him human, kind, learned, and ordinary; do not turn him into a warrior, monk, Chinese ancient scholar, Western Jesus figure, older uncle, or slim heroic fantasy character.
 Extra phase lock for the mortal body: Chapter 8 / before wisdom returns uses the poor present-day countryside home. Chapters 9-15 / after classes begin use rented classrooms or cleaner learning rooms with students, notebooks, tea, shelves, proper tables/chairs, and improved electric lighting; do not send him back to a poor pre-teaching home unless the local excerpt is explicitly a flashback. Chapter 16+ / Covid and post-Covid uses modern office-classrooms or training rooms, with Nalas about 32-35 around Covid in a white button-down or light dress shirt, optionally a blazer.
 The canonical reference is only for pham tran / Earth / mortal scenes. In true heaven, dream, tuelinh, or celestial scenes, do not use the mortal Vietnamese teacher as the primary divine figure. Use the mortal reference only if the sleeping or waking earthly body is explicitly visible."""
 
@@ -134,10 +138,14 @@ Whenever the pham-tran / Earth / mortal teacher body of Nalas Nalanda is visible
 
 PHAM_TRAN_AGE_CONTINUITY_LOCK = """Mortal Nalas age continuity lock:
 Keep the pham-tran / Earth Nalas as one continuous person across all lanes in a chapter and across both images in a start/end pair. The approved reference controls face shape, glasses, body type, calm scholarly compassion, and grounded build; the local chapter controls age stage. Do not let lighting, sleep, dream glow, camera angle, or emotion turn him into a different younger or older man.
-- Chapter 8 / before wisdom returns: apparent age 30-32 but still before the Covid teaching era, same rounded-square Vietnamese face with gentle fullness, same solid grounded adult body, short dark hair, thin glasses, clean T-shirt/polo/casual shirt. He may look tired, humble, or thoughtful, but not elderly, 40+, grey-haired, deeply wrinkled, frail, receding-haired, or like a middle-aged senior teacher. He also must not become a baby-faced college student, slim youthful actor, narrow-faced handsome youth, thin-necked model, or a different younger man. Keep the mature father-teacher identity even when subtly de-aged.
+- Chapter 8 / before wisdom returns: apparent age 29-32 but still before the Covid teaching era, same rounded-square Vietnamese face with gentle fullness, same solid grounded adult body, short dark hair, thin glasses, clean T-shirt/polo/casual shirt. He may look tired, humble, or thoughtful, but not elderly, not 40+, not grey-haired, not deeply wrinkled, not frail, not receding-haired, and not like a middle-aged senior teacher or older uncle. He also must not become a baby-faced college student, slim youthful actor, narrow-faced handsome youth, thin-necked model, or a different younger man. Keep him as an adult early-30s Vietnamese man with calm wisdom; do not use age, grey hair, deep lines, or an old face to show wisdom.
 - Chapters 9-15 / early teaching: the same person, only slightly more established and teacher-like, about early-30s unless the excerpt says otherwise. Do not jump between boyish youth and old master.
 - Covid chapter / Chapter 16: about 32-35, neat and formal, same face/body continuity with thin glasses. Later chapters can mature gradually, but age must progress smoothly, not randomly within one chapter.
-If the canonical reference appears older than the current chapter stage, borrow identity, glasses, rounded-square face proportions, gentle fullness, and solid body silhouette from it, then only subtly de-age for Chapter 8 rather than copying older skin or grey hair. If the local excerpt shows sleep, keep the same age as the awake frame; sleep must not make him look older."""
+If an attached reference or generated frame appears older than the current approved C008 age, preserve identity, glasses, rounded-square face proportions, gentle fullness, and solid body silhouette while only removing older-age drift such as grey hair, deep wrinkles, sunken cheeks, or receding hairline. Do not over-change the face to make him look like a different younger actor. If the local excerpt shows sleep, keep the same age as the awake frame; sleep must not make him look older."""
+
+
+NALAS_FAMILY_RULE = """Nalas family composition lock:
+Do not invent Nalas Nalanda's wife or children unless the local excerpt explicitly supports a family, home-life, wife, child, or children-of-Nalas beat. If the frame truly shows Nalas's own immediate Earth family, the family is exactly: Nalas, his wife, and two daughters. Both children are girls. Do not show one son and one daughter, sons, boys, extra children, or neighbor children as his own family. This rule applies only to Nalas's private family scenes; it does not apply to students, disciples, patients, village neighbors, general children, heavenly children/tuelinhs, or classroom examples unless the prompt says they are his wife/children."""
 
 
 FIVE_MESSENGERS_DNA = """Five messengers visual DNA:
@@ -403,7 +411,9 @@ COMMON_NEGATIVE_PROMPT = (
     "full beard on messenger, Father-like messenger face, central chest glow on messenger, "
     "messenger holding light at the center of his chest, earthen wall, woven bamboo wall, "
     "straw hut, thatch roof, exposed bamboo rafters, exposed thatch roof, dirt floor, "
-    "ancient hut interior, nostalgic oil-lamp hut"
+    "ancient hut interior, nostalgic oil-lamp hut, invented Nalas family when the excerpt does not mention family, "
+    "Nalas family with a son, Nalas with one boy and one girl as his children, sons of Nalas, "
+    "boy child presented as Nalas's own child, extra children presented as Nalas's own family"
 )
 
 
@@ -963,6 +973,8 @@ def mortal_age_negative_prompt(chapter_number):
             "older Chapter 8 mortal Nalas, elderly Chapter 8 Nalas, middle-aged Chapter 8 teacher, "
             "40-year-old Chapter 8 Nalas, 45-year-old Chapter 8 Nalas, grey hair on Chapter 8 Nalas, "
             "deep wrinkles on Chapter 8 Nalas, receding hairline on Chapter 8 Nalas, frail older Nalas, "
+            "old uncle Nalas, senior-teacher Nalas, sagging cheeks on Chapter 8 Nalas, sunken cheeks, "
+            "heavy under-eye bags, tired aged eyes, grey temples, copied older skin texture from reference, "
             "baby-faced Chapter 8 Nalas, teenage-looking Nalas, college-boy Nalas, slim young actor Nalas, "
             "K-drama youthful Nalas, narrow-faced youthful Nalas, thin-necked model Nalas, "
             "handsome unrelated younger man replacing Nalas"
@@ -1154,6 +1166,8 @@ Character and world DNA, with mandatory fidelity rule:
 
 {PHAM_TRAN_AGE_CONTINUITY_LOCK}
 
+{NALAS_FAMILY_RULE}
+
 {DIVINE_NALAS_CHARACTER_DNA}
 
 {FIVE_MESSENGERS_DNA}
@@ -1315,6 +1329,7 @@ def prepare_chapter_lane_pairs(manifest, chapter_number, pairs_per_batch):
 
     chapter_plan = {
         **chapter,
+        "prompt_ruleset_version": PROMPT_RULESET_VERSION,
         "prompt_dir": str(prompt_dir),
         "output_dir": str(output_dir),
         "target_lane_count": pair_count,
@@ -1394,8 +1409,11 @@ def run_pair_batches(chapter_plan, start_batch, limit_batches, model, timeout, w
             "--prompt-file",
             batch["prompt_file"],
         ]
-        if CANONICAL_PHAM_TRAN_REF.exists() and batch.get("use_pham_tran_ref", True):
-            command.extend(["--input-ref", str(CANONICAL_PHAM_TRAN_REF), "--image-detail", "high"])
+        pham_tran_ref = CANONICAL_PHAM_TRAN_REF
+        if int(chapter_plan["chapter"]) == 8 and C008_YOUNG_PHAM_TRAN_REF.exists():
+            pham_tran_ref = C008_YOUNG_PHAM_TRAN_REF
+        if pham_tran_ref.exists() and batch.get("use_pham_tran_ref", True):
+            command.extend(["--input-ref", str(pham_tran_ref), "--image-detail", "high"])
         if CANONICAL_HEAVEN_FATHER_REF.exists() and batch.get("use_divine_nalas_ref", False):
             command.extend(["--input-ref", str(CANONICAL_HEAVEN_FATHER_REF), "--image-detail", "high"])
         attempt = 1

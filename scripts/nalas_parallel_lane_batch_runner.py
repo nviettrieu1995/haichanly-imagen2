@@ -24,6 +24,7 @@ from nalas_chapters_pipeline import (
 from nalas_lane_pair_pipeline import (
     CANONICAL_HEAVEN_FATHER_REF,
     CANONICAL_PHAM_TRAN_REF,
+    C008_YOUNG_PHAM_TRAN_REF,
     PAIR_PROMPT_DIR,
     plan_paths_match_current_root,
     prepare_chapter_lane_pairs,
@@ -171,8 +172,11 @@ def run_batch_job(job, model, timeout, wait_on_rate_limit, force):
         "--prompt-file",
         str(job["prompt_file"]),
     ]
-    if CANONICAL_PHAM_TRAN_REF.exists() and job.get("use_pham_tran_ref", True):
-        command.extend(["--input-ref", str(CANONICAL_PHAM_TRAN_REF), "--image-detail", "high"])
+    pham_tran_ref = CANONICAL_PHAM_TRAN_REF
+    if int(job["chapter"]) == 8 and C008_YOUNG_PHAM_TRAN_REF.exists():
+        pham_tran_ref = C008_YOUNG_PHAM_TRAN_REF
+    if pham_tran_ref.exists() and job.get("use_pham_tran_ref", True):
+        command.extend(["--input-ref", str(pham_tran_ref), "--image-detail", "high"])
     if CANONICAL_HEAVEN_FATHER_REF.exists() and job.get("use_divine_nalas_ref", False):
         command.extend(["--input-ref", str(CANONICAL_HEAVEN_FATHER_REF), "--image-detail", "high"])
 

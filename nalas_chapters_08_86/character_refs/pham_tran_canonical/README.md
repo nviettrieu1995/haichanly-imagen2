@@ -4,7 +4,7 @@ Approved file:
 `pham_tran_canonical.png`
 
 Use this image as the canonical mortal Earth / pham-tran identity for Cha Nalas Nalanda:
-- Vietnamese middle-aged father-teacher
+- current approved C008 early-30s Vietnamese father-teacher identity; preserve this face/body and only block older-age drift
 - rounded-square gentle face, thin glasses, solid grounded body
 - modest grey-brown cotton clothing
 - calm, learned, compassionate teacher energy
