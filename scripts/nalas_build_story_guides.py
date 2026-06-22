@@ -275,6 +275,12 @@ EARLY_TEACHING_FLOW_LOCKS = {
 
 
 MODERN_CHAPTER_FLOW_LOCKS = {
+    16: """Chapter 16 step-by-step lock:
+- This is the Covid-era origin of the smallest energy particle teaching, not a generic doctrine lecture.
+- Opening memory: a dark pandemic period with lockdowns, deaths, poverty, economic loss, mental-health illness, toxins erupting, fraud/corruption/fake medicine, but also doctors, scientists, donors, and helpers serving patients. Show modern pandemic society compassionately, not disaster spectacle.
+- Teaching phase: classes close for a year; when blockade lifts, Nalas returns daily to a modern city office-classroom with LED/fluorescent lights, magnetic whiteboard, marker pens, desks/chairs, shelves, notebooks, tea/coffee, and three excellent male students. These three students are young men, distinct adults; two are married siblings and one is unmarried.
+- Research/treatment focus: during the teaching break, Nalas transforms sublime smallest-energy-particle knowledge into simple lessons, teaches mentally ill patients and the three students, observes their faces/reactions, adjusts explanation levels, and uses the knowledge to support healing. Show patients respectfully, with family/classroom care; no possession horror, restraints, or hospital-drama framing.
+- Later post-pandemic class: he teaches the structure of the smallest energy particle - shape, intellectual wave-code strand, internal energy state, positive/negative/neutral particles, simple/complex/super matter - and students report heat, forehead tension, headache, and clearer understanding. Visualize particles as restrained gold/blue/neutral educational overlays around the board/classroom; avoid fake readable diagrams, sci-fi lab, cosmic wallpaper, or old rural rooms. Nalas is about 32-35, modern, clean, compassionate, wearing thin glasses and a white/light shirt or blazer.""",
     17: """Chapter 17 step-by-step lock:
 - This is the Truth of the Universe through smallest energy particle knowledge, not a generic lecture chapter.
 - Setting baseline: modern post-Covid Vietnamese class/training room; students arrive early, eager for the next lesson about enlightened knowledge and energy particles.

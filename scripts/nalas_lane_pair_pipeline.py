@@ -168,6 +168,8 @@ Suffering and Methods of Liberation. Present-class scenes: Nalas sipping hot tea
 
 
 MODERN_CHAPTER_FLOW_LOCKS = {
+    16: """C016 flow lock:
+Covid-era origin of the smallest energy particle teaching. Open with modern pandemic lockdown, death/economic loss/mental-health suffering, toxins erupting, fraud/corruption/fake medicine, and also doctors/scientists/donors/helpers. Classes close for a year; when blockade lifts, Nalas returns to a modern city office-classroom with LED/tube lights, magnetic whiteboard, markers, desks/chairs, shelves, notebooks, tea/coffee, and three excellent male students. He transforms sublime smallest-particle knowledge into simple lessons, treats mentally ill patients respectfully, observes reactions, then teaches particle structure and student body reactions. Nalas is 32-35, glasses always, white/light shirt or blazer. No old rural room, hospital horror, fake readable diagrams, or sci-fi lab.""",
     17: """C017 flow lock:
 Truth of the Universe with smallest energy particle knowledge. Modern post-Covid class/training room; students arrive early and look forward to the new lesson. Focus on Nalas giving a practical standard for the truth of the universe, including parent-child/soul-not-property examples. Visualize smallest positive/negative energy particles only as restrained support for classroom explanation of humans, animals, tuelinhs, events, interactions, information acquisition, toxins, and suffering.""",
     18: """C018 flow lock:
